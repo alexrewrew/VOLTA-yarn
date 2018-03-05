@@ -1,0 +1,29 @@
+.volta
+  float right
+  display block
+  position relative
+  &--text
+    font-size 0.625rem
+    color #bebebe
+    position relative
+    top -3px
+    margin-right 5px
+  &--visible
+    svg
+      width 62px
+      g
+        fill #BEBEBE
+  &--hidden
+    position absolute
+    right 0
+    top 0
+    height 0
+    overflow hidden
+    trans()
+    svg
+      width 62px
+      g
+        fill #7521E1
+  &:hover
+    .volta--hidden
+      height 100%

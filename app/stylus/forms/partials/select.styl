@@ -1,0 +1,29 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+select
+  width 100%
+  background $white
+  border 1px solid #ccc
+  padding $s12 $s15 $s13
+  border-radius 0
+  display block
+  margin-bottom $s5
+  -webkit-appearance none
+  -moz-appearance none
+  trans()
+  &:focus
+    outline none
+    border 1px solid blue
+
+.select-group
+  position relative
+  margin-bottom $s5
+  &:after
+    triangle($black, down, 4px)
+    top calc(50% - 2px)
+    right 15px
+
+.select-group-noarrow
+  &:after
+    display none !important

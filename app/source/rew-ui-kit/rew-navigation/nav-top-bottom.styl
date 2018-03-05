@@ -1,0 +1,59 @@
++mobile()
+  body
+    padding-top 71px
+
+  body.open
+    overflow hidden !important
+    nav
+      height 100%
+      overflow scroll !important
+    .nav-panel
+      transform none
+      position static
+    .nav-icon
+      span
+        &:nth-child(1)
+          top 18px
+          width 0
+          left 50%
+        &:nth-child(2)
+          transform rotate(45deg)
+        &:nth-child(3)
+          transform rotate(-45deg)
+        &:nth-child(4)
+          top 18px
+          width 0
+          left 50%
+
+  html.open
+    overflow hidden !important
+
+  nav
+    position fixed
+    left 0
+    right 0
+    top 0
+    z-index 5000
+
+  .nav-panel
+    background $white
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform translateY(-100vh)
+    trans()
+
+  .menu
+    flex-wrap wrap
+    justify-content center
+    li
+      margin 10px 0
+      flex 1 1 100%
+      max-width 100%
+      text-align center
+      a
+        font-size $s22
+        display inline-block
+

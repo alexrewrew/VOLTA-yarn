@@ -1,0 +1,42 @@
+.range-slider
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  input
+    flex 1 1 25%
+    max-width 25%
+  .nouislider
+    flex 1 1 100%
+    max-width 100%
+
+  .noUi-target
+    border 0
+    border-radius 0
+    box-shadow none
+    background #ccc
+
+  .noUi-horizontal
+    height 10px
+    .noUi-handle
+      box-shadow none
+      border none
+      background blue
+      border-radius 0
+      &:focus
+        outline none
+      &:before, &:after
+        display none
+
+  .noUi-base
+    width calc(100% - 30px)
+    margin 0 15px
+
+  .noUi-connect
+    background lightblue
+    border 0
+    border-radius 0
+    box-shadow none
+
+  .noUi-horizontal .noUi-handle
+    width: 34px;
+    height: 22px;

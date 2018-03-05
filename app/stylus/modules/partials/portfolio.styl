@@ -1,0 +1,83 @@
+.portfolio
+  display block
+  position relative
+  z-index 30
+  margin-bottom 131px
+  padding-bottom: 99px;
+  height 439px
+  +portrait()
+    margin-bottom 150px
+  h3
+    margin-bottom $s48
+  &--viewport
+    position absolute
+    top: 52px;
+    left: 4.6%;
+    right: 18.2%;
+    bottom: 0;
+    overflow hidden
+    z-index -1
+    trans()
+    &-image
+      position: absolute;
+      left: 61px;
+      top: -101px;
+      trans()
+    +portrait()
+      right 4.6%
+  &--image
+    position absolute
+    top: -9px;
+    left: 43px;
+    trans()
+    +tablet()
+      left 0
+    +portrait()
+      position static
+      display block
+      height 340px
+      mcenter()
+  &:hover
+    .portfolio--image
+      transform translateY(60px)
+      +portrait()
+        transform translateY(-60px)
+    .portfolio--viewport
+      left 0
+      right 0
+      top -100px
+      bottom -60px
+      +portrait()
+        top -70px
+    .portfolio--viewport-image
+      left 161px
+    .link-inner
+      letter-spacing 3px
+
+.portfolio.portfolio-left
+  .col-left
+    order 2
+    +portrait()
+      order 1
+  .col-right
+    order 1
+    +portrait()
+      order 2
+  .portfolio--viewport
+    right: 4.6%
+    left: 18.2%;
+    +portrait()
+      left 4.6%
+  .portfolio--viewport-image
+    left auto
+    right: 228px;
+    top -147px
+  .portfolio--image
+    left auto
+    right 43px
+    +tablet()
+      right 0
+  &:hover
+    .portfolio--viewport
+      left 0
+      right 0

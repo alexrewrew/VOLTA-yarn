@@ -1,0 +1,100 @@
+.ui-datepicker
+  padding 10px
+  border: 1px solid blue;
+  border-top 0
+  background $white
+  display none
+  .ui-datepicker-header
+    padding 0
+  .ui-datepicker-prev, .ui-datepicker-next
+    top 4px
+    left 0
+    right 0
+    width 20px
+    height 20px
+    display block
+    position absolute
+    span
+      position relative
+      font-size 0
+      color $trans
+      line-height 0
+      display block
+      cursor pointer
+      width 100%
+      height 100%
+      top 0
+      left 0
+      right 0
+      bottom 0
+      margin 0
+      &:before, &:after
+        pseudo(block, absolute)
+        width 10px
+        height 2px
+        background blue
+        top 6px
+        trans()
+      &:hover
+        &:before, &:after
+          background lightblue
+
+  .ui-datepicker-next
+    right 0
+    left auto
+    span
+      &:before, &:after
+        right 8px
+        left auto
+      &:before
+        transform rotate(45deg)
+      &:after
+        transform rotate(-45deg)
+        top 12px
+
+  .ui-datepicker-prev
+    span
+      &:before, &:after
+        right auto
+        left 8px
+      &:before
+        transform rotate(-45deg)
+      &:after
+        transform rotate(45deg)
+        top 12px
+
+  .ui-datepicker-title
+    text-align center
+    padding 0 20px
+
+  table, tr, th, td
+    border none
+    padding 0
+
+  th
+    text-transform lowercase
+    padding 0
+    span
+      width 30px
+      height 30px
+      display flex
+      align-items center
+      justify-content center
+  td
+    a
+      padding 0
+      text-align center
+      color $black
+      width 30px
+      height 30px
+      display flex
+      align-items center
+      justify-content center
+      &:hover
+        background lightblue
+        color $white
+    .ui-priority-secondary
+      color #ccc
+    .ui-state-active
+      background blue
+      color $white

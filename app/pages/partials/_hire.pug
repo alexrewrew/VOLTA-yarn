@@ -1,0 +1,30 @@
+.link-hire
+    .link-hire--step#step1
+        .link-hire--text
+            p Have a project?
+            h2 Hire us
+                include ../svgs/arrow-right-big.svg
+    .link-hire--step#step2
+        form.form-hire
+            .select-group.select-group-noarrow.error
+                select.chosen-select(data-placeholder='What can we help you with?')
+                    option
+                    option Web design & Development
+                    option Branding & identity development
+                    option Marketing & analyst
+                    option Mobile app development
+            input(type='text' placeholder='Your name').error
+            input(type='mail' placeholder='Enter your e-mail')
+            textarea(placeholder='A brief intro to your project').error
+            .form-submit
+                button(type='submit')
+                    span send
+                    include ../svgs/send.svg
+    .link-hire--step#step3
+        .link-hire--text
+            img(src='img/icons/mail.svg' title='')
+            h3 Thanks for your message!
+                br
+                | We will respond soon
+
+    .link-hire--close

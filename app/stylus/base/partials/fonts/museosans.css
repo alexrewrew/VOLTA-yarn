@@ -1,0 +1,81 @@
+/* MuseoSans */
+
+/* normal */
+
+/* 100 */
+
+/* 200 */
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/MuseoSansCyrl-100.eot');
+    src: url('../fonts/MuseoSans/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/MuseoSansCyrl-100.woff') format('woff'),
+    url('../fonts/MuseoSans/MuseoSansCyrl-100.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+/* 300 */
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/MuseoSansCyrl-300.eot');
+    src: url('../fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/MuseoSansCyrl-300.woff') format('woff'),
+    url('../fonts/MuseoSans/MuseoSansCyrl-300.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/* 400 */
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/MuseoSansCyrl-500.eot');
+    src: url('../fonts/MuseoSans/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/MuseoSansCyrl-500.woff') format('woff'),
+    url('../fonts/MuseoSans/MuseoSansCyrl-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 500 */
+
+/* 600 */
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/MuseoSansCyrl-700.eot');
+    src: url('../fonts/MuseoSans/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/MuseoSansCyrl-700.woff') format('woff'),
+    url('../fonts/MuseoSans/MuseoSansCyrl-700.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+/* 700 */
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('../fonts/MuseoSans/MuseoSansCyrl-900.eot');
+    src: url('../fonts/MuseoSans/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSans/MuseoSansCyrl-900.woff') format('woff'),
+    url('../fonts/MuseoSans/MuseoSansCyrl-900.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/* 800 */
+
+/* 900 */
+
+/* italic */
+
+/* 100 */
+
+/* 200 */
+
+/* 300 */
+
+/* 400 */
+
+/* 500 */
+
+/* 600 */
+
+/* 700 */
+
+/* 800 */
+
+/* 900 */

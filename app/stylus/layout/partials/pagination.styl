@@ -1,0 +1,24 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+.pagination
+  df(row)
+  justify-content center
+  margin 0 auto
+  li
+    margin 0 $s15
+    a
+      display inline-block
+      color $black
+      font-size $s18
+      &:hover
+        color lightblue
+    .arrow
+      df(row)
+      justify-content center
+      align-items center
+      height 100%
+    .active
+      color blue
+      cursor default
+      pointer-events: none;

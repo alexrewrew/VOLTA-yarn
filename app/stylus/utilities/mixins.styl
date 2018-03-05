@@ -1,0 +1,135 @@
+@import 'vars'
+
+// ----- MARGIN CENTER -----
+mcenter()
+  margin-left auto
+  margin-right auto
+
+// ----- TEXT OVERLOW -----
+toverflow()
+  white-space nowrap
+  overflow hidden
+  text-overflow ellipsis
+
+// ----- POSITION -----
+posn($top = false, $right = false, $bottom = false, $left = false)
+  if $top
+    top $top
+  if $left
+    left $left
+  if $right
+    right $right
+  if $bottom
+    bottom $bottom
+
+// ----- DISPLAY FLEX -----
+df($direction)
+  display flex
+  if $direction == col
+    flex-direction column
+
+// ----- FONT (font-size, font-color, weight, line-height) -----
+font($sz = false, $wght = false, $lh = false)
+  if $sz
+    font-size: $sz
+  if $wght
+    font-weight: $wght
+  if $lh
+    line-height: $lh
+
+// ----- PSEUDOELEMENT -----
+pseudo($display, $position)
+  content: ''
+  display: $display
+  position: $position
+
+// ----- TRANSITION -----
+trans()
+  transition: all 0.4s ease
+
+// ----- TRIANGLE -----
+triangle($colour, $direction, $size)
+  pseudo(block, absolute)
+  width: 0
+  height: 0
+  if $direction == down
+    border-left: $size solid transparent
+    border-right: $size solid transparent
+    border-top: $size solid $colour
+  else if $direction == up
+    border-left: $size solid transparent
+    border-right: $size solid transparent
+    border-bottom: $size solid $colour
+  else if $direction == right
+    border-top: $size solid transparent
+    border-bottom: $size solid transparent
+    border-left: $size solid $colour
+  else if $direction == left
+    border-top: $size solid transparent
+    border-bottom: $size solid transparent
+    border-right: $size solid $colour
+
+// ----- PLACEHOLDER -----
+placeholder()
+  &:-moz-placeholder
+    {block}
+  &::-moz-placeholder
+    {block}
+  &:-ms-input-placeholder
+    {block}
+  &::-webkit-input-placeholder
+    {block}
+
+// ----- MEDIA QUERIES -----
+mobile()
+  @media (max-width: 767px)
+    {block}
+
+fablet()
+  @media (max-width: 568px)
+    {block}
+
+landscape()
+  @media (max-device-width: 767px) and (orientation: landscape)
+    {block}
+
+portrait()
+  @media (min-width: 768px) and (max-width: 991px)
+    {block}
+
+tablet()
+  @media (min-width: 992px) and (max-width: 1199px)
+    {block}
+
+displays()
+  @media (min-width: 1200px)
+    {block}
+
+displaysxxl()
+  @media (min-width: 1600px)
+    {block}
+
+custom-min($minwidth)
+  @media (min-width: $minwidth)
+    {block}
+
+custom-max($maxwidth)
+  @media (max-width: $maxwidth)
+    {block}
+
+custom($minwidth, $maxwidth)
+  @media (min-width: $minwidth) and (max-width: $maxwidth)
+    {block}
+
+// ----- ANIMATIONS -----
+anim($name, $duration, $delay = false, $count = false, $function = false, $direction = false)
+  animation-name: $name
+  animation-duration: $duration
+  if $delay
+    animation-delay: $delay
+  if $count
+    animation-iteration-count: $count
+  if $function
+    animation-timing-function: $function
+  if $direction
+    animation-direction: $direction

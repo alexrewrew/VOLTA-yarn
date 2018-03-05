@@ -1,0 +1,23 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+blockquote
+  padding $s15
+  position relative
+  &:before, &:after
+    position absolute
+    display block
+    line-height 1
+  &:before
+    content open-quote
+    left 0
+    top 0
+  &:after
+    content close-quote
+    right 0
+    bottom 0
+
+cite
+  font-size $s16
+  font-style italic
+  color $gray

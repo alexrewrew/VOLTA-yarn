@@ -1,0 +1,110 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | VOLTA
+
+block canvas
+    //canvas#volta(data-color='7521E1')
+
+block content
+
+    header.header-index
+        .container-fluid
+            .row.justify-content-center
+                .col-md-10
+                    h1 We are VOLTA - a marketing driven digital production
+        a(href='' title='').jumbotron
+            .container-fluid
+                .row.justify-content-center
+                    .col-lg-4.order-2.order-lg-1.align-self-end
+                        span.link-inner View portfolio
+                            include svgs/arrow-right.svg
+                    .col-lg-6.order-1.order-lg-2
+
+                        img(src='img/illus/illus1.png' title='' alt='').jumbotron--image
+            .jumbotron--viewport
+                .jumbotron--viewport-back
+                img(src='' title='' alt='').jumbotron--viewport-image
+
+
+    section
+        .container-fluid
+            .row.justify-content-center
+                .col-md-10.col-lg-4
+                    h2 Services
+                    .slider-counter 1/4
+                .col-md-10.col-lg-6
+                    .slider.slider-full
+                        div
+                            .slide
+                                h3 Social Media Marketing
+                                p Google Adwords, Google Analytics, Google SEO Tools, да и каждый последующий сервис управления рекламой в интернете — совершенно занудная штука, с которой способен подружиться только дотошный технарь. Но и здесь есть место для творчества - мы называем это техническим креативом.
+                        div
+                            .slide
+                                h3 Web design & Development
+                                p Google Adwords, Google Analytics, Google SEO Tools, да и каждый последующий сервис управления рекламой в интернете — совершенно занудная штука, с которой способен подружиться только дотошный технарь. Но и здесь есть место для творчества - мы называем это техническим креативом.
+                    a(href='' title='').link-inner.link-slider Все услуги
+                        include svgs/arrow-right.svg
+
+    section
+        a(href='' title='').portfolio.portfolio-color-yellow
+            .container-fluid
+                .row.justify-content-center
+                    .col-md-10.col-lg-5.col-xl-6.col-left
+                        img(src='img/illus/illus2.png' title='' alt='').portfolio--image
+                    .col-md-10.col-lg-5.col-xl-4.col-right
+                        h3 Мы Volta — киевское агентство цифровых коммуникаций
+                        span.link-inner.link-inner-small View more
+                            include svgs/arrow-right-small.svg
+            .portfolio--viewport
+                img(src='img/illus/illus2a.svg' title='' alt='').portfolio--viewport-image
+
+
+        a(href='' title='').portfolio.portfolio-left.portfolio-color-gray-dark
+            .container-fluid
+                .row.justify-content-center
+                    .col-md-10.col-lg-5.col-xl-6.col-left
+                        img(src='img/illus/illus3.png' title='' alt='').portfolio--image
+                    .col-md-10.col-lg-5.col-xl-4.col-right
+                        h3 Мы Volta — киевское агентство цифровых коммуникаций
+                        span.link-inner.link-inner-small View more
+                            include svgs/arrow-right-small.svg
+            .portfolio--viewport
+                img(src='img/illus/illus3a.svg' title='' alt='').portfolio--viewport-image
+
+    section.section-last
+        .container-fluid
+            .row.justify-content-center
+                .col-md-10
+                    h2 Clients
+                    ul.ul-clients
+                        li
+                            img(src='img/clients/client1.png' title='' alt='')
+                        li
+                            img(src='img/clients/client2.png' title='' alt='')
+                        li
+                            img(src='img/clients/client3.png' title='' alt='')
+                        li
+                            img(src='img/clients/client4.png' title='' alt='')
+                        li
+                            img(src='img/clients/client5.png' title='' alt='')
+                        li
+                            img(src='img/clients/client6.png' title='' alt='')
+                        li
+                            img(src='img/clients/client7.png' title='' alt='')
+                        li
+                            img(src='img/clients/client8.png' title='' alt='')
+                        li
+                            img(src='img/clients/client9.png' title='' alt='')
+                        li
+                            img(src='img/clients/client10.png' title='' alt='')
+                        li
+                            img(src='img/clients/client11.png' title='' alt='')
+
+
+
+
+
+
+

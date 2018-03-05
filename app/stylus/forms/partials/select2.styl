@@ -1,0 +1,65 @@
+.select2-container--default
+  .select2-selection--single
+    border 1px solid #ccc
+    border-radius 0
+    height auto
+    trans()
+    &:focus
+      outline none
+      border-color blue
+    .select2-selection__clear
+      right 20px
+    .select2-selection__rendered
+      color $black
+      font-size $s16
+      line-height normal
+      padding $s12 $s15 $s13
+    .select2-selection__arrow
+      top calc(50% - 15px)
+      right 9px
+      b
+        border-color: $black transparent transparent transparent;
+        trans()
+
+  .select2-results__option[aria-selected=true]
+    margin-bottom 0
+    background #ccc
+    color $white
+
+  .select2-results__option--highlighted[aria-selected]
+    background blue
+    color $white
+
+  .select2-results__option.select2-results__message
+    background $white
+    font-size $s14
+    color #999
+    padding $s12 $s10 $s13
+
+  .select2-search--dropdown .select2-search__field
+      font-size $s16
+      margin-bottom $s12
+      border 1px solid #ccc
+      padding $s11 $s10 $s12
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single
+  border-color blue
+  border-bottom-color $trans
+
+.select2-container--open .select2-dropdown--below
+  border 1px solid blue
+  border-top 0
+  border-radius 0
+//
+.select2-results__option
+  padding $s12 $s15 $s13
+  font-size $s16
+
+//
+//.select2-search--dropdown
+//  padding: 11px 15px 12px;
+//
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+  border-color: $black transparent transparent transparent;
+  transform rotate(180deg)
+  border-width: 5px 4px 0 4px;

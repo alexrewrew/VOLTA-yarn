@@ -1,0 +1,55 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+::selection
+  background $black
+  color $white
+
+h1, h2, h3, h4, h5, h6, p, ul li, ol li, blockquote, cite
+  font-family $m-font, $s-font, sans-serif
+  color $white
+
+h1
+  font($s50, 500, 1.4)
+  margin-bottom $s23
+  position relative
+  z-index 30
+  +portrait()
+    font-size 2.5rem
+
+h2
+  font($s56, 700, 1)
+  margin-bottom $s27
+  color: $purple-text;
+
+h3
+  font($s30, 700, 1.13)
+  margin-bottom $s39
+
+h4
+  font($s22, 700, 1.5)
+  margin-bottom $s38
+
+h5
+  font($s18, 700, 1.5)
+  margin-bottom $s44
+
+h6
+  font($s14, 700, 1.5)
+  margin-bottom $s50
+
+p
+  font($s16, 400, 1.44)
+  margin-bottom $s30
+
+.paragraph-lead
+  font-size $s20
+
+.paragraph-small
+  font-size $s14
+
+hr
+  border: 0;
+  height: 1px;
+  background: $black
+  margin $s15 0

@@ -1,0 +1,113 @@
+.chosen-rtl .chosen-search input[type="text"],
+.chosen-container-single .chosen-single abbr,
+.chosen-container-single .chosen-single div b,
+.chosen-container-single .chosen-search input[type="text"],
+.chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+.chosen-container .chosen-results-scroll-down span,
+.chosen-container .chosen-results-scroll-up span {
+  background-image: url("../img/chosen/chosen-sprite.png") !important;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  .chosen-rtl .chosen-search input[type="text"],
+  .chosen-container-single .chosen-single abbr,
+  .chosen-container-single .chosen-single div b,
+  .chosen-container-single .chosen-search input[type="text"],
+  .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+  .chosen-container .chosen-results-scroll-down span,
+  .chosen-container .chosen-results-scroll-up span {
+    background-image: url("../img/chosen/chosen-sprite@2x.png") !important;
+  }
+}
+
+.chosen-container
+  width 100%
+  &:after
+    triangle($white, down, 5px)
+    top calc(50% - 2.5px)
+    right 19px
+    trans()
+  &:focus
+    outline none
+  .chosen-single
+    padding 0
+    height auto
+    border-radius 0
+    border 0
+    border-bottom 2px solid #fd5fab
+    background $trans
+    box-shadow none
+    trans()
+    input[type='text']
+      display none
+    span
+      padding $s5 0 $s6
+      font-size $s18
+      line-height 1.89
+      color $white
+  .chosen-default
+    span
+      color #ff86c0
+
+.select-group.error
+  .chosen-container
+    .chosen-default
+      span
+        color $pink-darkest
+  .chosen-container .chosen-single
+    border-color $pink-darkest
+
+.chosen-container-single
+  .chosen-search
+    padding 0 5px
+    margin-bottom $s12
+    input[type='text']
+      font-size $s16
+      border 1px solid #ccc
+      padding $s11 $s10 $s12
+      background-image none !important
+
+.chosen-container.chosen-with-drop
+  &:after
+    transform rotate(180deg)
+
+.chosen-container.chosen-container-active
+  box-shadow none
+  .chosen-single
+    box-shadow none
+    border none
+    border-bottom 2px solid $white
+    background none
+
+.chosen-container-single .chosen-drop
+  border-radius 0
+  border none
+  border-top 0
+  padding 0
+  box-shadow none
+  .chosen-results
+    padding 0
+    margin 0
+    box-shadow: 0 8px 15px -8px #C21768;
+    .active-result
+      padding $s12 $s15 $s13
+      font-size $s16
+      line-height normal
+      background #ef2a88
+      trans()
+    .active-result.highlighted
+      background #fd5fab
+    .result-selected
+      background #fd5fab
+      color $white
+
+.chosen-container-single .chosen-single div b
+  display none
+
+.chosen-container
+  .chosen-results
+    li.no-results
+      background $white
+      color #999
+      font-size $s14
+      padding $s12 $s10 $s13

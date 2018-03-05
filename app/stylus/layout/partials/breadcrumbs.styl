@@ -1,0 +1,32 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+.breadcrumbs
+  df(row)
+  margin-bottom $s15
+  li
+    position relative
+    padding-right $s15
+    margin-right $s15
+    &:after
+      pseudo(block, absolute)
+      right 0
+      top 0
+      height 100%
+      width 1px
+      background $black
+      transform rotate(25deg)
+    &:last-child
+      &:after
+        display none
+
+    a
+      display inline-block
+      color $black
+      &:hover
+        color lightblue
+
+    .active
+      cursor default
+      pointer-events: none
+      color blue

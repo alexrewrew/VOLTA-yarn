@@ -1,0 +1,23 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+.ui-tabs
+  .ui-tabs-nav
+    df(row)
+    margin-bottom $s16
+    li
+      margin 0 $s15
+      &:first-child
+        margin-left 0
+      a
+        padding $s12 $s15 $s13
+        background $trans
+        display block
+        color $black
+        &:hover
+          color $white
+          background lightblue
+    .ui-tabs-active.ui-state-active
+      a
+        background blue
+        color $white

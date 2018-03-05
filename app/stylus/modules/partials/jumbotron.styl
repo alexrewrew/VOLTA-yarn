@@ -1,0 +1,43 @@
+.jumbotron
+  padding 63px 0 53px
+  display block
+  position relative
+  z-index 10
+  min-height 500px
+  &--viewport
+    position absolute
+    top 0
+    bottom 0
+    left 43%
+    right: 4.6%;
+    background $purple-dark
+    z-index -1
+    trans()
+    +portrait()
+      left 4.6%
+  &--image
+    position relative
+    left: -13.4%;
+    top 0
+    trans()
+    +tablet()
+      max-width: 585px
+    +portrait()
+      left 0
+      mcenter()
+      display block
+      margin-bottom $s30
+  .link-inner
+    +portrait()
+      display flex
+      justify-content center
+  &:hover
+    .jumbotron--image
+        transform translateY(-20px)
+    .jumbotron--viewport
+      left 0
+      right 0
+      top -100px
+      bottom -60px
+    .link-inner
+      letter-spacing 3px

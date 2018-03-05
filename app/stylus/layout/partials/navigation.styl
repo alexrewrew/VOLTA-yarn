@@ -1,0 +1,127 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+nav
+  padding 14px 32px 0
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 8999
+  trans()
+  +mobile()
+    border-top: 7px solid #fff;
+    background $purple
+    padding 13px 0
+
+nav.scroll
+  background $white
+  padding-bottom 9px
+  +mobile()
+    padding-bottom 13px
+    background $purple
+
+.menu
+  df(row)
+  justify-content flex-end
+  height 100%
+  +mobile()
+    flex-wrap wrap
+    justify-content flex-start
+  li
+    margin 0 $s24
+    &:last-child
+      margin-right 0
+    +tablet()
+      margin 0 $s20
+    +portrait()
+      margin 0 $s6
+    +mobile()
+      margin 0 0 $s20
+      flex 1 1 100%
+      max-width 100%
+    +landscape()
+      flex 1 1 50%
+      max-width 50%
+    a
+      display inline-block
+      color $purple
+      font-weight 500
+      +mobile()
+        font-size: 1.25rem
+        font-weight 700
+      &:hover
+        color $pink
+    .active
+      color $pink
+
+.menu.menu-lang
+  +mobile()
+    height auto
+  li
+    margin 0 $s10
+    +portrait()
+      margin 0 $s6
+    +mobile()
+      margin 0 0 $s20
+      flex 1 1 100%
+      max-width 100%
+      text-align: right;
+    &:last-child
+      margin-right 0
+
+.menu-social
+  display flex
+  justify-content space-between
+  margin $s20 0
+  +landscape()
+    margin $s10 0
+
+
+.nav-menu
+  display none
+  +mobile()
+    display block
+
+.nav-icon
+  width 35px
+  height 20px
+  position relative
+  cursor pointer
+  trans()
+  transform rotate(0deg)
+  float right
+  border-radius: 2px;
+  span
+    display block
+    position absolute
+    height 3px
+    width 100%
+    background $white
+    border-radius 2px
+    opacity 1
+    left 0
+    transform rotate(0deg)
+    trans()
+    &:nth-child(1)
+      top 0
+    &:nth-child(2), &:nth-child(3)
+      top 8px
+    &:nth-child(4)
+      top 17px
+
+#nav-mobile
+  display none
+  top 53px
+  left 0
+  right 0
+  bottom 0
+  position fixed
+  z-index 8998
+  background $white
+  transform translateY(-150vh)
+  padding-top 20px
+  trans()
+  +mobile()
+    display block
+

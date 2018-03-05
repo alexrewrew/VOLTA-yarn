@@ -1,0 +1,65 @@
+/* Oswald */
+
+/* normal */
+
+/* 100 */
+
+/* 200 */
+
+/* 300 */
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald/Oswald-Light.eot');
+    src: url('../fonts/Oswald/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Oswald/Oswald-Light.woff') format('woff'),
+    url('../fonts/Oswald/Oswald-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/* 400 */
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald/Oswald-Regular.eot');
+    src: url('../fonts/Oswald/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Oswald/Oswald-Regular.woff') format('woff'),
+    url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 500 */
+
+/* 600 */
+
+/* 700 */
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald/Oswald-Bold.eot');
+    src: url('../fonts/Oswald/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Oswald/Oswald-Bold.woff') format('woff'),
+    url('../fonts/Oswald/Oswald-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/* 800 */
+
+/* 900 */
+
+/* italic */
+
+/* 100 */
+
+/* 200 */
+
+/* 300 */
+
+/* 400 */
+
+/* 500 */
+
+/* 600 */
+
+/* 700 */
+
+/* 800 */
+
+/* 900 */

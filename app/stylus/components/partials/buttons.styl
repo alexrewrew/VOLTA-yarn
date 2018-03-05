@@ -1,0 +1,40 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+button
+  border none
+  cursor pointer
+  background $trans
+  line-height: 1.13;
+  font-size $s30
+  color $white
+  display flex
+  float right
+  padding 0
+  trans()
+  span
+    padding 6px 0
+    margin-right $s32
+  svg
+    trans()
+  &:hover
+    svg
+      transform translateX(50px)
+  &:focus
+    outline none
+
+.btn
+  display block
+  max-width 320px
+  width 100%
+  text-align center
+  background blue
+  color $white
+  padding $s12 $s15 $s13
+  margin-bottom $s15
+  &:hover
+    color $white
+    background lightblue
+
+.btn-center
+  mcenter()

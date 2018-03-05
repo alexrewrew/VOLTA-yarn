@@ -1,0 +1,123 @@
+.link-hire
+  height 100%
+  background $pink-dark;
+  box-shadow: 0 8px 50px 0 $pink-dark;
+  min-height 400px
+  margin-top 10px
+  cursor pointer
+  position relative
+  trans()
+  &:hover
+    background #C20C63
+    box-shadow: 0 8px 20px 0 #C20C63;
+    h2
+      svg
+        transform translateX(50px)
+  &--text
+    p
+      font-size: $s28
+      line-height: 1.21;
+      text-align: center
+      color: #ffaed5;
+      margin-bottom 0
+    h2
+      font-size: 5rem
+      font-weight: 500;
+      text-align center
+      display: flex;
+      align-items: center;
+      margin-bottom 0
+      color $white
+      svg
+        margin-left 33px
+        position relative
+        top 5px
+        trans()
+    h3
+      font-size $s28
+      font-weight 500
+      text-align center
+    img
+      display block
+      margin 0 auto $s30
+  &--close
+    width 25px
+    height 25px
+    position absolute
+    right 30px
+    top 30px
+    z-index 300
+    cursor pointer
+
+    visibility hidden
+    z-index 0
+    opacity 0
+
+    trans()
+    &:before, &:after
+      pseudo(block, absolute)
+      background $white
+      width 100%
+      height 2px
+    &:after
+      transform rotate(-45deg)
+    &:before
+      transform rotate(45deg)
+
+  &--step
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    top 0
+    display flex
+    justify-content center
+    align-items center
+
+    trans()
+    visibility hidden
+    z-index 0
+    opacity 0
+
+  &--step#step1
+    visibility visible
+    z-index 300
+    opacity 1
+
+.link-hire.with-form
+  cursor default
+  &:hover
+    background $pink-dark
+    box-shadow: 0 8px 50px 0 $pink-dark;
+  .link-hire--step#step1
+    visibility hidden
+    z-index 0
+    opacity 0
+  .link-hire--step#step2
+    visibility visible
+    z-index 300
+    opacity 1
+  .link-hire--close
+    visibility visible
+    z-index 300
+    opacity 1
+
+
+.link-hire.with-success
+  cursor default
+  &:hover
+    background $pink-dark
+    box-shadow: 0 8px 50px 0 $pink-dark;
+  .link-hire--step#step1, .link-hire--step#step2
+    visibility hidden
+    z-index 0
+    opacity 0
+  .link-hire--step#step3
+    visibility visible
+    z-index 300
+    opacity 1
+  .link-hire--close
+    visibility visible
+    z-index 300
+    opacity 1
+

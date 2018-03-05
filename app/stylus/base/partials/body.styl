@@ -1,0 +1,38 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+html, body
+  overflow-x hidden
+
+body
+  font(16px, 400, normal)
+  color $black
+  font-family $m-font, $s-font, sans-serif
+  background $white
+
++mobile()
+  body.open
+    overflow hidden !important
+    nav
+      background $white
+    #nav-mobile
+      transform none
+    .nav-icon
+      span
+        background $pink
+        &:nth-child(1)
+          top 18px
+          width 0
+          left 50%
+        &:nth-child(2)
+          transform rotate(45deg)
+        &:nth-child(3)
+          transform rotate(-45deg)
+        &:nth-child(4)
+          top 18px
+          width 0
+          left 50%
+    .link-logo
+      svg
+        g
+          fill $pink

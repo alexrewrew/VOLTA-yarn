@@ -1,0 +1,55 @@
+nav
+    .container-fluid
+        .row#nav-desktop
+            .col-6.col-md-2
+                a(href='./' title='').link-logo
+                    include ../svgs/volta-logo.svg
+
+            .col-6.nav-menu
+                .nav-icon#menu-trigger
+                    span
+                    span
+                    span
+                    span
+
+            .col-8.nav-panel
+                ul.menu
+                    li
+                        a(href='./' title='') home
+                    li
+                        a(href='services.html' title='') services
+                    li
+                        a(href='above.html' title='') about
+                    li
+                        a(href='portfolio.html' title='') portfolio
+                    li
+                        a(href='blog.html' title='') blog
+                    li
+                        a(href='vacancy.html' title='') vacancy
+                    li
+                        a(href='contacts.html' title='') contacts
+            .col-2.nav-lang
+                ul.menu.menu-lang
+                    li
+                        a(href='' title='') EN
+                    li
+                        a(href='' title='') UA
+                    li
+                        a(href='' title='') RU
+
+.container#nav-mobile
+    .row.justify-content-center
+        .col-10
+            ul.menu-social
+                li
+                    a(href='#', title='')
+                        include ../svgs/behance.svg
+                li
+                    a(href='#', title='')
+                        include ../svgs/dribble.svg
+                li
+                    a(href='#', title='')
+                        include ../svgs/facebook.svg
+                li
+                    a(href='#', title='')
+                        include ../svgs/linkedin.svg

@@ -1,0 +1,139 @@
+/* Cera */
+
+/* normal */
+
+/* 100 */
+@font-face {
+    font-family: 'Cera';
+    src: url('../fonts/Cera/CeraCY-Thin.eot');
+    src: url('../fonts/Cera/CeraCY-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cera/CeraCY-Thin.woff') format('woff'),
+    url('../fonts/Cera/CeraCY-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+/* 200 */
+
+/* 300 */
+@font-face {
+    font-family: 'Cera';
+    src: url('../fonts/Cera/CeraCY-Light.eot');
+    src: url('../fonts/Cera/CeraCY-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cera/CeraCY-Light.woff') format('woff'),
+    url('../fonts/Cera/CeraCY-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/* 400 */
+@font-face {
+    font-family: 'Cera';
+    src: url('../fonts/Cera/CeraCY-Regular.eot');
+    src: url('../fonts/Cera/CeraCY-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cera/CeraCY-Regular.woff') format('woff'),
+    url('../fonts/Cera/CeraCY-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 500 */
+@font-face {
+    font-family: 'Cera';
+    src: url('../fonts/Cera/CeraCY-Medium.eot');
+    src: url('../fonts/Cera/CeraCY-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cera/CeraCY-Medium.woff') format('woff'),
+    url('../fonts/Cera/CeraCY-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+/* 600 */
+
+/* 700 */
+@font-face {
+    font-family: 'Cera';
+    src: url('../fonts/Cera/CeraCY-Bold.eot');
+    src: url('../fonts/Cera/CeraCY-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cera/CeraCY-Bold.woff') format('woff'),
+    url('../fonts/Cera/CeraCY-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/* 800 */
+
+/* 900 */
+@font-face {
+    font-family: 'Cera';
+    src: url('../fonts/Cera/CeraCY-Black.eot');
+    src: url('../fonts/Cera/CeraCY-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cera/CeraCY-Black.woff') format('woff'),
+    url('../fonts/Cera/CeraCY-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* italic */
+
+/* 100 */
+@font-face {
+    font-family: 'Cera';
+    src: url('../fonts/Cera/CeraCY-ThinItalic.eot');
+    src: url('../fonts/Cera/CeraCY-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cera/CeraCY-ThinItalic.woff') format('woff'),
+    url('../fonts/Cera/CeraCY-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+/* 200 */
+
+/* 300 */
+@font-face {
+    font-family: 'Cera';
+    src: url('../fonts/Cera/CeraCY-LightItalic.eot');
+    src: url('../fonts/Cera/CeraCY-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cera/CeraCY-LightItalic.woff') format('woff'),
+    url('../fonts/Cera/CeraCY-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+/* 400 */
+@font-face {
+    font-family: 'Cera';
+    src: url('../fonts/Cera/CeraCY-RegularItalic.eot');
+    src: url('../fonts/Cera/CeraCY-RegularItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cera/CeraCY-RegularItalic.woff') format('woff'),
+    url('../fonts/Cera/CeraCY-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+/* 500 */
+@font-face {
+    font-family: 'Cera';
+    src: url('../fonts/Cera/CeraCY-MediumItalic.eot');
+    src: url('../fonts/Cera/CeraCY-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cera/CeraCY-MediumItalic.woff') format('woff'),
+    url('../fonts/Cera/CeraCY-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+/* 600 */
+
+/* 700 */
+@font-face {
+    font-family: 'Cera';
+    src: url('../fonts/Cera/CeraCY-BoldItalic.eot');
+    src: url('../fonts/Cera/CeraCY-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cera/CeraCY-BoldItalic.woff') format('woff'),
+    url('../fonts/Cera/CeraCY-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+/* 800 */
+
+/* 900 */
+@font-face {
+    font-family: 'Cera';
+    src: url('../fonts/Cera/CeraCY-BlackItalic.eot');
+    src: url('../fonts/Cera/CeraCY-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Cera/CeraCY-BlackItalic.woff') format('woff'),
+    url('../fonts/Cera/CeraCY-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}

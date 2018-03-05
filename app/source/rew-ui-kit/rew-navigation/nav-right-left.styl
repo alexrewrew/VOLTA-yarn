@@ -1,0 +1,63 @@
++mobile()
+  html.open
+    overflow hidden !important
+
+  body.open
+    overflow hidden !important
+    nav, main
+      transform translateX(calc(-100vw + 60px))
+    .nav-icon
+      span
+        &:nth-child(1)
+          top 18px
+          width 0
+          left 50%
+        &:nth-child(2)
+          transform rotate(45deg)
+        &:nth-child(3)
+          transform rotate(-45deg)
+        &:nth-child(4)
+          top 18px
+          width 0
+          left 50%
+
+  body
+    padding-top 71px
+
+  main
+    trans()
+
+  nav
+    position fixed
+    left 0
+    right 0
+    top 0
+    z-index 5000
+    .container
+      max-width 100%
+
+  .nav-panel
+    width 100vw
+    height 100vh
+    transform translateX(100vw)
+    background lightblue
+    overflow-y: scroll;
+    trans()
+    top 0
+    left 0
+    right 0
+    bottom 0
+    position fixed
+
+  .menu
+    position static
+    background lightblue
+    flex-wrap wrap
+    height auto
+    li
+      margin 10px 0
+      flex 1 1 100%
+      max-width 100%
+      a
+        font-size $s22
+        color $white

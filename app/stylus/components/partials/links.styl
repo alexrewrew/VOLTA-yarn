@@ -1,0 +1,79 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+a
+  text-decoration none
+  font-family $m-font, $s-font, sans-serif
+  color $pink
+  trans()
+  &:hover
+    text-decoration none
+    color $pink-dark
+  &:focus
+    text-decoration none
+    outline none
+
+.link-logo
+  display block
+  max-width 97px
+  +mobile()
+    max-width 88px
+    display flex
+    align-items center
+    height auto
+  svg
+    height auto
+    width 100%
+    g
+      fill $purple
+      trans()
+      +mobile()
+        fill $white
+    &:hover
+      g
+        fill $pink
+
+
+.link-inner
+  font-size: $s26;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  display inline-block
+  margin-bottom $s18
+  trans()
+  svg
+    margin-left $s30
+    position relative
+    top 4px
+    g
+      fill $pink
+  &:hover
+    letter-spacing 3px
+
+.link-inner-small
+  font-size $s20
+  svg
+    top 2px
+    margin-left $s10
+
+.link-slider
+  margin-left 35%
+
+
+
+.link-arrow
+  display block
+  position fixed
+  right 15px
+  bottom 66px
+
+  opacity 0
+  visibility hidden
+  z-index -1
+  trans()
+
+.link-arrow.visible
+  opacity 1
+  visibility visible
+  z-index 8999

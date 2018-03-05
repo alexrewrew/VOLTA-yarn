@@ -1,0 +1,26 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+.fancybox-slide > div
+  width 100%
+  max-width 1170px
+  +tablet()
+    max-width 960px
+  +portrait()
+    max-width 720px
+  +fablet()
+    max-width 540px
+  +mobile()
+    max-width calc(100% - 30px)
+
+.fancybox-close-small
+  &:hover
+    &:after
+      background $trans
+      color lightblue
+  &:focus
+    &:after
+      outline none
+  &:after
+    trans()
+    color blue

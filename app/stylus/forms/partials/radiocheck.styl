@@ -1,0 +1,67 @@
+.radio-check
+  margin-bottom $s15
+  margin-right $s15
+  position relative
+  padding 0
+
+  input
+    position absolute
+    opacity 0
+
+  input + span
+    position relative
+    padding-left 35px
+    cursor pointer
+    font-weight 400
+    &:before, &:after
+      pseudo(block, absolute)
+      top 2px
+      left 0
+      width 15px
+      height 15px
+      trans()
+
+    &:before
+      border 1px solid #ccc
+      opacity 1
+
+    &:after
+      background blue
+      border 1px solid blue
+      opacity 0
+
+
+  input[type='radio'] + span
+    &:after, &:before
+      border-radius 50%
+
+  input:checked + span
+    &:before
+      opacity 0
+    &:after
+      opacity 1
+
+
+//validation
+.radio-check.error
+  span
+    color red
+    &:before, &:after
+      border-color red
+    &:after
+      background red
+
+.radio-check.disabled
+  span
+    color #e5e5e5
+    cursor default
+    &:before, &:after
+      border-color #e5e5e5
+
+.radio-check.success
+  span
+    color green
+    &:before, &:after
+      border-color green
+    &:after
+      background green
