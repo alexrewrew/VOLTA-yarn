@@ -5,13 +5,16 @@
   padding-left 15px
   display flex
   flex-direction column
+  +mobile()
+    display none
   li
     margin-bottom 25px
     a
       display block
-      svg g
-        fill $purple
-        trans()
+      svg
+        g
+          fill $purple
+          trans()
       &:hover
         svg g
           fill $pink

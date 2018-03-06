@@ -4,6 +4,8 @@
   position relative
   z-index 10
   min-height 500px
+  +mobile()
+    min-height unset
   &--viewport
     position absolute
     top 0
@@ -15,6 +17,9 @@
     trans()
     +portrait()
       left 4.6%
+    +mobile()
+      left 0
+      right 0
   &--image
     position relative
     left: -13.4%;
@@ -27,17 +32,29 @@
       mcenter()
       display block
       margin-bottom $s30
+    +mobile()
+      max-width: 520px;
+      width 100%
+      left 0
+      mcenter()
+      display block
   .link-inner
     +portrait()
       display flex
       justify-content center
+    +mobile()
+      margin-left 15px
+      margin-top $s18
   &:hover
     .jumbotron--image
         transform translateY(-20px)
     .jumbotron--viewport
       left 0
       right 0
-      top -100px
-      bottom -60px
+      top -56px
+      bottom -16px
+      +mobile()
+        top -46px
+        bottom -6px
     .link-inner
       letter-spacing 3px

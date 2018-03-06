@@ -2,11 +2,11 @@ module.exports = function () {
     $.gulp.task('scripts:lib', function () {
         return $.gulp.src([
             'node_modules/jquery/dist/jquery.js',
-            'node_modules/jquery-ui-dist/jquery-ui.js',
+            // 'node_modules/jquery-ui-dist/jquery-ui.js',
             // 'node_modules/jquery-ui/ui/i18n/datepicker-uk.js',
             // 'node_modules/jquery-ui/ui/i18n/datepicker-ru.js',
             // 'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
-            'app/source/fontawesome-free-5.0.6/svg-with-js/js/fontawesome-all.js',
+            // 'app/source/fontawesome-free-5.0.6/svg-with-js/js/fontawesome-all.js',
             'node_modules/chosen-js/chosen.jquery.js',
             // 'node_modules/select2/dist/js/select2.full.js',
             'node_modules/slick-carousel/slick/slick.js',

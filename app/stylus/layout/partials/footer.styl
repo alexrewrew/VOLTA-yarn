@@ -2,19 +2,34 @@
 @import "../../utilities/mixins"
 
 footer
-
+  +mobile()
+    padding 0 22px
+    position relative
   .menu
     justify-content center
     padding 61px 0 44px
+    +mobile()
+      height auto
+      padding-top 51px
+      padding-bottom 18px
+      justify-content: flex-start;
     li
+      +mobile()
+        margin-bottom 17px
       &:last-child
         margin-right $s24
       a
         font-size 1.25em
         font-weight 700
 
+  .menu-social
+    margin-top 0
+    margin-bottom 23px
+
 
 .footer-copyright
   color $purple
   text-align center
   margin-bottom $s10
+  +mobile()
+    margin-bottom $s22

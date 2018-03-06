@@ -57,8 +57,7 @@
 
         // ----- CHOSEN -----
         $(".chosen-select").chosen({
-            disable_search_threshold: 200,
-
+            disable_search_threshold: 200
         });
 
         // ========== HIRE BUTTON ==========

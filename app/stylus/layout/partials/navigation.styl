@@ -71,9 +71,11 @@ nav.scroll
       margin-right 0
 
 .menu-social
-  display flex
+  display none
   justify-content space-between
   margin $s20 0
+  +mobile()
+    display flex
   +landscape()
     margin $s10 0
 

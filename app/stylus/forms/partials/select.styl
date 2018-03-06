@@ -3,18 +3,20 @@
 
 select
   width 100%
-  background $white
-  border 1px solid #ccc
-  padding $s12 $s15 $s13
+  background $trans
+  border none
+  border-bottom 2px solid $pink-lighter
+  padding $s5 0 $s6
   border-radius 0
   display block
   margin-bottom $s5
+  font-size 1.125em
   -webkit-appearance none
   -moz-appearance none
   trans()
   &:focus
     outline none
-    border 1px solid blue
+    border-color $pink-lighter
 
 .select-group
   position relative
@@ -27,3 +29,8 @@ select
 .select-group-noarrow
   &:after
     display none !important
+    +mobile()
+      display block !important
+      triangle($black, down, 4px)
+      top calc(50% - 5px)
+      right 15px

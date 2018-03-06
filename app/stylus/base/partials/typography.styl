@@ -2,7 +2,7 @@
 @import '../../utilities/mixins'
 
 ::selection
-  background $black
+  background $pink
   color $white
 
 h1, h2, h3, h4, h5, h6, p, ul li, ol li, blockquote, cite
@@ -15,16 +15,22 @@ h1
   position relative
   z-index 30
   +portrait()
-    font-size 2.5rem
+    font-size 2.5em
+  +mobile()
+    font-size: 2.25em;
 
 h2
   font(3.5em, 700, 1)
   margin-bottom $s27
   color: $purple-text;
+  +mobile()
+    font-size 3em
 
 h3
   font(1.875em, 700, 1.13)
   margin-bottom $s39
+  +mobile()
+    font-size: 1.375em;
 
 h4
   font($s22, 700, 1.5)

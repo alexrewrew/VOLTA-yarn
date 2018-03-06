@@ -13,6 +13,8 @@
 
 .slider
   padding-bottom 60px
+  +mobile()
+    padding-bottom 0
   .arrow
     position absolute
     z-index 100
@@ -26,14 +28,28 @@
     align-items center
     justify-content center
     trans()
+    +mobile()
+      top: 100px;
+      bottom 0
+
     &:hover
       opacity .5
+
   .arrow.left
     left 0
+    +mobile()
+      right calc(23% + 48px)
+      left auto
   .arrow.right
     left 48px
+    +mobile()
+      right 23%
+      left auto
   .slide
     padding-top 19px
+    h3
+      +mobile()
+        margin-bottom 110px
     &:focus
       outline none
 
@@ -50,6 +66,14 @@
   +portrait()
     left auto
     right 15px
+  +mobile()
+    font-size: 7.5em;
+    left: auto;
+    right: 6%
+    bottom: -100px;
+    z-index -1
+  +landscape()
+    right 13%
 
 .slider.slick-dotted.slick-slider
   margin-bottom $s30
