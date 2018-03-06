@@ -37,6 +37,7 @@
     position absolute
     top: -9px;
     left: 43px;
+    max-width 100%
     trans()
     +tablet()
       left 0
@@ -52,6 +53,19 @@
       mcenter()
       display block
       margin-top $s25
+  &-marker
+    color $white
+    font-size $f20
+    font-family $sl-font, $s-font, sans-serif
+    position absolute
+    right 15px
+    bottom -208px
+    +portrait()
+      bottom 25px
+    +mobile()
+      left 30px
+      bottom -280px
+
 
   +mobile()
     .col-left
@@ -109,6 +123,15 @@
     right 43px
     +tablet()
       right 0
+  .portfolio-marker
+    left 15px
+    right auto
+    +portrait()
+      left auto
+      right 15px
+    +mobile()
+      left 30px
+      right auto
   &:hover
     .portfolio--viewport
       left 0

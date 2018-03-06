@@ -61,3 +61,26 @@ ol
       max-width 33.33333%
     img
       max-width 100%
+
+.ul-filter
+  display flex
+  flex-flow row wrap
+  li
+    margin-right 40px
+    +portrait()
+      margin-right 30px
+    +mobile()
+      margin-right 20px
+      margin-bottom 10px
+    a
+      font-size $f18
+      color $white
+      display inline-block
+      border-bottom 3px solid $trans
+      padding: 3px 0;
+      +mobile()
+        font-size: 1.125em;
+      &:hover
+        border-bottom-color $pink-darker
+    .active
+      border-bottom-color $pink-darker

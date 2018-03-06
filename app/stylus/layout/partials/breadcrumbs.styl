@@ -6,25 +6,28 @@
   margin-bottom $s15
   li
     position relative
-    padding-right $s15
-    margin-right $s15
+    padding-right $s8
+    margin-right $s8
     &:after
       pseudo(block, absolute)
       right 0
-      top 0
-      height 100%
+      top 3px
+      height 15px
       width 1px
-      background $black
-      transform rotate(25deg)
+      background $white
+      opacity .5
+      transform rotate(30deg)
     &:last-child
       &:after
         display none
 
     a
       display inline-block
-      color $black
+      color $white
+      opacity .5
+      font-size .875em
       &:hover
-        color lightblue
+        opacity 1
 
     .active
       cursor default

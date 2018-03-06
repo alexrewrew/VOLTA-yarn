@@ -80,8 +80,24 @@ a
     top 50px
     right 38px
     bottom auto
+  svg g
+    fill $purple
+    trans()
+  &:hover
+    svg g
+      fill $pink
 
 .link-arrow.visible
   opacity 1
   visibility visible
   z-index 8999
+
+.link-all
+  letter-spacing: 0.7px;
+  font-size $f20
+  font-weight 700
+  float right
+  color $pink-darker
+  line-height: 1.4;
+  &:hover
+    color $pink-dark
