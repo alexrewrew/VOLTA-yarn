@@ -1,0 +1,251 @@
+.blogin-rubric
+  display flex
+  margin-bottom 21px
+  li
+    margin-right 30px
+    color #868686
+    a
+      font-weight 700
+
+.blogin-date
+  display flex
+  justify-content flex-end
+  align-items center
+  margin-bottom 21px
+  +mobile()
+    justify-content flex-start
+  +landscape()
+    justify-content flex-end
+  li
+    font-size $f12
+    color #868686
+    display flex
+    font-family $sl-font, $s-font, sans-serif
+    margin-left 26px
+    padding-top 1px
+    svg
+      margin-right 10px
+      g
+        fill #868686
+    &:first-child
+      padding-top 0
+      margin-left 0
+      font-size $f16
+      font-family $m-font, $s-font, sans-serif
+
+.blogin-image
+  display flex
+  align-items center
+  justify-content center
+  height 230px
+  overflow hidden
+  margin-bottom 70px
+  img
+    width 100%
+    +mobile()
+      width auto
+      height 100%
+
+.blogin-tags
+  display flex
+  align-items center
+  margin-bottom 50px
+  &--heading
+    font-size: $f18
+    line-height: 1.78;
+    color $pink
+    background $white
+    margin-right 30px
+    width 68px
+    height 35px
+    display flex
+    align-items center
+    justify-content center
+    flex-shrink 0
+  &--list
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    li
+      padding-left 0
+      padding-right 3px
+      position relative
+      &:after
+        content ','
+        display block
+        position absolute
+        right 0
+        bottom 0
+        color $gray-lightdark
+      &:last-child
+        &:after
+          display none
+
+.blogin-author
+  display flex
+  background $white
+  padding 30px 0
+  margin-bottom 80px
+  +portrait()
+    flex-wrap: wrap;
+  +mobile()
+    flex-wrap: wrap;
+  +landscape()
+    flex-wrap nowrap
+  &--heading
+    font-size: $f14
+    line-height: 1.64;
+    color: #868686;
+    padding 0 29px 0 24px
+    display flex
+    align-items center
+    +mobile()
+      padding 0 15px
+  &--image
+    width: 68px;
+    height: 68px;
+    overflow hidden
+    display flex
+    align-items center
+    justify-content center
+    flex-shrink 0
+    img
+      width 100%
+
+  &--author
+    padding 0 30px
+    display flex
+    flex-wrap wrap
+    align-items center
+    flex-direction: column;
+    justify-content: center;
+    max-width: 337px;
+    width: 100%;
+    +mobile()
+      padding 0 15px
+      max-width: 47%;
+
+    &-name
+      font-size: 1em
+      line-height: 1.44;
+      color: #3f3c41;
+      width 100%
+      margin-bottom 0
+      +mobile()
+        font-size $f14
+    &-prof
+      font-size: .875em
+      line-height: 1.64;
+      color: #868686;
+      width 100%
+      margin-bottom 0
+      +mobile()
+        font-size $f12
+
+  &--share
+    display flex
+    padding: 0 29px 0 24px;
+    +tablet()
+      padding 0
+    +portrait()
+      margin-top 30px
+    +mobile()
+      margin-top 30px
+      padding 0 15px
+    +landscape()
+      margin-top 0
+    &-heading
+      display flex
+      align-items center
+      +mobile()
+        font-size $f14
+      svg
+        margin-left 27px
+        +mobile()
+          margin-left 15px
+
+    &-list
+      display flex
+      flex-direction row
+      align-items center
+      padding 6px 22px 0
+      +portrait()
+        padding: 6px 34px 0;
+      +mobile()
+        padding-left 6px
+        padding-right 6px
+      li
+        margin 0 9px
+        +mobile()
+          margin 0 6px
+        a
+          svg g
+            trans()
+            fill #b9b9b9
+          &:hover
+            svg g
+              fill $pink
+
+.blog-small
+  display flex
+  position relative
+  z-index 20
+  padding-bottom 15px
+  +mobile()
+    margin-bottom 50px
+  &--image
+    display flex
+    align-items center
+    justify-content center
+    overflow hidden
+    height 92px
+    width 165px
+    margin 15px 0
+    position relative
+    +portrait()
+      width 125px
+    +mobile()
+      width 125px
+    img
+      width 100%
+
+  &--text
+    width calc(100% - 165px)
+    padding: 9px 0 9px 28px
+    +portrait()
+      width calc(100% - 125px)
+      padding-left 15px
+
+    +mobile()
+      width calc(100% - 125px)
+      padding-left 15px
+
+  .link-more
+    right auto
+    left 0
+    bottom auto
+    top 128px
+    +portrait()
+      top 110px
+    +mobile()
+      top 110px
+
+  &:after
+    pseudo(block, absolute)
+    background $trans
+    right -12px
+    top 0
+    bottom 11px
+    left 22.5%
+    z-index -1
+    trans()
+    +portrait()
+      background $white
+    +mobile()
+      background $white
+
+  &:hover
+    &:after
+      background $white
+    .link-more
+      opacity 1

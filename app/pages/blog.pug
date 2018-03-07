@@ -1,0 +1,92 @@
+//- layouts/layout.pug
+extend layouts/_layout6.pug
+
+block title
+    | VOLTA - Blog
+
+block canvas
+    //canvas#volta(data-color='7521E1')
+
+block content
+
+    include partials/headers/_header-blog
+
+    section.section-filter
+        .container-fluid
+            .row.justify-content-center
+                .col-md-8.col-9
+                    ul.ul-filter
+                        li
+                            a(href='' title='').active Новости
+                        li
+                            a(href='' title='') Обзоры
+                        li
+                            a(href='' title='') Мнения
+                        li
+                            a(href='' title='') Анонсы
+                        li
+                            a(href='' title='') События
+                .col-md-2.col-3
+                    a(href='' title='').link-all Все
+
+
+
+    section.section-blog
+        .container-fluid
+            .row.justify-content-center
+                .offset-lg-1.col-lg-10
+                    .row.justify-content-around
+                        .col-lg-5.col-sm-8.grid-item
+                            a(href='blogin.html' title='').blog
+                                .blog--image
+                                    img(src='img/blog/blog1.png' title='')
+                                .blog--text
+                                    h3 Lifeprint - принтер, печатающий видео
+                                    p Живые фото из Гарри Поттера теперь существуют!
+                                ul.blog--date
+                                    li 17.02.2017
+                                    li
+                                        include svgs/eye.svg
+                                        | 125
+                                span.link-more More
+                        .col-lg-5.col-sm-8.grid-item
+                            a(href='blogin.html' title='').blog
+                                .blog--image
+                                    img(src='img/blog/blog2.png' title='')
+                                .blog--text
+                                    h3 Lifeprint - принтер, печатающий видео
+                                    p Создатели хоррор-игры Outlast 2 разработали специальные трусы-подгузники, призванные спасти чувство собственного достоинства и любимое нижнее белье от риска быть испачканным во время жутких и неожиданных игровых сцен
+                                ul.blog--date
+                                    li 17.02.2017
+                                    li
+                                        include svgs/eye.svg
+                                        | 125
+                                span.link-more More
+                        .col-lg-5.col-sm-8.grid-item
+                            a(href='blogin.html' title='').blog
+                                .blog--image
+                                    img(src='img/blog/blog1.png' title='')
+                                .blog--text
+                                    h3 Lifeprint - принтер, печатающий видео
+                                    p Живые фото из Гарри Поттера теперь существуют!
+                                ul.blog--date
+                                    li 17.02.2017
+                                    li
+                                        include svgs/eye.svg
+                                        | 125
+                                span.link-more More
+                        .col-lg-5.col-sm-8.grid-item
+                            a(href='blogin.html' title='').blog
+                                .blog--image
+                                    img(src='img/blog/blog2.png' title='')
+                                .blog--text
+                                    h3 Lifeprint - принтер, печатающий видео
+                                    p Создатели хоррор-игры Outlast 2 разработали специальные трусы-подгузники, призванные спасти чувство собственного достоинства и любимое нижнее белье от риска быть испачканным во время жутких и неожиданных игровых сцен
+                                ul.blog--date
+                                    li 17.02.2017
+                                    li
+                                        include svgs/eye.svg
+                                        | 125
+                                span.link-more More
+
+    include partials/_pagination

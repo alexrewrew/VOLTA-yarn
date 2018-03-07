@@ -132,3 +132,30 @@ a
   &:hover
     &:after
       top 33px
+
+.link-tag
+  color $gray-lightdark
+  border 0
+  position relative
+  z-index 10
+  padding 0 2px
+  line-height 1
+  &:after, &:before
+    pseudo(block, absolute)
+    background #b9b9b9
+    left 0
+    right 0
+    bottom -3px
+    height 10px
+
+  &:before
+    background $pink
+    z-index -1
+    right 100%
+    trans()
+  &:after
+    z-index -2
+  &:hover
+    color #605c65
+    &:before
+      right 0

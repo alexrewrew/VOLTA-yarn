@@ -2,11 +2,49 @@
 @import '../../utilities/mixins'
 
 section
-  margin-bottom 227px
+  padding-bottom 227px
   +mobile()
-    margin-bottom: 130px;
+    padding-bottom: 130px;
 
-article {}
+article
+  img
+    width 100%
+    margin-bottom $s30
+  iframe
+    width 100%
+    margin-bottom $s30
+    height 400px
+    +mobile()
+      height 300px
+  p
+    line-height: 1.63;
+    color: $gray-lightdark
+    margin-bottom $s26
+  a
+    display inline-block
+    border-bottom 2px solid $pink
+    line-height 1.2
+    font-weight 700
+  ul
+    display flex
+    flex-flow wrap column
+    padding-top 3px
+    padding-bottom 3px
+    margin-bottom 80px
+    li
+      position relative
+      padding-left $s34
+      padding-right $s15
+      margin-bottom $s6
+      color $gray-lightdark
+      line-height: 1.63;
+      &:before
+        pseudo(block, absolute)
+        width 14px
+        height 2px
+        top 10px
+        left 0
+        background $pink-light
 
 aside {}
 
@@ -18,7 +56,7 @@ main
   height 100%
   z-index 0
   +mobile()
-    padding 0
+    padding 33px 0 0
 
 address {}
 
@@ -40,10 +78,15 @@ canvas
 
 
 .section-last
-  margin-bottom 0
   padding-bottom 83px
 
+.section-portfolio
+  padding-bottom 103px
+
+.section-blog
+  padding-bottom 8px
+
 .section-filter
-  margin-bottom 153px
+  padding-bottom 153px
   +mobile()
-    margin-bottom: 110px;
+    padding-bottom: 110px

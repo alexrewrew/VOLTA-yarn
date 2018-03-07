@@ -4,21 +4,28 @@
 .pagination
   df(row)
   justify-content center
-  margin 0 auto
+  margin 0 auto 49px
   li
     margin 0 $s15
     a
       display inline-block
-      color $black
+      color $white
       font-size $s18
+      font-family $sl-font, $s-font, sans-serif
+      border-bottom 3px solid $trans
+      padding 5px 0
       &:hover
-        color lightblue
+        color $pink
+        border-bottom-color $pink
     .arrow
       df(row)
       justify-content center
-      align-items center
       height 100%
+      border 0
+      padding 3px 0
+      &:hover
+        opacity .5
     .active
-      color blue
+      color #868686
       cursor default
       pointer-events: none;

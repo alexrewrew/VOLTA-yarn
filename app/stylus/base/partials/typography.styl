@@ -39,12 +39,19 @@ h4
   color: $pink-light
 
 h5
-  font($s18, 700, 1.5)
-  margin-bottom $s44
+  font($f26, 400, 1)
+  color $gray-lightdark
+  margin-top 64px
+  margin-bottom $s35
 
 h6
-  font($s14, 700, 1.5)
-  margin-bottom $s50
+  font($f16, 700, 1.38)
+  margin-bottom 0
+  color #3f3c41
+  +portrait()
+    font-size $f12
+  +mobile()
+    font-size $f14
 
 p
   font(1em, 400, 1.44)

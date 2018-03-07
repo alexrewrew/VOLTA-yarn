@@ -1,0 +1,126 @@
+//- layouts/layout.pug
+extend layouts/_layout7.pug
+
+block title
+    | VOLTA - Blog In
+
+block canvas
+    //canvas#volta(data-color='7521E1')
+
+block content
+
+    include partials/headers/_header-blogin
+
+    section
+        .container-fluid
+            .row.justify-content-center
+                .col-lg-10.col-md-11
+                    .row.justify-content-between
+                        .col-sm-5
+                            ul.blogin-rubric
+                                li Рубрика:
+                                li
+                                    a(href='' title='') Анонсы
+                        .col-sm-7
+                            ul.blogin-date
+                                li Ангелина Андреева
+                                li 17.02.2017
+                                li
+                                    include svgs/eye.svg
+                                    | 125
+                        .col-12
+                            .blogin-image
+                                img(src='img/blog/blog1h.png' title='' alt='')
+
+                article.col-lg-10.col-sm-11
+
+                    .row.justify-content-center
+                        .col-md-10
+                            p Создатели хоррор-игры
+                                b Outlast 2
+                                | разработали специальные трусы-подгузники, призванные спасти чувство собственного достоинства и любимое нижнее белье от риска быть испачканным во время жутких и неожиданных игровых сцен.
+                            iframe(src='https://www.youtube.com/embed/auLBLk4ibAk', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+
+                            p Разработчики утверждают, что
+                                b
+                                | UNDERSCARES удобно носить и легко стирать. Для заказа доступны три версии подгузников: DYI, Basic и Deluxe. Последняя включает кармашек под бутылку воды (или не воды) и съемный ночной фонарик.
+                            blockquote
+                                | Типо прямая речь: Создатели хоррор-игры
+                                b Outlast 2
+                                |  разработали специальные трусы-подгузники, призванные спасти чувство собственного достоинства и любимое нижнее белье от риска.
+                            h5 Только задумайся:
+                            p Создатели хоррор-игры
+                                b Outlast 2
+                                | разработали специальные трусы-подгузники, призванные спасти чувство собственного достоинства и любимое нижнее белье от риска быть испачканным во время жутких и неожиданных игровых сцен.
+                            img(src='img/blog/blog1h.png' title='' alt='')
+                            p Разработчики утверждают, что
+                                b
+                                | UNDERSCARES удобно носить и легко стирать. Для заказа доступны три версии подгузников: DYI, Basic и Deluxe. Последняя включает кармашек под бутылку воды (или не воды) и съемный ночной фонарик.
+                                a(href='' title='') Ссылочкааа
+                            h5 Список
+                            ul
+                                li Создатели хоррор-игры Outlast 2 разработали специальные трусы-подгузники,
+                                li призванные спасти чувство собственного достоинства и любимое нижнее белье от риска
+                                li быть испачканным во время жутких и неожиданных игровых сцен.
+
+                                li Разработчики утверждают, что
+                                    a(href='' title='').link-tag UNDERSCARES
+                                    | удобно носить и легко стирать. Для заказа доступны три версии подгузников: DYI, Basic и Deluxe. Последняя включает кармашек под бутылку воды (или не воды) и съемный ночной фонарик.
+
+
+                .col-lg-10.col-sm-11
+                    .row.justify-content-center
+                        .col-md-10
+                            .blogin-tags
+                                .blogin-tags--heading Теги:
+                                ul.blogin-tags--list
+                                    li
+                                        a(href='' title='').link-tag UNDERSCARES
+                                    li
+                                        a(href='' title='').link-tag Япония
+                                    li
+                                        a(href='' title='').link-tag Дети
+                        .col-12
+                            .blogin-author
+                                .blogin-author--heading Автор:
+                                .blogin-author--image
+                                    img(src='img/blog/blog3.png' title='' alt='')
+                                .blogin-author--author
+                                    p.blogin-author--author-name Ангелина Андреева
+                                    p.blogin-author--author-prof SMM в Volta
+                                .blogin-author--share
+                                    .blogin-author--share-heading
+                                        | Поделиться
+                                        include svgs/angle-right-share.svg
+                                    ul.blogin-author--share-list
+                                        li
+                                            a(href='' title='')
+                                                include svgs/facebook.svg
+                                        li
+                                            a(href='' title='')
+                                                include svgs/facebook.svg
+                                        li
+                                            a(href='' title='')
+                                                include svgs/facebook.svg
+                                        li
+                                            a(href='' title='')
+                                                include svgs/facebook.svg
+                                        li
+                                            a(href='' title='')
+                                                include svgs/facebook.svg
+
+
+                .col-xl-4.col-sm-5.col-11
+                    a(href='' title='').blog-small
+                        .blog-small--image
+                            img(src='img/blog/blog1a.png' title='' alt='')
+                        .blog-small--text
+                            h6 Lifeprint - принтер, печатающий видео
+                        .link-more More
+                .col-xl-4.col-sm-5.col-11
+                    a(href='' title='').blog-small
+                        .blog-small--image
+                            img(src='img/blog/blog1a.png' title='' alt='')
+                        .blog-small--text
+                            h6 Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                        .link-more More
