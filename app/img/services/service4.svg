@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="112px" viewBox="0 0 84 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-308.000000, -1953.000000)">
+        <g id="Page-1" transform="translate(308.000000, 1953.000000)">
+            <polygon id="Fill-1" fill="#FEFEFE" points="10 32 10 112 61 112 61 77.8144963 55.985867 77.8144963 55.985867 107.085995 15.014133 107.085995 15.014133 36.9140049 38.110483 36.9140049 38.110483 32"></polygon>
+            <path d="M33,80 L84,80 L84,0 L33,0 L33,80 Z M38.0134552,75.0859951 L78.9865448,75.0859951 L78.9865448,4.91400491 L38.0134552,4.91400491 L38.0134552,75.0859951 Z" id="Fill-2" fill="#FEFEFE"></path>
+            <polygon id="Fill-3" fill="#F14496" points="75 22.8034719 71.6036889 26 58 13.1971267 61.3963111 10"></polygon>
+            <polygon id="Fill-4" fill="#F14496" points="58 22.8034719 61.3963111 26 75 13.1971267 71.6036889 10"></polygon>
+            <g id="Group-10" transform="translate(0.000000, 40.000000)">
+                <path d="M38.6698,60.0141176 C38.6698,61.9705098 37.1048476,63.5567059 35.1746571,63.5567059 C33.2444667,63.5567059 31.6795143,61.9705098 31.6795143,60.0141176 C31.6795143,58.0577255 33.2444667,56.4715294 35.1746571,56.4715294 C37.1048476,56.4715294 38.6698,58.0577255 38.6698,60.0141176 Z" id="Fill-5" fill="#FEFEFE"></path>
+                <polygon id="Fill-7" fill="#FEFEFE" points="26.8951429 5.03466667 37.1391429 5.03466667 37.1391429 0.523921569 26.8951429 0.523921569"></polygon>
+                <polygon id="Fill-9" fill="#F14496" points="0 10.898949 0 0.515890196 5.06999974 0.515890196 5.06999974 10.898949"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

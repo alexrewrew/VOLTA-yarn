@@ -1,0 +1,27 @@
+include ../utilities/_mixins
+
+doctype html
+
+html
+
+    include ../partials/_head
+
+    body#pageup.body-crimson
+
+        include ../partials/_preloader
+        include ../partials/_navigation
+
+        main
+
+            #inner.wrapper
+
+                .content
+                    block content
+
+            block canvas
+
+            include ../partials/_hire
+
+            include ../partials/_footer
+
+        include ../partials/_icons

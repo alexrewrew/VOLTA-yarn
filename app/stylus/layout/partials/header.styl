@@ -1,7 +1,9 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
-header {}
+header
+  position relative
+  z-index 40
 
 .header-index
   padding-top 103px
@@ -12,9 +14,11 @@ header {}
 
 .header-regular
   padding 32px 38px
-  height 332px
+  min-height 332px
   +mobile()
-    height 300px
+    min-height 300px
+    padding-left 0
+    padding-right 0
   h1
     text-transform uppercase
     letter-spacing: 10px;

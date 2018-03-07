@@ -101,3 +101,34 @@ a
   line-height: 1.4;
   &:hover
     color $pink-dark
+
+.link-more
+  display inline-block
+  position absolute
+  right 15px
+  bottom 34px
+  color #ff1182
+  line-height: 1.44;
+  font-family $sl-font, $s-font, sans-serif
+  font-weight 500
+  padding 7px 14px
+  opacity 0
+  trans()
+  +portrait()
+    opacity 1
+  +mobile()
+    opacity 1
+  +landscape()
+    right 30px
+  &:after
+    pseudo(block, absolute)
+    width 100%
+    background #ff1182
+    height 4px
+    left 0
+    right 0
+    top 0
+    trans()
+  &:hover
+    &:after
+      top 33px

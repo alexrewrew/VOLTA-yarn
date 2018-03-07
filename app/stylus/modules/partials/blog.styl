@@ -1,0 +1,84 @@
+.blog
+  display block
+  position relative
+  z-index 30
+  padding-bottom 81px
+  margin-bottom 47px
+  &--image
+    height 201px
+    display flex
+    align-items center
+    justify-content center
+    overflow hidden
+    +tablet()
+      height: 162px;
+    +portrait()
+      height: auto
+    +mobile()
+      height: auto
+      padding: 0 15px;
+    +landscape()
+      padding 0 30px
+
+    img
+      height 100%
+      +mobile()
+        height auto
+        width 100%
+  &--text
+    padding: 37px 15px 0
+    +mobile()
+      padding 37px 30px
+    +fablet()
+      padding 37px 15px
+    h3
+      position relative
+      left -70px
+      width calc(100% + 70px)
+      margin-bottom $s28
+      +mobile()
+        left 0
+        width calc(100% + 25px)
+        left -25px
+      +landscape()
+        left -70px
+        width calc(100% + 70px)
+    p
+      margin-bottom $s22
+  &--date
+    display flex
+    padding 0 15px
+    +landscape()
+      padding 0 30px
+    li
+      color $lemon-darker
+      font-family $sl-font, $s-font, sans-serif
+      display flex
+      font-size: $f12
+      font-weight: 500;
+      margin-right 35px
+      svg
+        margin-right 10px
+  &:after
+    pseudo(block, absolute)
+    background $lemon-dark
+    trans()
+    position absolute
+    top 101px
+    bottom 0
+    left -15px
+    right -15px
+    z-index -1
+    opacity 0
+    trans()
+    +portrait()
+      opacity 1
+    +mobile()
+      opacity 1
+      left 0
+      right 0
+  &:hover
+    .link-more
+      opacity 1
+    &:after
+      opacity 1
