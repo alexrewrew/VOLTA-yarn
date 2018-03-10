@@ -14,59 +14,31 @@ input.error, textarea.error
     color $pink-darkest
 
 input.success, textarea.success
-  color green
-  border-color green
+  color $green
+  border-color $green
   +placeholder()
-    color green
-    opacity .5
-
-.input-group.error
-  input, select, textarea
-    color red
-    border-color red
-    +placeholder()
-      color #f9d3cf
-    &:focus + span
-      color red
-  span
-    color red
-
-.input-group.success
-  input, textarea
-    color green
-    border-color green
-    +placeholder()
-      color green
-      opacity .5
-    &:focus + span
-      color green
-  span
-    color green
-
-.input-group.disabled
-  input, textarea
-    background #e5e5e5
-    border-color #e5e5e5
-    +placeholder()
-      opacity .5
-  span
-    color #999
+    color $green
 
 .select-group.error
   select
     border-color $pink-darkest
     color $pink-darkest
+  .chosen-container
+    .chosen-default
+      span
+        color $pink-darkest
+  .chosen-container .chosen-single
+    border-color $pink-darkest
 
 .select-group.success
   select
-    border-color green
-    color green
+    border-color $green
+    color $green
   &:after
-    triangle(green, down, 5px)
+    triangle($green, down, 5px)
 
 .select-group.disabled
   select
-    background #e5e5e5
     border-color #e5e5e5
     color rgba(153,153,153,.5)
   &:after

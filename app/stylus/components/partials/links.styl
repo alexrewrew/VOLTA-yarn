@@ -6,11 +6,9 @@ a
   font-family $m-font, $s-font, sans-serif
   color $pink
   trans()
-  &:hover
+  &:hover, &:focus
     text-decoration none
     color $pink-dark
-  &:focus
-    text-decoration none
     outline none
 
 .link-logo
@@ -69,7 +67,6 @@ a
   position fixed
   right 15px
   bottom 66px
-
   opacity 0
   visibility hidden
   z-index -1
@@ -111,7 +108,7 @@ a
   line-height: 1.44;
   font-family $sl-font, $s-font, sans-serif
   font-weight 500
-  padding 7px 14px
+  padding $s7 $s14
   opacity 0
   trans()
   +portrait()
@@ -147,7 +144,6 @@ a
     right 0
     bottom -3px
     height 10px
-
   &:before
     background $pink
     z-index -1

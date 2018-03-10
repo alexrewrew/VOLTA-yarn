@@ -23,32 +23,12 @@ input
   +placeholder()
     color #ff86c0
 
-
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button
-  -webkit-appearance: none;
-  margin: 0;
-
-input[type=number]
-  -moz-appearance:textfield;
-
-input[type=reset]
-  border 0
-  cursor pointer
-
-label
-  padding-left $s16
-  font-weight 700
-  font-size $s16
-  margin-bottom $s13
-
 textarea
   -webkit-appearance none
   resize none
   margin-bottom $s5
   margin-top 57px
-  border 0
+  border none
   border-bottom 2px solid $pink-lighter
   border-radius: 0;
   width 100%
@@ -63,32 +43,3 @@ textarea
     border-color $white
   +placeholder()
     color #ff86c0
-
-.input-group
-  position relative
-  margin-bottom $s20
-  input
-    margin-bottom 0
-    padding-left 45px
-    &:focus + span
-      color blue
-  textarea
-    padding-left 45px
-    margin-bottom 0
-    & + span
-      height 45px
-    &:focus + span
-      color blue
-  select
-    padding-left 45px
-    margin-bottom 0
-  span
-    position absolute
-    top 0
-    left 0
-    display flex
-    justify-content center
-    align-items center
-    width 45px
-    height 100%
-    trans()

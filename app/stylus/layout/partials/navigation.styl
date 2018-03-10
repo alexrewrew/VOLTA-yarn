@@ -2,7 +2,7 @@
 @import '../../utilities/mixins'
 
 nav
-  padding 14px 32px 0
+  padding $s14 $s32 0
   position fixed
   top 0
   left 0
@@ -10,15 +10,15 @@ nav
   z-index 8999
   trans()
   +mobile()
-    border-top: 7px solid #fff;
+    border-top: 7px solid $white
     background $purple
-    padding 13px 0
+    padding $s13 0
 
 nav.scroll
   background $white
-  padding-bottom 9px
+  padding-bottom $s9
   +mobile()
-    padding-bottom 13px
+    padding-bottom $s13
     background $purple
 
 .menu

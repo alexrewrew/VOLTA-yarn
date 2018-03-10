@@ -22,15 +22,8 @@ select
   position relative
   margin-bottom $s5
   &:after
-    triangle($black, down, 4px)
-    top calc(50% - 2px)
-    right 15px
-
-.select-group-noarrow
-  &:after
     display none !important
     +mobile()
-      display block !important
       triangle($black, down, 4px)
       top calc(50% - 5px)
       right 15px

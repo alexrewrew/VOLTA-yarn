@@ -1,31 +1,20 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
-ul
-  li
-    list-style none
-    ul
-      margin-top $s15
-      margin-left $s20
-
 ul, ol
   padding 0
   margin 0
   li
     font-family $m-font, sans-serif
+    list-style none
 
-ol
-  margin-left $s20
-  li
-    ol
-      margin-top $s15
 
 .ul-clients
   display flex
-  flex-flow row wrap
+  flex-wrap wrap
   justify-content center
   align-items center
-  padding 43px 0 25px
+  padding $s43 0 $s25
   li
     flex 1 1 20%
     max-width 20%
@@ -37,12 +26,10 @@ ol
     +portrait()
       flex 1 1 33.33333%
       max-width 33.33333%
-
     +mobile()
       flex 1 1 50%
       max-width 50%
-      padding-left 15px
-      padding-right 15px
+      padding 0 15px
     +landscape()
       flex 1 1 33.33333%
       max-width 33.33333%
@@ -51,14 +38,14 @@ ol
 
 .ul-filter
   display flex
-  flex-flow row wrap
+  flex-wrap wrap
   li
-    margin-right 40px
+    margin-right $s40
     +portrait()
-      margin-right 30px
+      margin-right $s30
     +mobile()
-      margin-right 20px
-      margin-bottom 10px
+      margin-right $s20
+      margin-bottom $s10
     a
       font-size $f18
       color $white

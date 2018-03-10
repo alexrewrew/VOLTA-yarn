@@ -31,7 +31,6 @@
     +mobile()
       top: 100px;
       bottom 0
-
     &:hover
       opacity .5
 
@@ -46,7 +45,7 @@
       right 23%
       left auto
   .slide
-    padding-top 19px
+    padding-top $s19
     h3
       +mobile()
         margin-bottom 110px
@@ -58,7 +57,7 @@
   z-index 100
   left 15px
   bottom -17px
-  padding 8px 0
+  padding $s8 0
   font-family $sl-font, $s-font, sans-serif
   font-size 8.625em
   font-weight 700
@@ -77,9 +76,3 @@
 
 .slider.slick-dotted.slick-slider
   margin-bottom $s30
-
-.slider-two, .slider-three
-  margin 0 -15px
-  .slide
-    margin 0 15px
-    overflow hidden

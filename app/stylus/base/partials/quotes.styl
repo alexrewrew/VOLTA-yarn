@@ -2,33 +2,28 @@
 @import '../../utilities/mixins'
 
 blockquote
-  padding: 30px 12.8% 42px;
+  padding: $s30 12.8% $s42
   position relative
   background $white
   color $gray-lightdark
   line-height: 1.63;
-  font-size 1em
+  font-size $f16
   margin 72px 0
   z-index 20
-  &:before
+  &:before, &:after
     position absolute
     display block
-    line-height 1
-    font-size 7em
   &:before
     content open-quote
-    left 0
+    line-height 1
+    font-size 7em
     top 10px
+    left 15px
   &:after
-    pseudo(block, absolute)
+    content ''
     background $white
     top 0
     bottom 0
     left -10.4%
     right -10.4%
     z-index -1
-//
-//cite
-//  font-size $s16
-//  font-style italic
-//  color $gray

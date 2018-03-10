@@ -25,11 +25,10 @@ article
     border-bottom 2px solid $pink
     line-height 1.2
     font-weight 700
-  ul
+  ul, ol
     display flex
     flex-flow wrap column
-    padding-top 3px
-    padding-bottom 3px
+    padding 3px 0
     margin-bottom 80px
     li
       position relative
@@ -38,30 +37,56 @@ article
       margin-bottom $s6
       color $gray-lightdark
       line-height: 1.63;
+      left 0
+
       &:before
-        pseudo(block, absolute)
+        position absolute
+        display block
+        left 0
+
+      ul, ol
+        margin $s4 0 0
+        padding-bottom 0
+        li
+          &:last-child
+            margin-bottom 0
+
+  ul
+    li
+      &:before
+        content ''
         width 14px
         height 2px
         top 10px
-        left 0
         background $pink-light
-
-aside {}
+  ol
+    counter-reset: item
+    li
+      &:before
+        top 0
+        content: counter(item) ". ";
+        counter-increment: item;
+        color: $pink-light
+        font-family $sl-font, $s-font, sans-serif
 
 main
-  padding 50px 50px 0 50px
+  padding $s50 $s50 0 $s50
   position relative
   overflow-y hidden
   overflow-x hidden
   height 100%
   z-index 0
   +mobile()
-    padding 33px 0 0
+    padding $s33 0 0
 
-address {}
+address {
+}
 
 canvas
-  z-index: 1; position: absolute; top:0px; left: 0px;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 
 .wrapper
   position relative
@@ -72,10 +97,8 @@ canvas
 
 .content
   +custom-min(1920px)
-    margin-left: auto;
-    margin-right: auto;
+    mcenter()
     max-width: 1920px;
-
 
 .section-last
   padding-bottom 83px
