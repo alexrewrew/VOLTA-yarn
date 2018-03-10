@@ -5,7 +5,7 @@
   body.open
     overflow hidden !important
     nav, main
-      transform translateX(calc(-100vw + 60px))
+      transform translate3d(calc(-100vw + 60px), 0, 0)
     .nav-icon
       span
         &:nth-child(1)
@@ -39,7 +39,7 @@
   .nav-panel
     width 100vw
     height 100vh
-    transform translateX(100vw)
+    transform translate3d(100vw, 0, 0)
     background lightblue
     overflow-y: scroll;
     trans()

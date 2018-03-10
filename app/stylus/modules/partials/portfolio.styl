@@ -75,9 +75,9 @@
 
   &:hover
     .portfolio--image
-      transform translateY(60px)
+      transform translate3d(0, 60px, 0)
       +portrait()
-        transform translateY(-60px)
+        transform translate3d(0, -60px, 0)
       +mobile()
         transform none
     .portfolio--viewport
@@ -91,9 +91,9 @@
         top: 36px;
         bottom 0
     .portfolio--viewport-image
-      left 161px
+      transform translate3d(120px, 0 0)
       +mobile()
-        left 61px
+        transform translate3d(20px, 0 0)
     .link-inner
       letter-spacing 3px
 

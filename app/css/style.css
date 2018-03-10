@@ -751,9 +751,8 @@ nav.scroll {
 	position: fixed;
 	z-index: 8998;
 	background: #fff;
-	-webkit-transform: translateY(-150vh);
-	    -ms-transform: translateY(-150vh);
-	        transform: translateY(-150vh);
+	-webkit-transform: translate3d(0, -150vh, 0);
+	        transform: translate3d(0, -150vh, 0);
 	padding-top: 20px;
 	-webkit-transition: all .2s ease;
 	     -o-transition: all .2s ease;
@@ -1176,9 +1175,8 @@ button svg {
 	        transition: all .2s ease;
 }
 button:hover svg {
-	-webkit-transform: translateX(50px);
-	    -ms-transform: translateX(50px);
-	        transform: translateX(50px);
+	-webkit-transform: translate3d(50px, 0, 0);
+	        transform: translate3d(50px, 0, 0);
 }
 button:focus {
 	outline: none;
@@ -1891,9 +1889,8 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	}
 }
 .jumbotron:hover .jumbotron--image {
-	-webkit-transform: translateY(-20px);
-	    -ms-transform: translateY(-20px);
-	        transform: translateY(-20px);
+	-webkit-transform: translate3d(0, -20px, 0);
+	        transform: translate3d(0, -20px, 0);
 }
 .jumbotron:hover .jumbotron--viewport {
 	left: 0;
@@ -2034,15 +2031,13 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	}
 }
 .portfolio:hover .portfolio--image {
-	-webkit-transform: translateY(60px);
-	    -ms-transform: translateY(60px);
-	        transform: translateY(60px);
+	-webkit-transform: translate3d(0, 60px, 0);
+	        transform: translate3d(0, 60px, 0);
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.portfolio:hover .portfolio--image {
-		-webkit-transform: translateY(-60px);
-		    -ms-transform: translateY(-60px);
-		        transform: translateY(-60px);
+		-webkit-transform: translate3d(0, -60px, 0);
+		        transform: translate3d(0, -60px, 0);
 	}
 }
 @media (max-width: 767px) {
@@ -2070,11 +2065,13 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	}
 }
 .portfolio:hover .portfolio--viewport-image {
-	left: 161px;
+	-webkit-transform: translate3d(120px, 0 0);
+	        transform: translate3d(120px, 0 0);
 }
 @media (max-width: 767px) {
 	.portfolio:hover .portfolio--viewport-image {
-		left: 61px;
+		-webkit-transform: translate3d(20px, 0 0);
+		        transform: translate3d(20px, 0 0);
 	}
 }
 .portfolio:hover .link-inner {
@@ -2172,9 +2169,8 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	        box-shadow: 0 8px 20px 0 #c20c63;
 }
 .link-hire:hover h2 svg {
-	-webkit-transform: translateX(50px);
-	    -ms-transform: translateX(50px);
-	        transform: translateX(50px);
+	-webkit-transform: translate3d(50px, 0, 0);
+	        transform: translate3d(50px, 0, 0);
 }
 .link-hire--text p {
 	font-size: 1.75em;
