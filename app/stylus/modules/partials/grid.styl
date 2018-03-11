@@ -1,12 +1,24 @@
-//.grid {
-//  flex-flow: column wrap;
-//  max-height 2000px
-//  align-items center
-//  padding 0 50px
-//}
-//
-//.grid-item
-//  &:nth-child(even)
-//    order 2
-//  &:nth-child(odd)
-//    order 1
+.grid
+  justify-content space-around
+  +displays()
+    flex-direction: column;
+    max-height: 1310px;
+    justify-content flex-start
+  +tablet()
+    flex-direction: column;
+    max-height: 1310px;
+    justify-content flex-start
+
+
+
+.grid-item
+  +displays()
+    &:nth-child(even)
+      order 2
+    &:nth-child(odd)
+      order 1
+  +tablet()
+    &:nth-child(even)
+      order 2
+    &:nth-child(odd)
+      order 1

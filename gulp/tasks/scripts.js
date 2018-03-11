@@ -12,6 +12,7 @@ module.exports = function () {
             'node_modules/slick-carousel/slick/slick.js',
             // 'node_modules/masonry-layout/dist/masonry.pkgd.js',
             // 'node_modules/wowjs/dist/wow.js',
+            // 'node_modules/aos/dist/aos.js',
             // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
             // 'node_modules/nouislider/distribute/nouislider.js',
             // 'node_modules/wnumb/wNumb.js',
@@ -32,7 +33,7 @@ module.exports = function () {
     $.gulp.task('scripts', function () {
         return $.gulp.src([
             'app/scripts/dev.js',
-            // 'app/scripts/v3.js',
+            'app/scripts/v3.js',
             'app/scripts/mail.js'
         ])
             .pipe($.concat('scripts.js'))

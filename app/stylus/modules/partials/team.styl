@@ -23,6 +23,19 @@
     left -20px
     right -20px
     padding: 37px 30px 61px
+    z-index 30
+
+    &:after
+      pseudo(block, absolute)
+      left 0
+      right 0
+      top 0
+      bottom 0
+      background $crimson-dark
+      z-index -1
+      trans()
+      height 0
+
     +portrait()
       background $crimson-dark
     +mobile()
@@ -65,5 +78,7 @@
     .team--description-text
       opacity 1
     .team--description
-      background $crimson-dark
+      &:after
+        height 100%
+    //  background $crimson-dark
 

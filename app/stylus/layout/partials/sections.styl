@@ -28,7 +28,7 @@ article
   ul, ol
     display flex
     flex-flow wrap column
-    padding 3px 0
+    padding $s3 0
     margin-bottom 80px
     li
       position relative
@@ -79,14 +79,16 @@ main
   +mobile()
     padding $s33 0 0
 
-address {
-}
-
 canvas
   z-index: 1;
   position: absolute;
   top: 0px;
   left: 0px;
+  bottom 0
+  right 0
+  display: none
+  +displays()
+    display block
 
 .wrapper
   position relative
@@ -94,6 +96,7 @@ canvas
   padding-bottom 0
   background transparent
   margin-bottom 0
+
 
 .content
   +custom-min(1920px)

@@ -12,6 +12,25 @@
   input
     flex 1 1 calc(50% - 15px)
     max-width calc(50% - 15px)
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+    +landscape()
+      flex 1 1 calc(50% - 15px)
+      max-width calc(50% - 15px)
   .select-group, .form-submit
     flex 1 1 100%
     max-width 100%
+
+.form-contactus
+  textarea
+    margin-top $s27
+  input, textarea
+    border-bottom-color: #774dab
+    +placeholder()
+      color #774dab
+  input.error, textarea.error
+    color #ff1182
+    border-bottom-color #ff1182
+    +placeholder()
+      color #ff1182

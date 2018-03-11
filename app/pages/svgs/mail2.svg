@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="14px" viewBox="0 0 19 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Cotnacts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-720.000000, -387.000000)">
+        <g id="Text" transform="translate(333.000000, 376.000000)" fill="#FF1182">
+            <g id="Group">
+                <g id="Icon" transform="translate(387.000000, 11.000000)">
+                    <path d="M0,13.748 L18.715,13.748 L18.715,0 L0,0 L0,13.748 Z M1.35714286,12.348 L17.3578571,12.348 L17.3578571,1.4 L1.35714286,1.4 L1.35714286,12.348 Z" id="Fill-1"></path>
+                    <polygon id="Fill-2" points="17.6563607 0.000139999999 16.0413607 1.40014 9.27600357 7.28014 2.62600357 1.40014 1.04493214 0.000139999999 -6.7857145e-05 0.000139999999 -6.7857145e-05 0.92344 1.357075 2.48810862 9.26921786 9.48880862 17.3577893 2.45380862 18.7149321 0.91014 18.7149321 0.000139999999"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

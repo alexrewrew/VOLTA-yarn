@@ -76,6 +76,17 @@
             $('.link-hire').removeClass('with-form').removeClass('with-success');
         });
 
+        // ========== CONTACT BUTTON ==========
+        $('.contactus-form--step#step1 button').click(function (e) {
+            e.preventDefault();
+            $('.contactus-form').addClass('with-success');
+        });
+
+        $('.contactus-form--close').click(function (e) {
+            e.preventDefault();
+            $('.contactus-form').removeClass('with-success');
+        });
+
         // ========== SLIDER ==========
 
         // ----- SLICK SLIDER COUNTER -----
@@ -136,6 +147,7 @@
         // ========== ANIMATION ==========
 
         // new WOW().init();
+        // AOS.init();
 
 
         // ========== ACCORDION ==========

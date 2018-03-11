@@ -1,0 +1,100 @@
+.contacts
+  background $purple-darkest
+  padding-top 73px
+
+.address
+  display flex
+  justify-content space-between
+  +mobile()
+    flex-wrap wrap
+    padding 0 0 0 $s30
+  +landscape()
+    padding 0 0 0 $s20
+  .address-col
+    padding 0 $s25
+    +portrait()
+      padding 0 $s20
+    a
+      color $white
+      &:hover
+        color $pink
+
+.icon-string
+  display block
+  position relative
+  font-size: $f18
+  line-height: 1.67;
+  span
+    position absolute
+    left -30px
+    top 2px
+  +portrait()
+    font-size $f14
+
+.contactus
+  padding 52px $s25
+  min-height 460px
+  +portrait()
+    padding 52px $s20
+  h4
+    color: #541b9d;
+    font-size $f32
+    letter-spacing: 3.8px;
+    margin-bottom $s20
+
+.contactus-form
+  position relative
+  &--step
+    position absolute
+    top 0
+    left 0
+    right 0
+    trans()
+    img
+      display block
+      margin 0 auto $s30
+    h3
+      font-size 1.75em
+      font-weight 500
+      text-align center
+      +mobile()
+        font-size: 1.5em;
+  #step2
+    visibility hidden
+    z-index 0
+    opacity 0
+
+  &--close
+    width 25px
+    height 25px
+    position absolute
+    right 30px
+    top 30px
+    cursor pointer
+
+    visibility hidden
+    z-index 0
+    opacity 0
+
+    trans()
+    &:before, &:after
+      pseudo(block, absolute)
+      background $white
+      width 100%
+      height 2px
+    &:after
+      transform rotate(-45deg)
+    &:before
+      transform rotate(45deg)
+
+.contactus-form.with-success
+  .contactus-form--step#step1
+    visibility hidden
+    z-index 0
+    opacity 0
+  .contactus-form--step#step2, .contactus-form--close
+    visibility visible
+    z-index 300
+    opacity 1
+
+

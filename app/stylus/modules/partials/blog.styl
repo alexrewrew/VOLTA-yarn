@@ -66,16 +66,23 @@
     left -15px
     right -15px
     z-index -1
-    opacity 0
+    //
+    //opacity 0
+    height 0
+    //
     trans()
     +portrait()
-      opacity 1
+      //opacity 1
+      height calc(100% - 101px)
     +mobile()
-      opacity 1
+      //opacity 1
+      height calc(100% - 101px)
       left 0
       right 0
   &:hover
     .link-more
       opacity 1
     &:after
-      opacity 1
+      //
+      //opacity 1
+      height calc(100% - 101px)

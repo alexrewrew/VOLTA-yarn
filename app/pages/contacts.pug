@@ -6,42 +6,62 @@ block title
 
 
 block canvas
-    //canvas#volta(data-color='7521E1')
+    canvas#volta(data-color='36096f')
 
 
 block content
 
     include partials/headers/_header-contacts
 
-    section
+    section.section-last
         .container-fluid
-            .row
-                .col-12
-                    .link-hire
-                        .link-hire--step
-                            form.form-hire
-                                .select-group.select-group-noarrow.error
-                                    select.chosen-select(data-placeholder='What can we help you with?')
-                                        option
-                                        option Web design & Development
-                                        option Branding & identity development
-                                        option Marketing & analyst
-                                        option Mobile app development
-                                input(type='text' placeholder='Your name').error
-                                input(type='mail' placeholder='Enter your e-mail')
-                                textarea(placeholder='A brief intro to your project').error
-                                .form-submit
-                                    button(type='submit')
-                                        span send
-                                        include svgs/send.svg
-                        .link-hire--step
-                            .link-hire--text
-                                img(src='img/icons/mail.svg' title='')
-                                h3 Thanks for your message!
-                                    br
-                                    | We will respond soon
+            .row.justify-content-center
+                .col-md-11
+                    .contacts
+                        .row.justify-content-center
+                            .col-xl-7.col-lg-9.col-md-10
+                                address.address
+                                    .address-col
+                                        p.icon-string
+                                            span
+                                                include svgs/pin.svg
+                                            | ул. Казимира Малевича, 86П, оф.107
+                                            br
+                                            | Киев, Украина, 03150
+                                    .address-col
+                                        ul
+                                            li
+                                                a(href='mailto:' title='').icon-string
+                                                    span
+                                                        include svgs/mail2.svg
+                                                    | hello@volta.one
+                                            li
+                                                a(href='tel:' title='').icon-string
+                                                    span
+                                                        include svgs/phone.svg
+                                                    | +38 (098) 138-38-38
 
-                        .link-hire--close
+                                .contactus
+                                    h4 Contact us
+                                    .contactus-form
+                                        .contactus-form--step#step1
+                                            form.form-hire.form-contactus
+                                                input(type='text' placeholder='Your name').error
+                                                input(type='mail' placeholder='Enter your e-mail')
+                                                textarea(placeholder='A brief intro to your project').error
+                                                .form-submit
+                                                    button(type='submit')
+                                                        span send
+                                                        include svgs/send2.svg
+
+                                        .contactus-form--step#step2
+                                            img(src='img/icons/mail.svg' title='')
+                                            h3 Thanks for your message!
+                                                br
+                                                | We will respond soon
+
+                                        .contactus-form--close
+
 
 
 
