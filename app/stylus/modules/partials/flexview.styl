@@ -1,0 +1,95 @@
++displays()
+  .portfolio
+    min-height 439px
+    height: 34.3vw;
+    &--image
+      width: 41.33vw;
+      top: -8%;
+
+  body
+    font-size 1.25vw
+
+  .header-regular
+    height: 25vw;
+
+  .header-blogin
+    height: 21vw;
+
+  .team
+    &--image
+      height: 33.29vw;
+
+  .jumbotron
+    &--image
+      width: 46.8vw;
+
+  .portfolio.portfolio-left .portfolio--viewport-image
+    top -39%
+
+  .portfolio--viewport-image
+    top: -27%
+  //width: 73%;
+
+  .service--image
+    width: 63%
+
+  .service--capabilities ul li:before
+    width: $s10
+    height: $s10
+    top: $s6
+
+  .link-hire--text img
+    width 33%
+
+  .link-hire--close
+    width $s25
+    height $s25
+
+  .link-hire--close:before, .link-hire--close:after
+    top $s12
+    height: $s2
+
+  .blog-image
+    height: 15.7vw;
+
+  .blogin-image
+    height: 18vw;
+
+  article iframe
+    height: 37.1vh;
+
+  .blogin-author--image
+    width: 4.250em
+    height: 4.250em
+
+  .blogin-author--share-list li a svg
+    width $f20
+
+  .blog-small--image
+    height: 5.750em
+    width: 10.313em
+
+  .jumbotron:hover
+    .jumbotron--viewport
+      top: -11.2%;
+      bottom: -3.2%
+
+  .portfolio:hover
+    .portfolio--viewport
+      top: -22.8%;
+      bottom: -13.8%;
+    .portfolio--viewport-image
+      top 10%
+      left 10%
+
+  .portfolio.portfolio-left:hover
+    .portfolio--viewport-image
+      top 5%
+      left auto
+      right 44%
+
+
+@media (min-width: 1920px)
+  .content {
+    max-width: unset;
+  }

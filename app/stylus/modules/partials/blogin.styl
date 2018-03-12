@@ -84,7 +84,7 @@
 .blogin-author
   display flex
   background $white
-  padding 30px 0
+  padding $s30 0
   margin-bottom 80px
   +portrait()
     flex-wrap: wrap;
@@ -96,11 +96,11 @@
     font-size: $f14
     line-height: 1.64;
     color: #868686;
-    padding 0 29px 0 24px
+    padding 0 $s29 0 $s24
     display flex
     align-items center
     +mobile()
-      padding 0 15px
+      padding 0 $s15
   &--image
     width: 68px;
     height: 68px;
@@ -113,7 +113,7 @@
       width 100%
 
   &--author
-    padding 0 30px
+    padding 0 $s30
     display flex
     flex-wrap wrap
     align-items center
@@ -122,7 +122,7 @@
     max-width: 337px;
     width: 100%;
     +mobile()
-      padding 0 15px
+      padding 0 $s15
       max-width: 47%;
 
     &-name
@@ -144,14 +144,14 @@
 
   &--share
     display flex
-    padding: 0 29px 0 24px;
+    padding: 0 $s29 0 $s24
     +tablet()
       padding 0
     +portrait()
-      margin-top 30px
+      margin-top $s30
     +mobile()
-      margin-top 30px
-      padding 0 15px
+      margin-top $s30
+      padding 0 $s15
     +landscape()
       margin-top 0
     &-heading
@@ -160,24 +160,24 @@
       +mobile()
         font-size $f14
       svg
-        margin-left 27px
+        margin-left $s27
         +mobile()
-          margin-left 15px
+          margin-left $s15
 
     &-list
       display flex
       flex-direction row
       align-items center
-      padding 6px 22px 0
+      padding $s6 $s22 0
       +portrait()
-        padding: 6px 34px 0;
+        padding: $s6 $s34 0;
       +mobile()
-        padding-left 6px
-        padding-right 6px
+        padding-left $s6
+        padding-right $s6
       li
-        margin 0 9px
+        margin 0 $s9
         +mobile()
-          margin 0 6px
+          margin 0 $s6
         a
           svg g
             trans()
@@ -190,9 +190,9 @@
   display flex
   position relative
   z-index 20
-  padding-bottom 15px
+  padding-bottom $s15
   +mobile()
-    margin-bottom 50px
+    margin-bottom $s50
   &--image
     display flex
     align-items center
@@ -200,7 +200,7 @@
     overflow hidden
     height 92px
     width 165px
-    margin 15px 0
+    margin $s15 0
     position relative
     +portrait()
       width 125px
@@ -211,14 +211,14 @@
 
   &--text
     width calc(100% - 165px)
-    padding: 9px 0 9px 28px
+    padding: $s9 0 $s9 $s28
     +portrait()
       width calc(100% - 125px)
-      padding-left 15px
+      padding-left $s15
 
     +mobile()
       width calc(100% - 125px)
-      padding-left 15px
+      padding-left $s15
 
   .link-more
     right auto
