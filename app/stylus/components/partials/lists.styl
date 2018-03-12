@@ -50,11 +50,22 @@ ul, ol
       font-size $f18
       color $white
       display inline-block
-      border-bottom 3px solid $trans
-      padding: $s3 0;
+      padding: $s3 0 $s6;
+      position relative
       +mobile()
         font-size: 1.125em;
+      &:after
+        pseudo(block, absolute)
+        height 3px
+        bottom 0
+        left 0
+        right 0
+        background $pink-darker
+        width 0
+        trans()
       &:hover
-        border-bottom-color $pink-darker
+        &:after
+          width 100%
     .active
-      border-bottom-color $pink-darker
+      &:after
+        width 100%

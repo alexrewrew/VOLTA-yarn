@@ -12,19 +12,31 @@
       color $white
       font-size $s18
       font-family $sl-font, $s-font, sans-serif
-      border-bottom 3px solid $trans
-      padding $s5 0
+      padding $s5 0 $s8
+      position relative
+      &:after
+        pseudo(block, absolute)
+        height 3px
+        bottom 0
+        left 0
+        right 0
+        background $pink-darker
+        width 0
+        trans()
       &:hover
         color $pink
-        border-bottom-color $pink
+        &:after
+          width 100%
+
     .arrow
       df(row)
       justify-content center
       height 100%
-      border 0
       padding $s3 0
       &:hover
         opacity .5
+      &:after
+        display none
     .active
       color #868686
       cursor default

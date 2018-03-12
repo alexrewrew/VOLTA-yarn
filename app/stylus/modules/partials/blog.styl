@@ -3,7 +3,7 @@
   position relative
   z-index 30
   padding-bottom 81px
-  margin-bottom 47px
+  margin-bottom $s47
   &--image
     height 201px
     display flex
@@ -16,9 +16,9 @@
       height: auto
     +mobile()
       height: auto
-      padding: 0 15px;
+      padding: 0 $s15
     +landscape()
-      padding 0 30px
+      padding 0 $s30
 
     img
       height 100%
@@ -26,11 +26,16 @@
         height auto
         width 100%
   &--text
-    padding: 37px 15px 0
+    padding: $s37 $s15 0
+    max-height 314px
+    overflow hidden
+    +portrait()
+      max-height unset
     +mobile()
-      padding 37px 30px
+      padding $s37 $s30
+      max-height unset
     +fablet()
-      padding 37px 15px
+      padding $s37px $s15
     h3
       position relative
       left -70px
@@ -46,18 +51,18 @@
       margin-bottom $s22
   &--date
     display flex
-    padding 0 15px
+    padding 0 $s15
     +landscape()
-      padding 0 30px
+      padding 0 $s30
     li
       color $lemon-darker
       font-family $sl-font, $s-font, sans-serif
       display flex
       font-size: $f12
       font-weight: 500;
-      margin-right 35px
+      margin-right $s35
       svg
-        margin-right 10px
+        margin-right $s10
   &:after
     pseudo(block, absolute)
     background $lemon-dark
@@ -66,23 +71,22 @@
     left -15px
     right -15px
     z-index -1
-    //
-    //opacity 0
     height 0
-    //
     trans()
     +portrait()
-      //opacity 1
       height calc(100% - 101px)
     +mobile()
-      //opacity 1
       height calc(100% - 101px)
       left 0
       right 0
+  .link-more
+    opacity 0
+    &:after
+      width 0
   &:hover
     .link-more
       opacity 1
+      &:after
+        width 100%
     &:after
-      //
-      //opacity 1
       height calc(100% - 101px)

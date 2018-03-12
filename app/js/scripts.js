@@ -103,82 +103,15 @@
             fade: true
         });
 
-        // $(".slider-two").slick({
-        //     dots: true,
-        //     slidesToShow: 2,
-        //     slidesToScroll: 1,
-        //     prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
-        //     nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
-        //     responsive: [
-        //         {
-        //             breakpoint: 991,
-        //             settings: {
-        //                 slidesToShow: 1,
-        //                 slidesToScroll: 1
-        //             }
-        //         }
-        //     ]
-        // });
-
-        // $(".slider-three").slick({
-        //     dots: true,
-        //     slidesToShow: 3,
-        //     slidesToScroll: 2,
-        //     prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
-        //     nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
-        //     responsive: [
-        //         {
-        //             breakpoint: 991,
-        //             settings: {
-        //                 slidesToShow: 2,
-        //                 slidesToScroll: 2
-        //             }
-        //         },
-        //         {
-        //             breakpoint: 767,
-        //             settings: {
-        //                 slidesToShow: 1,
-        //                 slidesToScroll: 1
-        //             }
-        //         }
-        //     ],
-        // });
-
         // ========== ANIMATION ==========
 
         // new WOW().init();
         // AOS.init();
 
-
-        // ========== ACCORDION ==========
-        // $("#accordion").accordion({
-        //     collapsible: true,
-        //     heightStyle: "content"
-        // });
-
-        // ========== TABS ==========
-        // $("#tabs").tabs();
-
-        // ========== DATEPICKER ==========
-        // $(".datepicker").datepicker({
-        //     showOtherMonths: true,
-        //     selectOtherMonths: true
-        // });
-
-        // ========== FULL PAGE SCROLLING ==========
-
-        // ----- FULL PAGE -----
-        // $('#fullpage').fullpage();
-
-        // ----- SLIM SCROLL -----
-        // $('.slim').slimScroll({
-        //     height: '200px'
-        // });
-
         // ========== SCROLLSPY ==========
 
         // ----- SCROLLING CLASS CHANGE -----
-        $(window).scroll(function () {
+        $(window).on('load scroll', function () {
             if ($(this).scrollTop() > 20) {
                 $('nav').addClass('scroll');
                 $(".link-arrow").addClass("visible");
@@ -212,14 +145,9 @@
         } else if (window.matchMedia("(min-width: 768px)").matches) {
             $('.nav-panel').appendTo('#nav-desktop');
             $('.nav-lang').appendTo('#nav-desktop');
-
-
         }
     });
 })();
-
-
-
 (function () {
     var lastTime = 0;
     var vendors = ['ms', 'moz', 'webkit', 'o'];

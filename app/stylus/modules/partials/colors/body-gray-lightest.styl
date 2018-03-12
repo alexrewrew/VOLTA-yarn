@@ -1,0 +1,55 @@
+.body-gray-lightest
+  .wrapper
+    background $gray-lightest
+  .panel-icon li
+    a
+      svg g
+        fill $gray-light
+      &:hover
+        svg g
+          fill $pink
+  .link-logo
+    svg g
+      fill $gray-light
+    &:hover
+      svg g
+        fill $pink
+  .menu li a
+    color $gray-light
+    &:hover
+      color $pink
+  .footer-copyright
+    color $gray-light
+  .link-arrow
+    svg g
+      fill $gray-light
+    &:hover
+      svg g
+        fill $pink
+  +mobile()
+    nav
+      background $gray-lightest
+    .link-logo
+      svg g
+        fill $white
+
+  .menu-social li a
+    svg g
+      fill $gray-light
+    &:hover
+      svg g
+        fill $pink
+
+  .breadcrumbs li
+    &:after
+      background $gray-lightdark
+    a
+      color $gray-lightdark
+
+  .blog:after
+    background $gray-lightdark
+
+  .blog--date li
+    color: $gray-lighter
+    svg g
+      fill $gray-lighter
