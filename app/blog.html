@@ -58,20 +58,6 @@
     <link rel="stylesheet" type="text/css" href="css/explorer.css"><![endif]-->
   </head>
   <body class="body-gray-light" id="pageup">
-    <style>
-      #preloader-load {
-          display: block;
-          position: fixed;
-          z-index: 99999;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: #fff url('../img/logo/volta-logo6.svg') center center no-repeat;
-          background-size: 197px
-      }
-      
-    </style>
     <div id="preloader">
       <div id="preloader-load"></div>
     </div>
@@ -356,8 +342,8 @@
         <div class="link-hire--step" id="step2">
           <form class="form-hire">
             <div class="select-group error">
-              <select class="chosen-select" data-placeholder="What can we help you with?">
-                <option></option>
+              <select class="chosen-select" data-placeholder="What can we help you with?" id="select-hire">
+                <option disabled selected></option>
                 <option>Web design & Development</option>
                 <option>Branding & identity development</option>
                 <option>Marketing & analyst</option>

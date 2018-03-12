@@ -43,6 +43,8 @@ nav.scroll
     +landscape()
       flex 1 1 50%
       max-width 50%
+    @media (max-height: 320px)
+      margin 0 0 $s10
     a
       display inline-block
       color $purple
@@ -76,7 +78,7 @@ nav.scroll
   margin $s20 0
   +mobile()
     display flex
-  +landscape()
+  @media (max-height: 320px)
     margin $s10 0
   li
     a
@@ -126,8 +128,11 @@ nav.scroll
   z-index 8998
   background $white
   transform translate3d(0, -150vh, 0)
-  padding-top 20px
+  padding-top $s20
   trans()
   +mobile()
     display block
+  @media (max-height: 320px)
+    padding-top $s10
+
 

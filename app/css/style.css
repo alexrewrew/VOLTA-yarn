@@ -358,6 +358,11 @@ h6 {
 		font-size: .875em;
 	}
 }
+@media (max-height: 320px) {
+	h6 {
+		font-size: 1.25rem;
+	}
+}
 p {
 	font-size: 1em;
 	font-weight: 400;
@@ -628,6 +633,11 @@ nav.scroll {
 		max-width: 50%;
 	}
 }
+@media (max-height: 320px) {
+	.menu li {
+		margin: 0 0 .625rem;
+	}
+}
 .menu li a {
 	display: inline-block;
 	color: #7521e1;
@@ -685,7 +695,7 @@ nav.scroll {
 		display: flex;
 	}
 }
-@media (max-device-width: 767px) and (orientation: landscape) {
+@media (max-height: 320px) {
 	.menu-social {
 		margin: .625rem 0;
 	}
@@ -753,7 +763,7 @@ nav.scroll {
 	background: #fff;
 	-webkit-transform: translate3d(0, -150vh, 0);
 	        transform: translate3d(0, -150vh, 0);
-	padding-top: 20px;
+	padding-top: 1.25rem;
 	-webkit-transition: all .2s ease;
 	     -o-transition: all .2s ease;
 	        transition: all .2s ease;
@@ -761,6 +771,11 @@ nav.scroll {
 @media (max-width: 767px) {
 	#nav-mobile {
 		display: block;
+	}
+}
+@media (max-height: 320px) {
+	#nav-mobile {
+		padding-top: .625rem;
 	}
 }
 header {
@@ -1635,7 +1650,7 @@ select:focus {
 	margin-bottom: .313rem;
 }
 .select-group:after {
-	display: none !important;
+	display: none;
 }
 @media (max-width: 767px) {
 	.select-group:after {
@@ -2121,7 +2136,7 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 @media (max-width: 767px) {
 	.portfolio-marker {
 		left: 30px;
-		bottom: -280px;
+		bottom: -270px;
 	}
 }
 @media (max-width: 767px) {
@@ -3543,6 +3558,17 @@ body.msie .link-logo {
 .portfolio-color-purple .portfolio--viewport {
 	background: #7521e1;
 }
+.body-crimson #preloader-load {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff url('../img/logo/volta-logo4.svg') center center no-repeat;
+	background-size: 197px;
+}
 .body-crimson .wrapper {
 	background: #e54646;
 }
@@ -3566,6 +3592,17 @@ body.msie .link-logo {
 		fill: #fff;
 	}
 }
+.body-gray-darker #preloader-load {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff url('../img/logo/volta-logo2.svg') center center no-repeat;
+	background-size: 197px;
+}
 .body-gray-darker .wrapper {
 	background: #2e2e2e;
 }
@@ -3588,6 +3625,17 @@ body.msie .link-logo {
 	.body-gray-darker .link-logo svg g {
 		fill: #fff;
 	}
+}
+.body-gray-light #preloader-load {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff url('../img/logo/volta-logo6.svg') center center no-repeat;
+	background-size: 197px;
 }
 .body-gray-light .wrapper {
 	background: #605c65;
@@ -3620,6 +3668,17 @@ body.msie .link-logo {
 }
 .body-gray-light .blog--date li svg g {
 	fill: #868686;
+}
+.body-gray-lightest #preloader-load {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff url('../img/logo/volta-logo7.svg') center center no-repeat;
+	background-size: 197px;
 }
 .body-gray-lightest .wrapper {
 	background: #e3e3e3;
@@ -3659,6 +3718,17 @@ body.msie .link-logo {
 .body-gray-lightest .blog--date li svg g {
 	fill: #868686;
 }
+.body-lemon #preloader-load {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff url('../img/logo/volta-logo5.svg') center center no-repeat;
+	background-size: 197px;
+}
 .body-lemon .wrapper {
 	background: #edbd05;
 }
@@ -3691,6 +3761,17 @@ body.msie .link-logo {
 .body-lemon .blog--date li svg g {
 	fill: #a48900;
 }
+.body-malina #preloader-load {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff url('../img/logo/volta-logo3.svg') center center no-repeat;
+	background-size: 197px;
+}
 .body-malina .wrapper {
 	background: #ad2f6b;
 }
@@ -3714,6 +3795,17 @@ body.msie .link-logo {
 		fill: #fff;
 	}
 }
+.body-purple #preloader-load {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff url('../img/logo/volta-logo1.svg') center center no-repeat;
+	background-size: 197px;
+}
 .body-purple .wrapper {
 	background: #7521e1;
 }
@@ -3736,6 +3828,17 @@ body.msie .link-logo {
 	.body-purple .link-logo svg g {
 		fill: #fff;
 	}
+}
+.body-purple-darker #preloader-load {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff url('../img/logo/volta-logo8.svg') center center no-repeat;
+	background-size: 197px;
 }
 .body-purple-darker .wrapper {
 	background: #36096f;

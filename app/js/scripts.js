@@ -145,10 +145,12 @@
         if (window.matchMedia("(max-width: 767px)").matches) {
             $('.nav-lang').prependTo('#nav-mobile .row');
             $('.nav-panel').prependTo('#nav-mobile .row');
+            $('#select-hire option:first-child').text('What can we help you with?');
 
         } else if (window.matchMedia("(min-width: 768px)").matches) {
             $('.nav-panel').appendTo('#nav-desktop');
             $('.nav-lang').appendTo('#nav-desktop');
+            $('#select-hire option:first-child').text('');
         }
     });
 })();
