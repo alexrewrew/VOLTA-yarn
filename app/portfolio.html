@@ -52,11 +52,26 @@
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- modernizr-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script><!--[if lt IE 10]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/explorer.css"><![endif]-->
   </head>
   <body class="body-gray-darker" id="pageup">
+    <style>
+      #preloader-load {
+          display: block;
+          position: fixed;
+          z-index: 99999;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #fff url('../img/logo/volta-logo2.svg') center center no-repeat;
+          background-size: 197px
+      }
+      
+    </style>
     <div id="preloader">
       <div id="preloader-load"></div>
     </div>

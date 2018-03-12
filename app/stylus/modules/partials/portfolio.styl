@@ -5,10 +5,14 @@
   margin-bottom 131px
   padding-bottom: 99px;
   height 439px
+  +tablet()
+    height 380px
   +portrait()
     margin-bottom 150px
   +mobile()
     margin-bottom 102px
+  +landscape()
+    height: 422px;
   h3
     margin-bottom $s48
     +mobile()
@@ -52,7 +56,7 @@
       max-height 222px
       mcenter()
       display block
-      margin-top $s25
+      //margin-top $s25
   &-marker
     color $white
     font-size $f20
@@ -60,6 +64,8 @@
     position absolute
     right 15px
     bottom -208px
+    +tablet()
+      bottom -150px
     +portrait()
       bottom 25px
     +mobile()

@@ -35,6 +35,8 @@ ul, ol
       max-width 33.33333%
     img
       max-width 100%
+      +portrait()
+        max-width: 85%;
 
 .ul-filter
   display flex
@@ -44,7 +46,7 @@ ul, ol
     +portrait()
       margin-right $s30
     +mobile()
-      margin-right $s20
+      margin-right $s13
       margin-bottom $s10
     a
       font-size $f18

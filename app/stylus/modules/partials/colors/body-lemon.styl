@@ -1,44 +1,28 @@
 .body-lemon
+  
   .wrapper
     background $lemon
-  .panel-icon li
-    a
-      svg g
-        fill $lemon
-      &:hover
-        svg g
-          fill $pink
-  .link-logo
-    svg g
-      fill $lemon
+    
+  .panel-icon li a svg g, .link-logo svg g, .link-arrow svg g, .menu-social li a svg g
+    fill $lemon
+
+  .panel-icon li a, .link-logo, .link-arrow, .menu-social li a
     &:hover
       svg g
         fill $pink
-  .menu li a
+
+  .menu li a, .footer-copyright
     color $lemon
-    &:hover
-      color $pink
-  .footer-copyright
-    color $lemon
-  .link-arrow
-    svg g
-      fill $lemon
-    &:hover
-      svg g
-        fill $pink
+
+  .menu li a:hover
+    color $pink
+    
   +mobile()
     nav
       background $lemon
     .link-logo
       svg g
         fill $white
-
-  .menu-social li a
-    svg g
-      fill $lemon
-    &:hover
-      svg g
-        fill $pink
 
   .blog:after
     background $lemon-dark

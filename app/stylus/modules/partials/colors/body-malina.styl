@@ -1,31 +1,22 @@
 .body-malina
+
   .wrapper
     background $malina
-  .panel-icon li
-    a
-      svg g
-        fill $malina
-      &:hover
-        svg g
-          fill $pink
-  .link-logo
-    svg g
-      fill $malina
+
+  .panel-icon li a svg g, .link-logo svg g, .link-arrow svg g, .menu-social li a svg g
+    fill $malina
+
+  .panel-icon li a, .link-logo, .link-arrow, .menu-social li a
     &:hover
       svg g
         fill $pink
-  .menu li a
+
+  .menu li a, .footer-copyright
     color $malina
-    &:hover
-      color $pink
-  .footer-copyright
-    color $malina
-  .link-arrow
-    svg g
-      fill $malina
-    &:hover
-      svg g
-        fill $pink
+
+  .menu li a:hover
+    color $pink
+
   +mobile()
     nav
       background $malina
@@ -33,9 +24,3 @@
       svg g
         fill $white
 
-  .menu-social li a
-    svg g
-      fill $malina
-    &:hover
-      svg g
-        fill $pink

@@ -1,44 +1,27 @@
 .body-gray-lightest
   .wrapper
     background $gray-lightest
-  .panel-icon li
-    a
-      svg g
-        fill $gray-light
-      &:hover
-        svg g
-          fill $pink
-  .link-logo
-    svg g
-      fill $gray-light
+
+  .panel-icon li a svg g, .link-logo svg g, .link-arrow svg g, .menu-social li a svg g
+    fill $gray-light
+
+  .panel-icon li a, .link-logo, .link-arrow, .menu-social li a
     &:hover
       svg g
         fill $pink
-  .menu li a
+
+  .menu li a, .footer-copyright
     color $gray-light
-    &:hover
-      color $pink
-  .footer-copyright
-    color $gray-light
-  .link-arrow
-    svg g
-      fill $gray-light
-    &:hover
-      svg g
-        fill $pink
+
+  .menu li a:hover
+    color $pink
+
   +mobile()
     nav
       background $gray-lightest
     .link-logo
       svg g
         fill $white
-
-  .menu-social li a
-    svg g
-      fill $gray-light
-    &:hover
-      svg g
-        fill $pink
 
   .breadcrumbs li
     &:after

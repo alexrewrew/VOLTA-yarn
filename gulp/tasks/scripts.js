@@ -21,7 +21,7 @@ module.exports = function () {
             // 'node_modules/fullpage.js/vendors/scrolloverflow.js',
             // 'node_modules/fullpage.js/dist/jquery.fullpage.js',
             // 'node_modules/jquery-slimscroll/jquery.slimscroll.js',
-            // 'node_modules/bowser/bowser.js'
+            'node_modules/bowser/bowser.js'
         ])
             .pipe($.concat('vendor.js'))
             .pipe($.gulp.dest('app/js'))

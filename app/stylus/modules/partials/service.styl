@@ -23,6 +23,12 @@
         margin-bottom $s16
         flex 1 1 50%
         max-width 50%
+        +mobile()
+          flex 1 1 100%
+          max-width 100%
+        +landscape()
+          flex 1 1 50%
+          max-width 50%
         &:before
           pseudo(block, absolute)
           width 10px

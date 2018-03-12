@@ -1,0 +1,28 @@
+body.msie
+  .link-logo
+    max-height 22px
+    svg
+      +displays()
+        max-height 22px
+
+  .grid
+    +displays()
+      flex-direction: row;
+      max-height: unset
+      justify-content space-around
+    +tablet()
+      flex-direction: row;
+      max-height: unset
+      justify-content space-around
+
+  .grid-item
+    +displays()
+      &:nth-child(even)
+        order 1
+      &:nth-child(odd)
+        order 1
+    +tablet()
+      &:nth-child(even)
+        order 1
+      &:nth-child(odd)
+        order 1

@@ -4,6 +4,9 @@
   z-index 30
   padding-bottom 81px
   margin-bottom $s47
+  +mobile()
+    max-width 460px
+    mcenter()
   &--image
     height 201px
     display flex
@@ -27,15 +30,10 @@
         width 100%
   &--text
     padding: $s37 $s15 0
-    max-height 314px
-    overflow hidden
-    +portrait()
-      max-height unset
     +mobile()
-      padding $s37 $s30
-      max-height unset
-    +fablet()
-      padding $s37px $s15
+      padding $s33 $s15
+    +landscape()
+      padding $s33 $s30
     h3
       position relative
       left -70px
@@ -45,8 +43,8 @@
         width calc(100% + 25px)
         left -25px
       +landscape()
-        left -70px
-        width calc(100% + 70px)
+        left -60px
+        width calc(100% + 60px)
     p
       margin-bottom $s22
   &--date
@@ -81,8 +79,16 @@
       right 0
   .link-more
     opacity 0
+    +portrait()
+      opacity 1
+    +mobile()
+      opacity 1
     &:after
       width 0
+      +portrait()
+        width 100%
+      +mobile()
+        width 100%
   &:hover
     .link-more
       opacity 1

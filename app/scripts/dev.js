@@ -132,6 +132,10 @@
             }, 1500);
         });
 
+        if (bowser.msie) {
+            $('body').addClass('msie');
+        }
+
 
     });
 

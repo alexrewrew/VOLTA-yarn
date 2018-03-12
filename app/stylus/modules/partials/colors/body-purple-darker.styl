@@ -1,41 +1,24 @@
 .body-purple-darker
   .wrapper
     background $purple-darker
-  .panel-icon li
-    a
-      svg g
-        fill $purple-darker
-      &:hover
-        svg g
-          fill $pink
-  .link-logo
-    svg g
-      fill $purple-darker
+    
+  .panel-icon li a svg g, .link-logo svg g, .link-arrow svg g, .menu-social li a svg g
+    fill $purple-darker
+
+  .panel-icon li a, .link-logo, .link-arrow, .menu-social li a
     &:hover
       svg g
         fill $pink
-  .menu li a
+
+  .menu li a, .footer-copyright
     color $purple-darker
-    &:hover
-      color $pink
-  .footer-copyright
-    color $purple-darker
-  .link-arrow
-    svg g
-      fill $purple-darker
-    &:hover
-      svg g
-        fill $pink
+
+  .menu li a:hover
+    color $pink
+        
   +mobile()
     nav
       background $purple-darker
     .link-logo
       svg g
         fill $white
-
-  .menu-social li a
-    svg g
-      fill $purple-darker
-    &:hover
-      svg g
-        fill $pink
