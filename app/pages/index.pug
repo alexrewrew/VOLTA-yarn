@@ -9,27 +9,10 @@ block canvas
 
 block content
 
-    header.header-index
-        .container-fluid
-            .row
-                .offset-md-1.col-md-9
-                    h1 We are VOLTA - a marketing driven digital production
-        a(href='portfolio.html' title='').jumbotron
-            .container-fluid
-                .row.justify-content-center
-                    .col-lg-4.order-2.order-lg-1.align-self-end
-                        span.link-inner View portfolio
-                            include svgs/arrow-right.svg
-                    .col-lg-6.order-1.order-lg-2
-
-                        img(src='img/illus/illus1.png' title='' alt='').jumbotron--image
-            .jumbotron--viewport
-                .jumbotron--viewport-back
-                img(src='' title='' alt='').jumbotron--viewport-image
-
+    include partials/headers/_header-index
 
     section
-        .container-fluid
+        .container
             .row.justify-content-center
                 .col-md-10.col-lg-4
                     h2 Services
@@ -49,7 +32,7 @@ block content
 
     section.section-portfolio
         a(href='#' title='' ).portfolio.portfolio-color-yellow
-            .container-fluid
+            .container
                 .row.justify-content-md-center
                     .col-md-10.col-lg-5.col-xl-6.col-left
                         img(src='img/illus/illus2.png' title='' alt='').portfolio--image
@@ -62,7 +45,7 @@ block content
 
 
         a(href='#' title='' ).portfolio.portfolio-left.portfolio-color-gray-dark
-            .container-fluid
+            .container
                 .row.justify-content-md-center
                     .col-md-10.col-lg-5.col-xl-6.col-left
                         img(src='img/illus/illus3.png' title='' alt='').portfolio--image
@@ -74,7 +57,7 @@ block content
                 img(src='img/illus/illus3a.svg' title='' alt='').portfolio--viewport-image
 
     section.section-last
-        .container-fluid
+        .container
             .row.justify-content-center
                 .col-md-10
                     h2 Clients
