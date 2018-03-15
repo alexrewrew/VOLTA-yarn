@@ -561,9 +561,9 @@ nav {
 	left: 0;
 	right: 0;
 	z-index: 8999;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (max-width: 767px) {
 	nav {
@@ -701,9 +701,9 @@ nav.scroll {
 	}
 }
 .menu-social li a svg g {
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .nav-menu {
 	display: none;
@@ -718,9 +718,9 @@ nav.scroll {
 	height: 20px;
 	position: relative;
 	cursor: pointer;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 	-webkit-transform: rotate(0deg);
 	    -ms-transform: rotate(0deg);
 	        transform: rotate(0deg);
@@ -739,9 +739,9 @@ nav.scroll {
 	-webkit-transform: rotate(0deg);
 	    -ms-transform: rotate(0deg);
 	        transform: rotate(0deg);
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .nav-icon span:nth-child(1) {
 	top: 0;
@@ -764,9 +764,9 @@ nav.scroll {
 	-webkit-transform: translate3d(0, -150vh, 0);
 	        transform: translate3d(0, -150vh, 0);
 	padding-top: 1.25rem;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (max-width: 767px) {
 	#nav-mobile {
@@ -946,9 +946,9 @@ footer .menu-social {
 	right: 0;
 	background: #ec0f78;
 	width: 0;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .pagination li a:hover {
 	color: #fc3a96;
@@ -981,9 +981,9 @@ a {
 	text-decoration: none;
 	font-family: 'Cera', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #fc3a96;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -1012,9 +1012,9 @@ a:hover, a:focus {
 }
 .link-logo svg g {
 	fill: #7521e1;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (max-width: 767px) {
 	.link-logo svg g {
@@ -1031,9 +1031,9 @@ a:hover, a:focus {
 	letter-spacing: 1px;
 	display: inline-block;
 	margin-bottom: 1.125rem;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .link-inner svg {
 	margin-left: 1.875rem;
@@ -1069,9 +1069,9 @@ a:hover, a:focus {
 	opacity: 0;
 	visibility: hidden;
 	z-index: -1;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (max-width: 767px) {
 	.link-arrow {
@@ -1083,9 +1083,9 @@ a:hover, a:focus {
 }
 .link-arrow svg g {
 	fill: #7521e1;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .link-arrow:hover svg g {
 	fill: #fc3a96;
@@ -1116,9 +1116,9 @@ a:hover, a:focus {
 	font-family: 'Gotham Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 500;
 	padding: .438rem .875rem;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.link-more {
@@ -1145,9 +1145,9 @@ a:hover, a:focus {
 	left: 0;
 	right: 0;
 	top: 0;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .link-more:hover:after {
 	top: 33px;
@@ -1174,9 +1174,9 @@ a:hover, a:focus {
 	background: #fc3a96;
 	z-index: -1;
 	right: 100%;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .link-tag:after {
 	z-index: -2;
@@ -1199,18 +1199,18 @@ button {
 	display: flex;
 	float: right;
 	padding: 0;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 button span {
 	padding: .375rem 0;
 	margin-right: 2rem;
 }
 button svg {
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 button:hover svg {
 	-webkit-transform: translate3d(50px, 0, 0);
@@ -1351,9 +1351,9 @@ ul li, ol li {
 	right: 0;
 	background: #ec0f78;
 	width: 0;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .ul-filter li a:hover:after {
 	width: 100%;
@@ -1397,9 +1397,9 @@ ul li, ol li {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (max-width: 767px) {
 	.slider .arrow {
@@ -1567,9 +1567,9 @@ input {
 	line-height: 1.89;
 	font-size: 1.125em;
 	color: #fff;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 input:-webkit-autofill {
 	-webkit-box-shadow: inset 0 0 0 50px #fff !important;
@@ -1606,9 +1606,9 @@ textarea {
 	color: #fff;
 	font-size: 1.125em;
 	line-height: 1.89;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 textarea:focus {
 	outline: none;
@@ -1638,9 +1638,9 @@ select {
 	font-size: 1.125em;
 	-webkit-appearance: none;
 	   -moz-appearance: none;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 select:focus {
 	outline: none;
@@ -1690,9 +1690,9 @@ select:focus {
 	border-top: 5px solid #fff;
 	top: calc(50% - 2.5px);
 	right: 19px;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .chosen-container:focus {
 	outline: none;
@@ -1706,9 +1706,9 @@ select:focus {
 	background: transparent;
 	-webkit-box-shadow: none;
 	        box-shadow: none;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .chosen-container .chosen-single input[type='text'] {
 	display: none;
@@ -1768,9 +1768,9 @@ select:focus {
 	font-size: 1em;
 	line-height: normal;
 	background: #ef2a88;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .chosen-container-single .chosen-drop .chosen-results .active-result.highlighted {
 	background: #fd5fab;
@@ -1900,9 +1900,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 }
 .panel-icon li a svg g {
 	fill: #7521e1;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .panel-icon li a:hover svg g {
 	fill: #fc3a96;
@@ -1933,9 +1933,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	right: 4.6%;
 	background: #5e14bc;
 	z-index: -1;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.jumbotron--viewport {
@@ -1952,9 +1952,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	position: relative;
 	left: -13.4%;
 	top: 0;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.jumbotron--image {
@@ -2059,17 +2059,17 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	bottom: 0;
 	overflow: hidden;
 	z-index: -1;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .portfolio--viewport-image {
 	position: absolute;
 	left: 6.5%;
 	top: -101px;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.portfolio--viewport {
@@ -2088,9 +2088,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	top: -9px;
 	left: 7.2%;
 	max-width: 100%;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 	.portfolio--image {
@@ -2281,9 +2281,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	margin-top: 20px;
 	cursor: pointer;
 	position: relative;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (max-width: 767px) {
 	.link-hire {
@@ -2332,9 +2332,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	margin-left: 33px;
 	position: relative;
 	top: 5px;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .link-hire--text h3 {
 	font-size: 1.75em;
@@ -2360,9 +2360,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	visibility: hidden;
 	z-index: 0;
 	opacity: 0;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .link-hire--close:before, .link-hire--close:after {
 	content: '';
@@ -2399,9 +2399,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	align-items: center;
 	padding-left: 15px;
 	padding-right: 15px;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 	visibility: hidden;
 	z-index: 0;
 	opacity: 0;
@@ -2525,9 +2525,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	background: #882555;
 	z-index: -1;
 	height: 0;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .service:hover .service--viewport {
 	height: calc(100% + 85px + 68px);
@@ -2576,9 +2576,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 }
 .team--description {
 	background: transparent;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 	position: absolute;
 	bottom: 0;
 	left: -20px;
@@ -2596,9 +2596,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	bottom: 0;
 	background: #bf2929;
 	z-index: -1;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 	height: 0;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2643,9 +2643,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 }
 .team--description-text {
 	opacity: 0;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.team--description-text {
@@ -2797,9 +2797,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	right: -15px;
 	z-index: -1;
 	height: 0;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.blog:after {
@@ -3181,9 +3181,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	}
 }
 .blogin-author--share-list li a svg g {
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 	fill: #b9b9b9;
 }
 .blogin-author--share-list li a:hover svg g {
@@ -3273,9 +3273,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	bottom: 11px;
 	left: 22.5%;
 	z-index: -1;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.blog-small:after {
@@ -3376,9 +3376,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	top: 0;
 	left: 0;
 	right: 0;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .contactus-form--step img {
 	display: block;
@@ -3409,9 +3409,9 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 	visibility: hidden;
 	z-index: 0;
 	opacity: 0;
-	-webkit-transition: all .2s ease;
-	     -o-transition: all .2s ease;
-	        transition: all .2s ease;
+	-webkit-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
 .contactus-form--close:before, .contactus-form--close:after {
 	content: '';
