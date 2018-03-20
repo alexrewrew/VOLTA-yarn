@@ -49,7 +49,7 @@
       #arrow2
         trans()
 
-.form-hire.success
+.form-hire.success, .form-contactus.success
   .btn-send
     cursor pointer
     &--icon
@@ -59,3 +59,12 @@
     &:hover
       .btn-send--icon svg #arrow1, .btn-send--icon svg #arrow2
         transform translate3d(49px, 0, 0)
+
+.form-contactus
+  .btn-send
+    &--icon
+      svg
+        #rect
+          fill #541b9d
+        #arrow1
+          fill $purple-lighter

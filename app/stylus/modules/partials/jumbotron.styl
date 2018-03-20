@@ -1,12 +1,12 @@
 .portfolio.jumbotron
   height 500px
   +portrait()
-    padding-top 60px
+    padding-top 3.750rem
   +mobile()
     height 345px
-    padding-top 46px
+    padding-top $s46
   +landscape()
-    padding-top: 37px;
+    padding-top: $s37
     height: 436px;
   .portfolio--back
     top 0
@@ -36,7 +36,6 @@
       display: block;
     +landscape()
       max-width: 500px;
-      margin: 0 auto;
 
   .portfolio--front-description
     height 500px
@@ -44,11 +43,11 @@
       height 100px
     +mobile()
       height: auto
-      padding-top: 15px;
+      padding-top: $s15
     .link-inner
       position absolute
       left 0
-      bottom: 30px
+      bottom: 53px
       +mobile()
         position static
 

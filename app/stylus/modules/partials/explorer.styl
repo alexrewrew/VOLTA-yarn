@@ -6,22 +6,13 @@ body.msie
         max-height 22px
 
   .grid
-    +displays()
-      flex-direction: row;
-      max-height: unset
-      justify-content space-around
-    +tablet()
+    +custom-min(992px)
       flex-direction: row;
       max-height: unset
       justify-content space-around
 
   .grid-item
-    +displays()
-      &:nth-child(even)
-        order 1
-      &:nth-child(odd)
-        order 1
-    +tablet()
+    +custom-min(992px)
       &:nth-child(even)
         order 1
       &:nth-child(odd)

@@ -2,13 +2,13 @@
   display block
   position relative
   z-index 30
-  padding-bottom 81px
+  padding-bottom 5.063rem
   margin-bottom $s47
   +mobile()
     max-width 460px
     mcenter()
-    padding-bottom 55px
-    margin-bottom 121px
+    padding-bottom 3.438rem
+    margin-bottom 7.563rem
   &--image
     height 201px
     display flex
@@ -18,9 +18,7 @@
 
     +tablet()
       height: 162px;
-    +portrait()
-      height: auto
-    +mobile()
+    +custom-max(992px)
       height: auto
 
     img

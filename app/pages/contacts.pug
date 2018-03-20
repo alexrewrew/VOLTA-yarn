@@ -45,14 +45,24 @@ block content
                                     h4 Contact us
                                     .contactus-form
                                         .contactus-form--step#step1
-                                            form.form-hire.form-contactus
-                                                input(type='text' placeholder='Your name').error
-                                                input(type='mail' placeholder='Enter your e-mail')
-                                                textarea(placeholder='A brief intro to your project').error
+                                            form.form-hire.form-contactus.success
+                                                .input-group
+                                                    input(type='text' placeholder='Your name').error
+                                                    .input-shadow
+
+                                                .input-group
+                                                    input(type='mail' placeholder='Enter your e-mail')
+                                                    .input-shadow
+
+                                                .textarea-group
+                                                    textarea(placeholder='A brief intro to your project')
+                                                    .input-shadow
+
                                                 .form-submit
-                                                    button(type='submit')
-                                                        span send
-                                                        include svgs/send2.svg
+                                                    button(type='submit').btn-send
+                                                        .btn-send--text send
+                                                        .btn-send--icon
+                                                            include svgs/send3.svg
 
                                         .contactus-form--step#step2
                                             img(src='img/icons/mail.svg' title='')

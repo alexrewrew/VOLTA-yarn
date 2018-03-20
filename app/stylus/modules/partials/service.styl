@@ -1,11 +1,11 @@
 .service
-  margin-bottom 154px
+  margin-bottom 9.625rem
   position relative
   z-index 20
   &:last-child
-    margin-bottom: 80px;
+    margin-bottom: 5rem
   +mobile()
-    margin-bottom 130px
+    margin-bottom 8.125rem
   h3
     +mobile()
       font-size $s30
@@ -13,12 +13,12 @@
       margin-bottom $s35
   &--image
     display block
-    margin 11px auto
+    margin $s11 auto
     +mobile()
-      margin-bottom 50px
+      margin-bottom $s50
       margin-top 0
   &--capabilities
-    padding-top 8px
+    padding-top $s8
     +mobile()
       padding-top 0
     ul
@@ -53,6 +53,6 @@
 
   &:hover
     .service--viewport
-      height calc(100% + 85px + 68px)
+      height calc(100% + 153px)
       +mobile()
         height 0

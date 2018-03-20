@@ -1,5 +1,5 @@
 .form-submit
-  padding-top 17px
+  padding-top $s17
 
 .form-hire
   max-width 556px
@@ -25,6 +25,7 @@
     margin-top $s27
   input, textarea
     border-bottom-color: #774dab
+    background $purple-darkest
     +placeholder()
       color #774dab
   input.error, textarea.error
@@ -32,3 +33,8 @@
     border-bottom-color #ff1182
     +placeholder()
       color #ff1182
+
+  .input-group, .textarea-group
+    .input-shadow
+      box-shadow: 0 2px 28px 0 #5e14bc;
+      background rgba(94, 20, 188, .5)
