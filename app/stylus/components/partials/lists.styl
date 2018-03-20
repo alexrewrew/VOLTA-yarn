@@ -41,13 +41,15 @@ ul, ol
 .ul-filter
   display flex
   flex-wrap wrap
+  //+mobile()
+  //  justify-content space-between
   li
     margin-right $s40
     +portrait()
       margin-right $s30
     +mobile()
-      margin-right $s13
-      margin-bottom $s10
+      margin-right $s26
+      margin-bottom $s15
     a
       font-size $f18
       color $white

@@ -84,10 +84,23 @@
   .chosen-results
     padding 0
     margin 0
-    box-shadow: 0 8px 15px -8px #C21768;
+    position relative
+    overflow visible
+    &:before
+      pseudo(block, absolute)
+      bottom -2px
+      left 10px
+      right 10px
+      z-index -1
+
+      height: 17px;
+      box-shadow: 0 2px 28px 0 #ae0a59;
+      border-radius 50%
+      background rgba(174, 10, 89, .5)
+
     .active-result
       padding $s12 $s15 $s13
-      font-size 1em
+      font-size $f16
       line-height normal
       background #ef2a88
       trans()
@@ -107,3 +120,42 @@
       color #999
       font-size .875em
       padding $s12 $s10 $s13
+
+
+.select-lang
+  max-width 68px
+  margin 0
+  +mobile()
+    display none
+  .chosen-container .chosen-single span
+    color $purple
+    font-weight 500
+    padding 0
+    text-align center
+    line-height normal
+    font-size $f14
+    margin 0
+  .chosen-container .chosen-single
+    border-bottom 0
+  .chosen-container-single .chosen-drop .chosen-results .active-result
+    background $white
+    color $purple
+    font-weight 500
+    font-size $f14
+    padding $s5 0 $s7
+    text-align center
+    opacity .5
+  .chosen-container-single .chosen-drop .chosen-results .active-result.highlighted
+    color $pink
+    opacity 1
+  .chosen-container-single .chosen-drop .chosen-results
+    padding-top $s8
+    padding-bottom $s9
+    background $white
+  .chosen-container-single .chosen-drop .chosen-results .result-selected
+    display none
+  .chosen-container-single .chosen-drop .chosen-results:before
+    display none
+  .chosen-container:after
+    triangle($purple, down, 5px)
+    right 0

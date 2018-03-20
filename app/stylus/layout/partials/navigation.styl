@@ -2,7 +2,7 @@
 @import '../../utilities/mixins'
 
 nav
-  padding $s14 $s32 0
+  padding $s14 55px 0
   position fixed
   top 0
   left 0
@@ -29,7 +29,7 @@ nav.scroll
     flex-wrap wrap
     justify-content flex-start
   li
-    margin 0 $s24
+    margin 0 $s23
     &:last-child
       margin-right 0
     +tablet()
@@ -58,8 +58,10 @@ nav.scroll
       color $pink
 
 .menu.menu-lang
+  display none
   +mobile()
     height auto
+    display flex
   li
     margin 0 $s10
     +portrait()

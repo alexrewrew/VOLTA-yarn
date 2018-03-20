@@ -38,7 +38,8 @@ article
       color $gray-lightdark
       line-height: 1.63;
       left 0
-
+      +mobile()
+        padding-right 0
       &:before
         position absolute
         display block
@@ -77,7 +78,7 @@ main
   height 100%
   z-index 0
   +mobile()
-    padding $s33 0 0
+    padding 53px 0 0
 
 canvas
   z-index: 1;

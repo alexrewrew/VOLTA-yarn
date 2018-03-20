@@ -1,0 +1,11 @@
+<svg width="94px" height="60px" viewBox="0 0 94 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-824.000000, -746.000000)">
+            <g transform="translate(824.000000, 746.000000)">
+                <rect id="rect" fill="#541B9D" x="26" y="0" width="68" height="60"></rect>
+                <polygon id="arrow1" fill="#FFFFFF" fill-rule="nonzero" points="49.509577 27.5177974 61.319183 29.5 49.509577 31.6526433 48 40 74 29.5 48 19"></polygon>
+                <polygon id="arrow2" fill="#FFFFFF" fill-rule="nonzero" points="1.50957702 27.5177974 13.319183 29.5 1.50957702 31.6526433 0 40 26 29.5 0 19"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

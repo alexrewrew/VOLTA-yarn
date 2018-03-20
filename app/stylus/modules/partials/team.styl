@@ -3,8 +3,6 @@
   padding-bottom 174px
   margin-bottom 62px
   +mobile()
-    padding-left: 15px;
-    padding-right: 15px;
     max-width 460px
     mcenter()
   &--image
@@ -24,7 +22,7 @@
     bottom 0
     left -20px
     right -20px
-    padding: 37px 30px 61px
+    padding: $s37 $s30 61px
     z-index 30
 
     &:after
@@ -42,13 +40,16 @@
       background $crimson-dark
     +mobile()
       background $crimson-dark
-      left 0
-      right 0
-      padding-left 15px
-      padding-right 15px
+      left -15px
+      right -15px
+      padding-left $s15
+      padding-right $s15
+      padding-bottom $s25
+      display flex
+      flex-wrap wrap
     +landscape()
-      padding-left 30px
-      padding-right 30px
+      padding-left $s30
+      padding-right $s30
     h3
       line-height: 1.13;
       font-size $f30
@@ -57,11 +58,9 @@
       left -70px
       width calc(100% + 70px)
       +mobile()
-        left -25px
-        width calc(100% + 25px)
-      +landscape()
-        left -70px
-        width calc(100% + 70px)
+        position static
+        width 100%
+        margin-bottom $s12
     &-text
       opacity 0
       trans()
@@ -69,12 +68,18 @@
         opacity 1
       +mobile()
         opacity 1
+        order 2
+        width 100%
       p
         margin-bottom: $s27
     &-prof
       color $white
       line-height: 1.44;
-      font-size 1em
+      font-size $f16
+      +mobile()
+        color #ff7b7b
+        margin-bottom $s37
+        width 100%
 
   &:hover
     .team--description-text

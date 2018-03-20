@@ -8,8 +8,9 @@
   position relative
   trans()
   +mobile()
-    min-height: 255px;
-    margin: 10px 15px;
+    height: 255px;
+    min-height unset
+    margin: $s10 $s15
   &:hover
     background #C20C63
     box-shadow: 0 8px 20px 0 #C20C63;
@@ -60,7 +61,7 @@
     height 25px
     position absolute
     right 30px
-    top 30px
+    top 18px
     cursor pointer
 
     visibility hidden
@@ -68,11 +69,18 @@
     opacity 0
 
     trans()
+
+    +mobile()
+      right 15px
+      top 15px
+
+
     &:before, &:after
       pseudo(block, absolute)
       background $white
       width 100%
       height 2px
+      top 12px
     &:after
       transform rotate(-45deg)
     &:before
@@ -102,6 +110,9 @@
 
 .link-hire.with-form
   cursor default
+  +mobile()
+    height 475px
+    min-height unset
   &:hover
     background $pink-dark
     box-shadow: 0 8px 50px 0 $pink-dark;

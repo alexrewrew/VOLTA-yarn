@@ -90,7 +90,7 @@
           <div class="col-6 nav-menu">
             <div class="nav-icon" id="menu-trigger"><span></span><span></span><span></span><span></span></div>
           </div>
-          <div class="col-8 nav-panel">
+          <div class="col-8 col-md-9 nav-panel">
             <ul class="menu">
               <li><a href="./" title="">home</a></li>
               <li><a href="services.html" title="">services</a></li>
@@ -101,12 +101,19 @@
               <li><a href="contacts.html" title="">contacts</a></li>
             </ul>
           </div>
-          <div class="col-2 nav-lang">
+          <div class="col-2 col-md-1 nav-lang">
             <ul class="menu menu-lang">
-              <li><a href="#" title="">EN</a></li>
-              <li><a href="#" title="">UA</a></li>
-              <li><a href="#" title="">RU</a></li>
+              <li><a href="#" title="">ENG</a></li>
+              <li><a href="#" title="">UKR</a></li>
+              <li><a href="#" title="">RUS</a></li>
             </ul>
+            <div class="select-group select-lang">
+              <select class="chosen-select">
+                <option>ENG</option>
+                <option>UKR</option>
+                <option>RUS</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
@@ -184,7 +191,7 @@
           <section class="section-filter">
             <div class="container">
               <div class="row justify-content-center">
-                <div class="col-md-8 col-9">
+                <div class="col-md-8">
                   <ul class="ul-filter">
                     <li><a class="active" href="" title="">Design</a></li>
                     <li><a href="" title="">Campaign</a></li>
@@ -192,7 +199,7 @@
                     <li><a href="" title="">Production</a></li>
                   </ul>
                 </div>
-                <div class="col-md-2 col-3"><a class="link-all" href="" title="">Все</a></div>
+                <div class="col-md-2"><a class="link-all" href="" title="">Все</a></div>
               </div>
             </div>
           </section>
@@ -312,7 +319,7 @@
         </div>
         <div class="link-hire--step" id="step2">
           <form class="form-hire">
-            <div class="select-group error">
+            <div class="select-group">
               <select class="chosen-select" data-placeholder="What can we help you with?" id="select-hire">
                 <option disabled selected></option>
                 <option>Web design & Development</option>
@@ -321,18 +328,33 @@
                 <option>Mobile app development</option>
               </select>
             </div>
-            <input class="error" type="text" placeholder="Your name">
-            <input type="mail" placeholder="Enter your e-mail">
-            <textarea class="error" placeholder="A brief intro to your project"></textarea>
+            <div class="input-group">
+              <input class="error" type="text" placeholder="Your name">
+              <div class="input-shadow"></div>
+            </div>
+            <div class="input-group">
+              <input type="mail" placeholder="Enter your e-mail">
+              <div class="input-shadow"></div>
+            </div>
+            <div class="textarea-group">
+              <textarea placeholder="A brief intro to your project"></textarea>
+              <div class="input-shadow"></div>
+            </div>
             <div class="form-submit">
-              <button type="submit"><span>send</span><svg width="68px" height="60px" viewBox="0 0 68 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Static" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-850.000000, -347.000000)">
-        <g id="Group" transform="translate(850.000000, 347.000000)">
-            <rect id="Rectangle-22" fill="#DE0F72" x="0" y="0" width="68" height="60"></rect>
-            <polygon id="Shape-Copy" fill="#FD5FAB" fill-rule="nonzero" points="23.5130607 27.9887123 35.3499195 30.0127135 23.5130607 32.2107494 22 40.7341261 48.06 30.0127135 22 19.2913009"></polygon>
+              <button class="btn-send" type="submit">
+                <div class="btn-send--text">send</div>
+                <div class="btn-send--icon"><svg width="94px" height="60px" viewBox="0 0 94 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-824.000000, -746.000000)">
+            <g transform="translate(824.000000, 746.000000)">
+                <rect id="rect" fill="#541B9D" x="26" y="0" width="68" height="60"></rect>
+                <polygon id="arrow1" fill="#FFFFFF" fill-rule="nonzero" points="49.509577 27.5177974 61.319183 29.5 49.509577 31.6526433 48 40 74 29.5 48 19"></polygon>
+                <polygon id="arrow2" fill="#FFFFFF" fill-rule="nonzero" points="1.50957702 27.5177974 13.319183 29.5 1.50957702 31.6526433 0 40 26 29.5 0 19"></polygon>
+            </g>
         </g>
     </g>
 </svg>
+                </div>
               </button>
             </div>
           </form>

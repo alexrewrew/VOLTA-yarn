@@ -12,7 +12,8 @@ nav
                     span
                     span
 
-            .col-8.nav-panel
+
+            .col-8.col-md-9.nav-panel
                 ul.menu
                     li
                         a(href='./' title='') home
@@ -28,14 +29,19 @@ nav
                         a(href='vacancy.html' title='') vacancy
                     li
                         a(href='contacts.html' title='') contacts
-            .col-2.nav-lang
+            .col-2.col-md-1.nav-lang
                 ul.menu.menu-lang
                     li
-                        a(href='#' title='') EN
+                        a(href='#' title='') ENG
                     li
-                        a(href='#' title='') UA
+                        a(href='#' title='') UKR
                     li
-                        a(href='#' title='') RU
+                        a(href='#' title='') RUS
+                .select-group.select-lang
+                    select.chosen-select
+                        option ENG
+                        option UKR
+                        option RUS
 
 .container-fluid#nav-mobile
     .row.justify-content-center

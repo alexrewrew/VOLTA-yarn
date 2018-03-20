@@ -7,6 +7,8 @@
   +mobile()
     max-width 460px
     mcenter()
+    padding-bottom 55px
+    margin-bottom 121px
   &--image
     height 201px
     display flex
@@ -20,9 +22,6 @@
       height: auto
     +mobile()
       height: auto
-      padding: 0 $s15
-    +landscape()
-      padding 0 $s30
 
     img
       height 100%
@@ -32,27 +31,22 @@
   &--text
     padding: $s37 $s15 0
     +mobile()
-      padding $s33 $s15
-    +landscape()
-      padding $s33 $s30
+      padding $s33 0
     h3
       position relative
       left -70px
       width calc(100% + 70px)
       margin-bottom $s28
       +mobile()
-        width calc(100% + 25px)
-        left -25px
-      +landscape()
-        left -60px
-        width calc(100% + 60px)
+        position static
+        width auto
     p
       margin-bottom $s22
   &--date
     display flex
     padding 0 $s15
-    +landscape()
-      padding 0 $s30
+    +mobile()
+      padding 0
     li
       color $lemon-darker
       font-family $sl-font, $s-font, sans-serif
@@ -76,20 +70,27 @@
       height calc(100% - 101px)
     +mobile()
       height calc(100% - 101px)
-      left 0
-      right 0
+      left -15px
+      right -15px
+    +landscape()
+      left -30px
+      right -30px
   .link-more
     opacity 0
     +portrait()
       opacity 1
     +mobile()
       opacity 1
+      right 5px
+      bottom 38px
     &:after
       width 0
       +portrait()
         width 100%
       +mobile()
         width 100%
+        bottom 0
+        top auto
   &:hover
     .link-more
       opacity 1

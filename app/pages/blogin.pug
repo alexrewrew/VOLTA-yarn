@@ -124,17 +124,32 @@ block content
                                                 include svgs/facebook.svg
 
 
-                .col-xl-4.col-sm-5.col-11
-                    a(href='' title='' ).blog-small
-                        .blog-small--image
-                            img(src='img/blog/blog1a.png' title='' alt='')
-                        .blog-small--text
-                            h6 Lifeprint - принтер, печатающий видео
-                        .link-more More
-                .col-xl-4.col-sm-5.col-11
-                    a(href='' title='').blog-small
-                        .blog-small--image
-                            img(src='img/blog/blog1a.png' title='' alt='')
-                        .blog-small--text
-                            h6 Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                        .link-more More
+            .row.justify-content-center
+                .offset-lg-2.col-lg-10
+                    .row.grid.grid-small
+                        .col-lg-5.col-sm-8.grid-item
+                            a(href='blogin.html' title='' ).blog
+                                .blog--image
+                                    img(src='img/blog/blog1.png' title='')
+                                .blog--text
+                                    h3 Lifeprint - принтер, печатающий видео
+                                    p Живые фото из Гарри Поттера теперь существуют!
+                                ul.blog--date
+                                    li 17.02.2017
+                                    li
+                                        include svgs/eye.svg
+                                        | 125
+                                span.link-more More
+                        .col-lg-5.col-sm-8.grid-item
+                            a(href='blogin.html' title='').blog
+                                .blog--image
+                                    img(src='img/blog/blog2.png' title='')
+                                .blog--text
+                                    h3 Lifeprint - принтер, печатающий видео
+                                    p Создатели хоррор-игры Outlast 2 разработали специальные трусы-подгузники, призванные спасти чувство собственного достоинства и любимое нижнее белье от риска быть испачканным во время жутких и неожиданных игровых сцен
+                                ul.blog--date
+                                    li 17.02.2017
+                                    li
+                                        include svgs/eye.svg
+                                        | 125
+                                span.link-more More

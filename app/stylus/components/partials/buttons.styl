@@ -1,28 +1,6 @@
 @import "../../utilities/vars"
 @import "../../utilities/mixins"
 
-button
-  border none
-  cursor pointer
-  background $trans
-  line-height: 1.13;
-  font-size 1.875em
-  color $white
-  display flex
-  float right
-  padding 0
-  trans()
-  span
-    padding $s6 0
-    margin-right $s32
-  svg
-    trans()
-  &:hover
-    svg
-      transform translate3d(50px, 0, 0)
-  &:focus
-    outline none
-
 .btn
   display block
   max-width 320px
@@ -38,3 +16,46 @@ button
 
 .btn-center
   mcenter()
+
+.btn-send
+  border none
+  cursor default
+  background $trans
+  line-height: 1.13;
+  font-size 1.875em
+  color $white
+  display flex
+  float right
+  padding 0
+  trans()
+  &:focus
+    outline none
+
+  &--text
+    padding $s6 0
+    margin-right $s32
+  &--icon
+    width 68px
+    height 60px
+    overflow hidden
+    svg
+      float right
+      #rect
+        fill #de0f72
+        trans()
+      #arrow1
+        fill #fd5fab
+        trans()
+      #arrow2
+        trans()
+
+.form-hire.success
+  .btn-send
+    cursor pointer
+    &--icon
+      svg
+        #arrow1
+          fill $white
+    &:hover
+      .btn-send--icon svg #arrow1, .btn-send--icon svg #arrow2
+        transform translate3d(49px, 0, 0)

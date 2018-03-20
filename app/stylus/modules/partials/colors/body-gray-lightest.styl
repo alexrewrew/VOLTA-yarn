@@ -43,9 +43,21 @@
       color $gray-lightdark
 
   .blog:after
-    background $gray-lightdark
+    background #b9b9b9
 
   .blog--date li
     color: $gray-lighter
     svg g
       fill $gray-lighter
+
+  .select-lang
+    .chosen-container .chosen-single span, .chosen-container-single .chosen-drop .chosen-results .active-result
+      color $gray-light
+    .chosen-container-single .chosen-drop .chosen-results .active-result.highlighted
+      color $pink
+    .chosen-container:after
+      triangle($gray-light, down, 5px)
+
+  .blog--text h3, .blog--text p
+    color $white
+

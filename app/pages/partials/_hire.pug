@@ -6,20 +6,32 @@
                 include ../svgs/arrow-right-big.svg
     .link-hire--step#step2
         form.form-hire
-            .select-group.error
+            .select-group
                 select.chosen-select(data-placeholder='What can we help you with?')#select-hire
                     option(disabled selected)
                     option Web design & Development
                     option Branding & identity development
                     option Marketing & analyst
                     option Mobile app development
-            input(type='text' placeholder='Your name').error
-            input(type='mail' placeholder='Enter your e-mail')
-            textarea(placeholder='A brief intro to your project').error
+
+            .input-group
+                input(type='text' placeholder='Your name').error
+                .input-shadow
+
+            .input-group
+                input(type='mail' placeholder='Enter your e-mail')
+                .input-shadow
+
+            .textarea-group
+                textarea(placeholder='A brief intro to your project')
+                .input-shadow
+
             .form-submit
-                button(type='submit')
-                    span send
-                    include ../svgs/send.svg
+                button(type='submit').btn-send
+                    .btn-send--text send
+                    .btn-send--icon
+                        include ../svgs/send3.svg
+
     .link-hire--step#step3
         .link-hire--text
             img(src='img/icons/mail.svg' title='')

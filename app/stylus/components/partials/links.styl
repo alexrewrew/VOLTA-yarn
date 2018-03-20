@@ -110,6 +110,8 @@ a
   line-height: 1.4;
   &:hover
     color $pink-dark
+  +mobile()
+    float none
 
 .link-more
   display inline-block
@@ -126,6 +128,8 @@ a
     opacity 1
   +mobile()
     opacity 1
+    font-size $f24
+    padding $s7 0
   +landscape()
     right 30px
   &:after

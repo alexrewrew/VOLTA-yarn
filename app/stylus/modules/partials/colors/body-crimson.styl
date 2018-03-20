@@ -35,3 +35,11 @@
     .link-logo
       svg g
         fill $white
+
+.select-lang
+  .chosen-container .chosen-single span, .chosen-container-single .chosen-drop .chosen-results .active-result
+    color $crimson
+  .chosen-container-single .chosen-drop .chosen-results .active-result.highlighted
+    color $pink
+  .chosen-container:after
+    triangle($crimson, down, 5px)

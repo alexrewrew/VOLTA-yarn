@@ -43,3 +43,11 @@
     color: $lemon-darker
     svg g
       fill $lemon-darker
+
+  .select-lang
+    .chosen-container .chosen-single span, .chosen-container-single .chosen-drop .chosen-results .active-result
+      color $lemon
+    .chosen-container-single .chosen-drop .chosen-results .active-result.highlighted
+      color $pink
+    .chosen-container:after
+      triangle($lemon, down, 5px)

@@ -14,7 +14,7 @@ block content
     section.section-filter
         .container
             .row.justify-content-center
-                .col-md-8.col-9
+                .col-md-8
                     ul.ul-filter
                         li
                             a(href='' title='').active Design
@@ -24,38 +24,44 @@ block content
                             a(href='' title='') SMM
                         li
                             a(href='' title='') Production
-                .col-md-2.col-3
+                .col-md-2
                     a(href='' title='').link-all Все
 
 
 
     section.section-last
-        a(href='#' title='' target='_blank').portfolio.portfolio-left.portfolio-color-purple
-            .container
-                .row.justify-content-md-center
-                    .col-md-10.col-lg-5.col-xl-6.col-left
-                        img(src='img/illus/illus4.png' title='' alt='').portfolio--image
-                    .col-sm-8.col-md-10.col-lg-5.col-xl-4.col-right
-                        h3 Мы Volta — киевское агентство цифровых коммуникаций
-                        span.link-inner.link-inner-small View more
-                            include svgs/arrow-right-small.svg
-                        .portfolio-marker Design
-            .portfolio--viewport
-                img(src='img/illus/illus4a.svg' title='' alt='').portfolio--viewport-image
 
+        .portfolio.portfolio-color-yellow
+            .portfolio--front
+                a(href='' title='' target='_blank').container.portfolio--front-link
+                    .row.justify-content-center
+                        .col-xl-6.col-lg-5.col-md-10.col-left
+                            img(src='img/illus/illus2.png' title='' alt='').portfolio--front-image
+                        .col-xl-4.col-lg-5.col-md-10.col-right
+                            .portfolio--front-description
+                                h3 Мы Volta — киевское агентство цифровых коммуникаций
+                                span.link-inner.link-inner-small View more
+                                    include svgs/arrow-right-small.svg
+                                .portfolio--front-description--marker Design
+            .portfolio--back
+                .portfolio--back-viewport
+                    img(src='img/illus/illus2a.svg' title='').portfolio--back-viewport--image
 
-        a(href='#' title='' target='_blank').portfolio.portfolio-color-green
-            .container
-                .row.justify-content-md-center
-                    .col-md-10.col-lg-5.col-xl-6.col-left
-                        img(src='img/illus/illus5.png' title='' alt='').portfolio--image
-                    .col-sm-8.col-md-10.col-lg-5.col-xl-4.col-right
-                        h3 Мы Volta — киевское агентство цифровых коммуникаций
-                        span.link-inner.link-inner-small View more
-                            include svgs/arrow-right-small.svg
-                        .portfolio-marker SMM
-            .portfolio--viewport
-                img(src='img/illus/illus5a.svg' title='' alt='').portfolio--viewport-image
+        .portfolio.portfolio-color-gray-dark.portfolio-left
+            .portfolio--front
+                a(href='' title='' target='_blank').container.portfolio--front-link
+                    .row.justify-content-center
+                        .col-xl-6.col-lg-5.col-md-10.col-left
+                            img(src='img/illus/illus3.png' title='' alt='').portfolio--front-image
+                        .col-xl-4.col-lg-5.col-md-10.col-right
+                            .portfolio--front-description
+                                h3 Мы Volta — киевское агентство цифровых коммуникаций
+                                span.link-inner.link-inner-small View more
+                                    include svgs/arrow-right-small.svg
+                                .portfolio--front-description--marker SMM
+            .portfolio--back
+                .portfolio--back-viewport
+                    img(src='img/illus/illus3a.svg' title='').portfolio--back-viewport--image
 
 
 

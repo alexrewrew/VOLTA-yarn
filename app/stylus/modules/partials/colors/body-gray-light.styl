@@ -42,3 +42,11 @@
     color: $gray-lighter
     svg g
       fill $gray-lighter
+
+  .select-lang
+    .chosen-container .chosen-single span, .chosen-container-single .chosen-drop .chosen-results .active-result
+      color $gray-light
+    .chosen-container-single .chosen-drop .chosen-results .active-result.highlighted
+      color $pink
+    .chosen-container:after
+      triangle($gray-light, down, 5px)

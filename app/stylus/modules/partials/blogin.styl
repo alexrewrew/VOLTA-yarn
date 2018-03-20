@@ -1,9 +1,13 @@
 .blogin-rubric
   display flex
-  margin-bottom 21px
+  margin-bottom $s21
+  +mobile()
+    margin-bottom $s15
   li
-    margin-right 30px
+    margin-right $s30
     color #868686
+    +mobile()
+      margin-right $s15
     a
       font-weight 700
 
@@ -11,18 +15,20 @@
   display flex
   justify-content flex-end
   align-items center
-  margin-bottom 21px
+  margin-bottom $s21
   +mobile()
-    justify-content flex-start
-  +landscape()
-    justify-content flex-end
+    justify-content space-between
+    flex-wrap wrap
+    margin-bottom 53px
   li
     font-size $f12
     color #868686
     display flex
     font-family $sl-font, $s-font, sans-serif
-    margin-left 26px
-    padding-top 1px
+    margin-left $s26
+    padding-top $s1
+    +mobile()
+      margin-left 0
     svg
       margin-right 10px
       g
@@ -32,6 +38,9 @@
       margin-left 0
       font-size $f16
       font-family $m-font, $s-font, sans-serif
+      +mobile()
+        width 100%
+        margin-bottom $s15
 
 .blogin-image
   display flex
@@ -40,6 +49,9 @@
   height 230px
   overflow hidden
   margin-bottom 70px
+  +mobile()
+    height 165px
+    margin-bottom 60px
   img
     width 100%
     +mobile()
@@ -55,13 +67,15 @@
     line-height: 1.78;
     color $pink
     background $white
-    margin-right 30px
+    margin-right $s30
     width 68px
     height 35px
     display flex
     align-items center
     justify-content center
     flex-shrink 0
+    +mobile()
+      margin-right 15px
   &--list
     display flex
     flex-direction row
@@ -90,6 +104,18 @@
     flex-wrap: wrap;
   +mobile()
     flex-wrap: wrap;
+    padding $s10 0 $s40
+    position relative
+    z-index 30
+    margin-bottom 150px
+    &:after
+      pseudo(block, absolute)
+      left -15px
+      right -15px
+      top 0
+      bottom 0
+      background $white
+      z-index -1
   +landscape()
     flex-wrap nowrap
   &--heading
@@ -100,7 +126,9 @@
     display flex
     align-items center
     +mobile()
-      padding 0 $s15
+      padding 0
+      margin-bottom $s10
+      width 100%
   &--image
     width: 68px;
     height: 68px;
@@ -122,11 +150,11 @@
     max-width: 337px;
     width: 100%;
     +mobile()
-      padding 0 $s15
-      max-width: 47%;
+      padding 0 $s30
+      max-width: calc(100% - 68px)
 
     &-name
-      font-size: 1em
+      font-size: $f16
       line-height: 1.44;
       color: #3f3c41;
       width 100%
@@ -150,15 +178,15 @@
     +portrait()
       margin-top $s30
     +mobile()
-      margin-top $s30
-      padding 0 $s15
+      margin-top $s18
+      padding 0
     +landscape()
       margin-top 0
     &-heading
       display flex
       align-items center
       +mobile()
-        font-size $f14
+        font-size $f16
       svg
         margin-left $s27
         +mobile()
@@ -172,7 +200,7 @@
       +portrait()
         padding: $s6 $s34 0;
       +mobile()
-        padding-left $s6
+        padding-left $s15
         padding-right $s6
       li
         margin 0 $s9
@@ -185,67 +213,3 @@
           &:hover
             svg g
               fill $pink
-
-.blog-small
-  display flex
-  position relative
-  z-index 20
-  padding-bottom $s15
-  +mobile()
-    margin-bottom $s50
-  &--image
-    display flex
-    align-items center
-    justify-content center
-    overflow hidden
-    height 92px
-    width 165px
-    margin $s15 0
-    position relative
-    +portrait()
-      width 125px
-    +mobile()
-      width 125px
-    img
-      width 100%
-
-  &--text
-    width calc(100% - 165px)
-    padding: $s9 0 $s9 $s28
-    +portrait()
-      width calc(100% - 125px)
-      padding-left $s15
-
-    +mobile()
-      width calc(100% - 125px)
-      padding-left $s15
-
-  .link-more
-    right auto
-    left 0
-    bottom auto
-    top 128px
-    +portrait()
-      top 110px
-    +mobile()
-      top 110px
-
-  &:after
-    pseudo(block, absolute)
-    background $trans
-    right -12px
-    top 0
-    bottom 11px
-    left 22.5%
-    z-index -1
-    trans()
-    +portrait()
-      background $white
-    +mobile()
-      background $white
-
-  &:hover
-    &:after
-      background $white
-    .link-more
-      opacity 1

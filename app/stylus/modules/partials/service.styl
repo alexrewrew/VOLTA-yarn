@@ -5,14 +5,22 @@
   &:last-child
     margin-bottom: 80px;
   +mobile()
-    margin-bottom 100px
+    margin-bottom 130px
+  h3
+    +mobile()
+      font-size $s30
+      line-height 1.13
+      margin-bottom $s35
   &--image
     display block
     margin 11px auto
     +mobile()
       margin-bottom 50px
+      margin-top 0
   &--capabilities
     padding-top 8px
+    +mobile()
+      padding-top 0
     ul
       display flex
       flex-wrap wrap
@@ -26,9 +34,6 @@
         +mobile()
           flex 1 1 100%
           max-width 100%
-        +landscape()
-          flex 1 1 50%
-          max-width 50%
         &:before
           pseudo(block, absolute)
           width 10px
@@ -43,19 +48,11 @@
     posn(-85px,4.55%,-68px,4.55%)
     background $malina-dark
     z-index -1
-    //
-    //opacity 0
     height 0
-    //
     trans()
 
   &:hover
     .service--viewport
-      //
-      //opacity 1
       height calc(100% + 85px + 68px)
-      //
       +mobile()
-        //
-        //opacity 0
         height 0

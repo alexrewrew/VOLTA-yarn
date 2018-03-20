@@ -10,6 +10,8 @@ blockquote
   font-size $f16
   margin 72px 0
   z-index 20
+  +mobile()
+    padding 90px 0
   &:before, &:after
     position absolute
     display block
@@ -19,6 +21,9 @@ blockquote
     font-size 7em
     top 10px
     left 15px
+    +mobile()
+      left 0
+      top 16px
   &:after
     content ''
     background $white
