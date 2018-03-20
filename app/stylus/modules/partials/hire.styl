@@ -8,13 +8,16 @@
   position relative
   trans()
   +mobile()
-    min-height: 450px;
+    min-height: 255px;
+    margin: 10px 15px;
   &:hover
     background #C20C63
     box-shadow: 0 8px 20px 0 #C20C63;
     h2
       svg
         transform translate3d(50px, 0, 0)
+        +mobile()
+          transform translate3d(10px, 0, 0)
   &--text
     p
       font-size: 1.75em
@@ -22,6 +25,8 @@
       text-align: center
       color: #ffaed5;
       margin-bottom 0
+      +mobile()
+        font-size $f20
     h2
       font-size: 5em
       font-weight: 500;
@@ -33,11 +38,14 @@
       +mobile()
         flex-wrap wrap
         justify-content center
+        font-size $f46
       svg
         margin-left 33px
         position relative
         top 5px
         trans()
+        +mobile()
+          width 35px
     h3
       font-size 1.75em
       font-weight 500

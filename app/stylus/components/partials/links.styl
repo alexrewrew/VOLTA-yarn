@@ -39,21 +39,33 @@ a
   letter-spacing: 1px;
   display inline-block
   margin-bottom $s18
+  color $pink
+  cursor pointer
   trans()
+  +mobile()
+    font-size $s24
   svg
     margin-left $s30
     position relative
     top 4px
+    trans()
     g
+      trans()
       fill $pink
   &:hover
-    letter-spacing 3px
+    color $pink-hover
+    svg
+      margin-left 3.750em
+      g
+        fill $pink-hover
 
 .link-inner-small
   font-size 1.25em
+  +mobile()
+    font-size $s24
   svg
     top 2px
-    margin-left $s10
+    margin-left $s18
 
 .link-slider
   margin-left 35%

@@ -1,60 +1,68 @@
-.jumbotron
-  padding 63px 0 53px
-  display block
-  position relative
-  z-index 10
-  min-height 500px
+.portfolio.jumbotron
+  height 500px
+  +portrait()
+    padding-top 60px
   +mobile()
-    min-height unset
-  &--viewport
-    position absolute
+    height 345px
+    padding-top 46px
+  +landscape()
+    padding-top: 37px;
+    height: 436px;
+  .portfolio--back
     top 0
     bottom 0
-    left 43%
-    right: 4.6%;
+    left: 39.6vw;
+    right 4.2vw
+    +portrait()
+      left 4.2vw
+    +mobile()
+      bottom 0
+      left 0
+      right 0
+      top 0
+  .portfolio--back
     background $purple-dark
-    z-index -1
-    trans()
-    +portrait()
-      left 4.6%
-    +mobile()
-      left 0
-      right 0
-  &--image
-    position relative
-    left: -13.4%;
-    top 0
-    trans()
-    +tablet()
-      max-width: 585px
-    +portrait()
-      left 0
-      mcenter()
-      display block
-      margin-bottom $s30
-    +mobile()
-      max-width: 520px;
+  .portfolio--front-image
+    top: 12.5%;
+    left: -10.4%;
+    width 599px
+    max-width unset
+    +custom-max(991px)
+      position static
       width 100%
-      left 0
-      mcenter()
-      display block
-  .link-inner
-    +portrait()
-      display flex
-      justify-content center
     +mobile()
-      margin-left 15px
-      margin-top $s18
-  &:hover
-    .jumbotron--image
-        transform translate3d(0, -20px, 0)
-    .jumbotron--viewport
+      max-width: 345px;
+      margin: 0 auto;
+      display: block;
+    +landscape()
+      max-width: 500px;
+      margin: 0 auto;
+
+  .portfolio--front-description
+    height 500px
+    +portrait()
+      height 100px
+    +mobile()
+      height: auto
+      padding-top: 15px;
+    .link-inner
+      position absolute
+      left 0
+      bottom: 30px
+      +mobile()
+        position static
+
++custom-max(991px)
+  .portfolio.jumbotron
+    .col-left
+      order 2
+    .col-right
+      order 1
+
++mobile()
+  .portfolio.jumbotron.active
+    .portfolio--back
+      bottom 0
       left 0
       right 0
-      top -56px
-      bottom -16px
-      +mobile()
-        top -46px
-        bottom -6px
-    .link-inner
-      letter-spacing 3px
+      top 0

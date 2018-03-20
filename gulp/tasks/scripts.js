@@ -13,11 +13,7 @@ module.exports = function () {
             // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
             // 'node_modules/nouislider/distribute/nouislider.js',
             // 'node_modules/wnumb/wNumb.js',
-            // 'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
-            // 'node_modules/fullpage.js/vendors/jquery.easings.min.js',
-            // 'node_modules/fullpage.js/vendors/scrolloverflow.js',
-            // 'node_modules/fullpage.js/dist/jquery.fullpage.js',
-            // 'node_modules/jquery-slimscroll/jquery.slimscroll.js',
+            // 'node_modules/jquery.maskedinput/src/jquery.maskedinput.js'
             'node_modules/bowser/bowser.js'
         ])
             .pipe($.concat('vendor.js'))
@@ -44,6 +40,7 @@ module.exports = function () {
         return $.gulp.src('app/js/*.js')
             .pipe($.sourcemaps.init())
             .pipe($.uglify())
+            .pipe($.strip.text())
             .pipe($.sourcemaps.write())
             .pipe($.gulp.dest('dist/js'));
     });

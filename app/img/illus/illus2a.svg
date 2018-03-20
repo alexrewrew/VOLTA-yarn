@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="662px" height="695px" viewBox="0 0 662 695" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <title>Path 12</title>
+<svg width="556px" height="560px" viewBox="0 0 556 560" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>BG_1</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Path-12" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-88.000000, -106.000000)">
-        <path d="M405.154806,811.325796 C236.396347,792.785136 140.354679,690.429602 108.22068,547.989461 C76.0866807,405.54932 129.304346,83.2421691 329.062329,75.5215881 C528.820313,67.8010072 378.318359,373.21039 593.264626,456.485223 C756.338923,519.663734 758.953252,850.195888 405.154806,811.325796 Z" fill="#FFC82A" transform="translate(399.473026, 444.935417) rotate(-18.000000) translate(-399.473026, -444.935417) "></path>
+    <g id="BG_1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M266.109311,618.548312 C131.882865,602.448955 55.5615661,516.472933 21.9195933,399.299887 C3.77260694,336.094984 7.87732028,244.365211 34.5039019,161.355647 C63.8990453,69.714968 120.121636,-6.44806065 202.121811,-0.202367883 C358.399028,11.7007713 243.542071,250.129373 424.294161,320.156643 C561.426202,373.284562 563.400748,654.205971 266.109311,618.548312 Z" id="Path-12-Copy" fill="#FFC82A" transform="translate(262.170243, 310.552236) rotate(-18.000000) translate(-262.170243, -310.552236) "></path>
     </g>
 </svg>

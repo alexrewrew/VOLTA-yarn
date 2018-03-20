@@ -1,144 +1,139 @@
 .portfolio
-  display block
   position relative
   z-index 30
-  margin-bottom 131px
-  padding-bottom: 99px;
-  height 439px
-  +tablet()
-    height 380px
-  +portrait()
-    margin-bottom 150px
-  +mobile()
-    margin-bottom 102px
-  +landscape()
-    height: 422px;
-  h3
-    margin-bottom $s48
-    +mobile()
-      margin-bottom $s30
-  &--viewport
-    position absolute
-    top: 52px;
-    left: 4.6%;
-    right: 18.2%;
-    bottom: 0;
-    overflow hidden
-    z-index -1
-    trans()
-    &-image
-      position: absolute;
-      left: 6.5%;
-      top: -101px;
-      trans()
-    +portrait()
-      right 4.6%
-    +mobile()
-      left 0
-      right 0
-      top: 36px;
-  &--image
-    position absolute
-    top: -9px;
-    left: 7.2%;
-    max-width 100%
-    trans()
-
-    +tablet()
-      left 0
-    +portrait()
-      position static
-      display block
-      height 340px
-      mcenter()
-    +mobile()
-      position static
-      width auto
-      max-height 222px
-      mcenter()
-      display block
-  &-marker
-    color $white
-    font-size $f20
-    font-family $sl-font, $s-font, sans-serif
-    position absolute
-    right 15px
-    bottom -208px
-    +tablet()
-      bottom -150px
-    +portrait()
-      bottom 25px
-    +mobile()
-      left 30px
-      bottom -270px
-
-
-  +mobile()
+  height 560px
+  margin-bottom 100px
+  +custom-max(991px)
     .col-left
       order 2
     .col-right
       order 1
-
-  &:hover
-    .portfolio--image
-      transform translate3d(0, 60px, 0)
+  +mobile()
+    margin-bottom 57px
+  &--front
+    &-link
+      display block
+    &-image
+      position: absolute;
+      top: 0
+      left: 3.6%;
+      max-width 457px
+      width 100%
       +portrait()
-        transform translate3d(0, -60px, 0)
+        top: -60px;
       +mobile()
-        transform none
-    .portfolio--viewport
+        top: -40px;
+        width: 320px
+        max-width: unset;
+        left: calc(50% - 160px);
+        right: calc(50% - 160px);
+      +landscape()
+        width: 400px;
+        left: calc(50% - 200px);
+        right: calc(50% - 200px);
+    &-description
+      padding-top: 125px;
+      position relative
+      height 560px
+      +custom-max(991px)
+        padding-top 0
+        height auto
+      h3
+        margin-bottom $s43
+        +portrait()
+          height: 66px;
+        +mobile()
+          height: 90px;
+          font-size $s24
+          line-height: 1.25;
+        +landscape()
+          height 60px
+
+      &--marker
+        color $white
+        font-size: $s20
+        font-weight: 500;
+        line-height: 1.15;
+        font-family $sl-font, sans-serif
+        position absolute
+        bottom: 125px;
+        left 0
+        +custom-max(991px)
+          bottom: -400px;
+          right 0
+          left auto
+        +mobile()
+          bottom: -350px;
+
+  &--back
+    position absolute
+    top 16%
+    left 4.2vw
+    right 4.2vw
+    bottom 16%
+    z-index -1
+    overflow hidden
+    trans()
+    +portrait()
+      top: 22%;
+      bottom: 10%;
+    +mobile()
       left 0
       right 0
-      top -100px
-      bottom -60px
-      +portrait()
-        top -70px
-      +mobile()
-        top: 36px;
-        bottom 0
-    .portfolio--viewport-image
-      transform translate3d(120px, 0, 0)
-      +mobile()
-        transform translate3d(20px, 0, 0)
-    .link-inner
-      letter-spacing 3px
+      top 29%
+      bottom: 13.85%;
+    &-viewport
+      width 1072px
+      margin 0 auto
+      position relative
+      height 100%
+      &--image
+        position absolute
+        top calc(50% - 280px)
+        bottom calc(50% - 280px)
+        left 6%
+  .link-inner-small
+    +portrait()
+      position: absolute;
+      bottom: -420px;
+    +mobile()
+      position: absolute;
+      bottom: -370px;
 
 .portfolio.portfolio-left
   .col-left
     order 2
-    +portrait()
-      order 1
   .col-right
     order 1
-    +portrait()
-      order 2
-  .portfolio--viewport
-    right: 4.6%
-    left: 18.2%;
-    +portrait()
-      left 4.6%
+  .portfolio--back-viewport--image
+    left auto
+    right 6%
+  .portfolio--front-image
+    left: 17.5%
+    +mobile()
+      left: calc(50% - 160px);
+    +landscape()
+      left: calc(50% - 200px);
+
+.portfolio.active
+  .portfolio--back
+    top: 0
+    bottom: 0
+    left 1.6vw
+    right 1.6vw
     +mobile()
       left 0
       right 0
-  .portfolio--viewport-image
-    left auto
-    right: 24%;
-    top -147px
-  .portfolio--image
-    left auto
-    right 7.2%;
-    +tablet()
-      right 0
-  .portfolio-marker
-    left 15px
-    right auto
+      top 29%
+      bottom: 13.85%;
     +portrait()
-      left auto
-      right 15px
-    +mobile()
-      left 30px
-      right auto
-  &:hover
-    .portfolio--viewport
-      left 0
-      right 0
+      top: 22%;
+      bottom: 10%;
+      left 4.2vw
+      right 4.2vw
+  .link-inner
+    color $pink-hover
+    svg
+      margin-left 2.25em
+      g
+        fill $pink-hover

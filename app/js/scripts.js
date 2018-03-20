@@ -108,6 +108,16 @@
         // new WOW().init();
         // AOS.init();
 
+        // ========== PORTFOLIO LINK ==========
+
+        var portfolio= function() {
+            $(this).parent().parent().toggleClass('active');
+        };
+
+        $('.portfolio--front-link').hover(portfolio);
+
+
+
         // ========== SCROLLSPY ==========
 
         // ----- SCROLLING CLASS CHANGE -----

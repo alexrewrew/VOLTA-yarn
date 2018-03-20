@@ -42,13 +42,17 @@
   .arrow.right
     left 48px
     +mobile()
-      right 23%
+      right 6%
       left auto
   .slide
     padding-top $s19
+    +mobile()
+      padding-top $s5
     h3
       +mobile()
         margin-bottom 110px
+        max-width: 82%;
+        height 48px
     &:focus
       outline none
 

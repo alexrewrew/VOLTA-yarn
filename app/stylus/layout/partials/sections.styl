@@ -94,21 +94,23 @@ canvas
   position relative
   z-index 3
   padding-bottom 0
-  background transparent
-  margin-bottom 10px
-
+  background $trans
 
 .content
   margin-bottom 0
-  +custom-min(1920px)
-    mcenter()
-    max-width: 1920px;
 
 .section-last
   padding-bottom 77px
 
+.section-slider
+  padding-bottom: 183px;
+  +mobile()
+    padding-bottom 108px
+
 .section-portfolio
   padding-bottom 103px
+  +mobile()
+    padding-bottom 3px
 
 .section-blog
   padding-bottom 8px

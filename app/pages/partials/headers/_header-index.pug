@@ -4,15 +4,15 @@ header.header-index
             .offset-md-1.col-md-9
                 h1 We are VOLTA - a marketing driven digital production
 
-    a(href='portfolio.html' title='').jumbotron
-        .container
-            .row.justify-content-center
-                .col-lg-4.order-2.order-lg-1.align-self-end
-                    span.link-inner View portfolio
-                        include ../../svgs/arrow-right.svg
-                .col-lg-6.order-1.order-lg-2
+    .portfolio.jumbotron
+        .portfolio--front
+            a(href='' title='').container.portfolio--front-link
+                .row.justify-content-center
+                    .col-lg-4.col-md-10.col-left
+                        .portfolio--front-description
+                            span.link-inner View portfolio
+                                include ../../svgs/arrow-right.svg
+                    .col-lg-6.col-md-10.col-rght
+                        img(src='img/illus/illus1.png' title='' alt='').portfolio--front-image
 
-                    img(src='img/illus/illus1.png' title='' alt='').jumbotron--image
-        .jumbotron--viewport
-            .jumbotron--viewport-back
-            img(src='' title='' alt='').jumbotron--viewport-image
+        .portfolio--back
