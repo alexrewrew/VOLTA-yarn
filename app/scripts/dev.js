@@ -110,12 +110,11 @@
 
         // ========== PORTFOLIO LINK ==========
 
-        var portfolio= function() {
+        var portfolio = function () {
             $(this).parent().parent().toggleClass('active');
         };
 
         $('.portfolio--front-link').hover(portfolio);
-
 
 
         // ========== SCROLLSPY ==========
@@ -161,6 +160,25 @@
             $('.nav-panel').appendTo('#nav-desktop');
             $('.nav-lang').appendTo('#nav-desktop');
             $('#select-hire option:first-child').text('');
+        }
+
+        if (window.matchMedia("(min-width: 992px)").matches) {
+            var gridItems = $('.blog');
+            var max = $(gridItems[0]).outerHeight();
+
+            for (var i = 0; i < gridItems.length; i++) {
+                if (max < $(gridItems[i]).outerHeight()) {
+                    max = $(gridItems[i]).outerHeight();
+                }
+            }
+
+            if (gridItems.length === 1 || gridItems.length === 2) {
+                $('.grid').css('max-height', max + 100);
+            } else if (gridItems.length === 3 || gridItems.length === 4) {
+                $('.grid').css('max-height', (max * 2) + 100);
+            } else if (gridItems.length === 5 || gridItems.length === 6) {
+                $('.grid').css('max-height', (max * 3) + 100);
+            }
         }
     });
 })();
