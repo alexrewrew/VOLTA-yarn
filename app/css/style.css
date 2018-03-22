@@ -1,3 +1,14 @@
+#preloader-load {
+	display: block;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 197px;
+	background: #fff url('../img/logo/volta-logo1.svg') center center no-repeat;
+}
 /* Cera */
 
 /* normal */
@@ -218,16 +229,13 @@
 /* 800 */
 
 /* 900 */
-html {
-	font-size: 16px;
-}
 html, body {
 	overflow-x: hidden;
+	font-size: 16px;
 }
 body {
-	font-size: 16px;
-	font-weight: 400;
 	line-height: normal;
+	font-weight: 400;
 	color: #000;
 	font-family: 'Cera', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background: #fff;
@@ -373,12 +381,6 @@ p {
 	line-height: 1.44;
 	margin-bottom: 1.875rem;
 }
-.paragraph-lead {
-	font-size: 1.25rem;
-}
-.paragraph-small {
-	font-size: .875rem;
-}
 hr {
 	border: none;
 	height: 1px;
@@ -472,8 +474,7 @@ article ul, article ol {
 }
 article ul li, article ol li {
 	position: relative;
-	padding-left: 2.125rem;
-	padding-right: .938rem;
+	padding: 0 .938rem 0 2.125rem;
 	margin-bottom: .375rem;
 	color: #3f3c41;
 	line-height: 1.63;
@@ -3747,13 +3748,6 @@ body.msie .link-logo {
 	background: #7521e1;
 }
 .body-crimson #preloader-load {
-	display: block;
-	position: fixed;
-	z-index: 99999;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	background: #fff url('../img/logo/volta-logo4.svg') center center no-repeat;
 	background-size: 197px;
 }
@@ -3797,13 +3791,6 @@ body.msie .link-logo {
 	border-top: 5px solid #e54646;
 }
 .body-gray-darker #preloader-load {
-	display: block;
-	position: fixed;
-	z-index: 99999;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	background: #fff url('../img/logo/volta-logo2.svg') center center no-repeat;
 	background-size: 197px;
 }
@@ -3847,13 +3834,6 @@ body.msie .link-logo {
 	border-top: 5px solid #2e2e2e;
 }
 .body-gray-light #preloader-load {
-	display: block;
-	position: fixed;
-	z-index: 99999;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	background: #fff url('../img/logo/volta-logo6.svg') center center no-repeat;
 	background-size: 197px;
 }
@@ -3906,13 +3886,6 @@ body.msie .link-logo {
 	border-top: 5px solid #605c65;
 }
 .body-gray-lightest #preloader-load {
-	display: block;
-	position: fixed;
-	z-index: 99999;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	background: #fff url('../img/logo/volta-logo7.svg') center center no-repeat;
 	background-size: 197px;
 }
@@ -3974,13 +3947,6 @@ body.msie .link-logo {
 	color: #3f3c41;
 }
 .body-lemon #preloader-load {
-	display: block;
-	position: fixed;
-	z-index: 99999;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	background: #fff url('../img/logo/volta-logo5.svg') center center no-repeat;
 	background-size: 197px;
 }
@@ -4033,13 +3999,6 @@ body.msie .link-logo {
 	border-top: 5px solid #edbd05;
 }
 .body-malina #preloader-load {
-	display: block;
-	position: fixed;
-	z-index: 99999;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	background: #fff url('../img/logo/volta-logo3.svg') center center no-repeat;
 	background-size: 197px;
 }
@@ -4083,13 +4042,6 @@ body.msie .link-logo {
 	border-top: 5px solid #ad2f6b;
 }
 .body-purple #preloader-load {
-	display: block;
-	position: fixed;
-	z-index: 99999;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	background: #fff url('../img/logo/volta-logo1.svg') center center no-repeat;
 	background-size: 197px;
 }
@@ -4133,13 +4085,6 @@ body.msie .link-logo {
 	border-top: 5px solid #7521e1;
 }
 .body-purple-darker #preloader-load {
-	display: block;
-	position: fixed;
-	z-index: 99999;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	background: #fff url('../img/logo/volta-logo8.svg') center center no-repeat;
 	background-size: 197px;
 }
