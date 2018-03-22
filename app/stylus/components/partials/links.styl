@@ -55,7 +55,7 @@ a
   &:hover
     color $pink-hover
     svg
-      margin-left 3.750em
+      margin-left 2.75rem
       g
         fill $pink-hover
 
@@ -65,7 +65,10 @@ a
     font-size $s24
   svg
     top 2px
-    margin-left $s18
+    margin-left 2.75rem
+  &:hover
+    svg
+      margin-left 3.625rem
 
 .link-slider
   margin-left 35%
@@ -108,10 +111,28 @@ a
   float right
   color $pink-darker
   line-height: 1.4;
+  display inline-block
+  padding-bottom $s6;
+  position relative
   &:hover
     color $pink-dark
   +mobile()
     float none
+  &:after
+    pseudo(block, absolute)
+    height 3px
+    bottom 0
+    left 0
+    right 0
+    background $pink-darker
+    width 0
+    trans()
+  &:hover
+    &:after
+      width 100%
+
+
+
 
 .link-more
   display inline-block

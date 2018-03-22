@@ -1,6 +1,7 @@
 .link-hire
   height 100%
   background $pink-dark;
+  //background #fd1785
   box-shadow: 0 8px 50px 0 $pink-dark;
   min-height 400px
   margin-top $s20
@@ -24,8 +25,8 @@
       font-size: 1.75em
       line-height: 1.21;
       text-align: center
-      color: #ffaed5;
-      margin-bottom 0
+      color: $pink-place
+      margin-bottom $s5
       +mobile()
         font-size $f20
     h2
@@ -34,8 +35,8 @@
       text-align center
       display: flex;
       align-items: center;
-      margin-bottom 0
       color $white
+      margin-bottom: $s40
       +mobile()
         flex-wrap wrap
         justify-content center
@@ -53,9 +54,12 @@
       text-align center
       +mobile()
         font-size: 1.5em;
-    img
+  #step3
+    svg
       display block
       margin 0 auto $s30
+      polygon, path
+        fill $pink-place
   &--close
     width 25px
     height 25px

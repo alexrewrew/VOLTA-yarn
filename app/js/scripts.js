@@ -100,7 +100,7 @@
             prevArrow: "<div class='arrow left'><img src='img/icons/angle-left.svg'></div>",
             nextArrow: "<div class='arrow right'><img src='img/icons/angle-right.svg'></div>",
             dots: false,
-            fade: true
+            // fade: true
         });
 
         // ========== ANIMATION ==========

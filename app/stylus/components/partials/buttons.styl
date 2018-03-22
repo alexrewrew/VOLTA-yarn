@@ -6,7 +6,6 @@
   max-width 320px
   width 100%
   text-align center
-  background blue
   color $white
   padding $s12 $s15 $s13
   margin-bottom $s15
@@ -32,7 +31,8 @@
     outline none
 
   &--text
-    padding $s6 0
+    padding $s13 0
+    font-weight 500
     margin-right $s32
   &--icon
     width 68px
@@ -41,13 +41,13 @@
     svg
       float right
       #rect
-        fill #de0f72
+        fill #da0068
         trans()
       #arrow1
-        fill #fd5fab
-        trans()
+        fill $pink-dark
+        transition none
       #arrow2
-        trans()
+        transition none
 
 .form-hire.success, .form-contactus.success
   .btn-send
@@ -58,7 +58,12 @@
           fill $white
     &:hover
       .btn-send--icon svg #arrow1, .btn-send--icon svg #arrow2
-        transform translate3d(49px, 0, 0)
+        transform translate3d(48px, 0, 0)
+      .btn-send--icon svg #arrow1
+        trans()
+      .btn-send--icon svg #arrow2
+        trans()
+        transition-delay .3s
 
 .form-contactus
   .btn-send
@@ -67,4 +72,4 @@
         #rect
           fill #541b9d
         #arrow1
-          fill $purple-lighter
+          fill $purple-darkest

@@ -35,7 +35,7 @@
     height auto
     border-radius 0
     border 0
-    border-bottom 2px solid #fd5fab
+    border-bottom 2px solid $pink-place
     background $trans
     box-shadow none
     trans()
@@ -94,15 +94,16 @@
       z-index -1
 
       height: 17px;
-      box-shadow: 0 2px 28px 0 #ae0a59;
+      box-shadow: 0 2px 28px 0 #af0054;
       border-radius 50%
-      background rgba(174, 10, 89, .5)
+      background rgba(175, 0, 84, .5)
 
     .active-result
       padding $s12 $s15 $s13
       font-size $f16
       line-height normal
-      background #ef2a88
+      //background #ef2a88
+      background $pink-dark
       trans()
     .active-result.highlighted
       background #fd5fab
@@ -124,7 +125,9 @@
 
 .select-lang
   max-width 68px
-  margin 0
+  margin 0 5px 0 0
+  float: right
+  width 100%
   +mobile()
     display none
   .chosen-container .chosen-single span
@@ -135,6 +138,12 @@
     line-height normal
     font-size $f14
     margin 0
+    trans()
+  .chosen-container
+    width 100% !important
+    &:hover
+      .chosen-single span
+        color $pink !important
   .chosen-container .chosen-single
     border-bottom 0
   .chosen-container-single .chosen-drop .chosen-results .active-result
