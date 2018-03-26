@@ -372,7 +372,7 @@ h6 {
 }
 @media (max-height: 320px) {
 	h6 {
-		font-size: 1.25rem;
+		font-size: 1.25em;
 	}
 }
 p {
@@ -671,7 +671,7 @@ nav.scroll {
 }
 @media (max-width: 767px) {
 	.menu li a {
-		font-size: 1.25rem;
+		font-size: 1.25em;
 		font-weight: 700;
 	}
 }
@@ -990,7 +990,7 @@ footer .menu-social {
 .pagination li a {
 	display: inline-block;
 	color: #fff;
-	font-size: 1.125rem;
+	font-size: 1.125em;
 	font-family: 'Gotham Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	padding: .313rem 0 .5rem;
 	position: relative;
@@ -1098,7 +1098,7 @@ a:hover, a:focus {
 }
 @media (max-width: 767px) {
 	.link-inner {
-		font-size: 1.5rem;
+		font-size: 1.5em;
 	}
 }
 .link-inner svg {
@@ -1129,7 +1129,7 @@ a:hover, a:focus {
 }
 @media (max-width: 767px) {
 	.link-inner-small {
-		font-size: 1.5rem;
+		font-size: 1.5em;
 	}
 }
 .link-inner-small svg {
@@ -2368,7 +2368,7 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 @media (max-width: 767px) {
 	.portfolio--front-description h3 {
 		height: 90px;
-		font-size: 1.5rem;
+		font-size: 1.5em;
 		line-height: 1.25;
 	}
 }
@@ -2379,7 +2379,7 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 }
 .portfolio--front-description--marker {
 	color: #fff;
-	font-size: 1.25rem;
+	font-size: 1.25em;
 	font-weight: 500;
 	line-height: 1.15;
 	font-family: 'Gotham Pro', sans-serif;
@@ -2723,7 +2723,7 @@ input.success::-webkit-input-placeholder, textarea.success::-webkit-input-placeh
 }
 @media (max-width: 767px) {
 	.service h3 {
-		font-size: 1.875rem;
+		font-size: 1.875em;
 		line-height: 1.13;
 		margin-bottom: 2.188rem;
 	}
