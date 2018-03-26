@@ -1658,10 +1658,10 @@ ul li, ol li {
 }
 @media (max-width: 767px) {
 	.form-hire .input-group {
-		-webkit-box-flex: 1;
-		-ms-flex: 1 1 100%;
-		    flex: 1 1 100%;
-		max-width: 100%;
+		-webkit-box-flex: 1 !important;
+		-ms-flex: 1 1 100% !important;
+		    flex: 1 1 100% !important;
+		max-width: 100% !important;
 	}
 }
 @media (max-device-width: 767px) and (orientation: landscape) {
@@ -1852,7 +1852,7 @@ select:focus {
 		border-right: 4px solid transparent;
 		border-top: 4px solid #000;
 		top: calc(50% - 5px);
-		right: 15px;
+		right: 5px;
 	}
 }
 .chosen-rtl .chosen-search input[type='text'], .chosen-container-single .chosen-single abbr, .chosen-container-single .chosen-single div b, .chosen-container-single .chosen-search input[type='text'], .chosen-container-multi .chosen-choices .search-choice .search-choice-close, .chosen-container .chosen-results-scroll-down span, .chosen-container .chosen-results-scroll-up span {

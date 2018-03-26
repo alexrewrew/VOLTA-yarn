@@ -90,13 +90,16 @@
         // ========== SLIDER ==========
 
         // ----- SLICK SLIDER COUNTER -----
-        $('.slider-full').on('init reInit afterChange', function (event, slick, currentSlide) {
+
+        var slider = $('.slider-full');
+
+        slider.on('init reInit afterChange', function (event, slick, currentSlide) {
             var i = (currentSlide ? currentSlide : 0) + 1;
             $('.slider-counter').html(i + '/' + slick.slideCount);
         });
 
         // ----- SLICK SLIDER -----
-        $(".slider-full").slick({
+        slider.slick({
             prevArrow: "<div class='arrow left'><img src='img/icons/angle-left.svg'></div>",
             nextArrow: "<div class='arrow right'><img src='img/icons/angle-right.svg'></div>",
             dots: false,
@@ -105,7 +108,6 @@
 
         // ========== ANIMATION ==========
 
-        // new WOW().init();
         // AOS.init();
 
         // ========== PORTFOLIO LINK ==========
