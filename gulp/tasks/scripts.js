@@ -25,8 +25,8 @@ module.exports = function () {
 
     $.gulp.task('scripts', function () {
         return $.gulp.src([
-            'app/scripts/dev.js',
             'app/scripts/v3.js',
+            'app/scripts/dev.js',
             'app/scripts/mail.js'
         ])
             .pipe($.concat('scripts.js'))

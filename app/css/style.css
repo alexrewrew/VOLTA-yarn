@@ -240,6 +240,14 @@ body {
 	font-family: 'Cera', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background: #fff;
 }
+body.no-canvas canvas {
+	display: none;
+}
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+}
 @media (max-device-width: 767px) and (orientation: landscape) {
 	.container {
 		max-width: 540px;
@@ -3735,6 +3743,11 @@ body.msie .link-logo {
 		order: 1;
 	}
 }
+@media (min-width: 1200px) {
+	body .wrapper {
+		background: transparent !important;
+	}
+}
 .portfolio-color-yellow .portfolio--back {
 	background: #fdbc00;
 }
@@ -3790,6 +3803,11 @@ body.msie .link-logo {
 	border-right: 5px solid transparent;
 	border-top: 5px solid #e54646;
 }
+@media (min-width: 1200px) {
+	body.no-canvas.body-crimson .wrapper {
+		background: #e54646 !important;
+	}
+}
 .body-gray-darker #preloader-load {
 	background: #fff url('../img/logo/volta-logo2.svg') center center no-repeat;
 	background-size: 197px;
@@ -3832,6 +3850,11 @@ body.msie .link-logo {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 5px solid #2e2e2e;
+}
+@media (min-width: 1200px) {
+	body.no-canvas.body-gray-darker .wrapper {
+		background: #2e2e2e !important;
+	}
 }
 .body-gray-light #preloader-load {
 	background: #fff url('../img/logo/volta-logo6.svg') center center no-repeat;
@@ -3884,6 +3907,11 @@ body.msie .link-logo {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 5px solid #605c65;
+}
+@media (min-width: 1200px) {
+	body.no-canvas.body-gray-light .wrapper {
+		background: #605c65 !important;
+	}
 }
 .body-gray-lightest #preloader-load {
 	background: #fff url('../img/logo/volta-logo7.svg') center center no-repeat;
@@ -3946,6 +3974,11 @@ body.msie .link-logo {
 .body-gray-lightest .blog--text h3, .body-gray-lightest .blog--text p {
 	color: #3f3c41;
 }
+@media (min-width: 1200px) {
+	body.no-canvas.body-gray-lightest .wrapper {
+		background: #e3e3e3 !important;
+	}
+}
 .body-lemon #preloader-load {
 	background: #fff url('../img/logo/volta-logo5.svg') center center no-repeat;
 	background-size: 197px;
@@ -3998,6 +4031,11 @@ body.msie .link-logo {
 	border-right: 5px solid transparent;
 	border-top: 5px solid #edbd05;
 }
+@media (min-width: 1200px) {
+	body.no-canvas.body-lemon .wrapper {
+		background: #edbd05 !important;
+	}
+}
 .body-malina #preloader-load {
 	background: #fff url('../img/logo/volta-logo3.svg') center center no-repeat;
 	background-size: 197px;
@@ -4041,6 +4079,11 @@ body.msie .link-logo {
 	border-right: 5px solid transparent;
 	border-top: 5px solid #ad2f6b;
 }
+@media (min-width: 1200px) {
+	body.no-canvas.body-malina .wrapper {
+		background: #ad2f6b !important;
+	}
+}
 .body-purple #preloader-load {
 	background: #fff url('../img/logo/volta-logo1.svg') center center no-repeat;
 	background-size: 197px;
@@ -4083,6 +4126,11 @@ body.msie .link-logo {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 5px solid #7521e1;
+}
+@media (min-width: 1200px) {
+	body.no-canvas.body-purple .wrapper {
+		background: #7521e1 !important;
+	}
 }
 .body-purple-darker #preloader-load {
 	background: #fff url('../img/logo/volta-logo8.svg') center center no-repeat;
@@ -4128,7 +4176,7 @@ body.msie .link-logo {
 	border-top: 5px solid #36096f;
 }
 @media (min-width: 1200px) {
-	body .wrapper {
-		background: transparent !important;
+	body.no-canvas.body-purple-darker .wrapper {
+		background: #36096f !important;
 	}
 }

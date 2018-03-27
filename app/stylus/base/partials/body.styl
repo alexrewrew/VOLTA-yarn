@@ -15,9 +15,13 @@ body
   font-family $m-font, $s-font, sans-serif
   background $white
 
-//+displays()
-//  .container
-//    max-width 1170px
+body.no-canvas
+  canvas
+    display none
+
++displays()
+  .container
+    max-width 1170px
 
 +landscape()
   .container

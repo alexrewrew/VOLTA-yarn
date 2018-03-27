@@ -100,8 +100,26 @@ function Wave() {
         this.InitCanvas();
     };
 
+    var lastLoop = new Date;
+    var c = 0;
+    var dateCookie = new Date(new Date().getTime() + 60 * 1000 * 60 * 24);
+
     this.InitCanvas = function () {
+
         var self = this;
+
+        var thisLoop = new Date;
+        var fps = 1000 / (thisLoop - lastLoop);
+        lastLoop = thisLoop;
+
+        if (fps < 20) {
+            c++;
+        }
+
+        if (c >= 20) {
+            $('body').addClass('no-canvas');
+            document.cookie = "nocanvas=true; path=/; expires=" + dateCookie;
+        }
 
         if (CLEAR) {
             if (first) {
@@ -142,7 +160,7 @@ function Wave() {
 
                         current.force.y += (MOUSE_PULL_SPEED * (1 - (dist / AREA_OF_EFFECT)) * mouseSpeed.y) * .3;
 
-                        if ((current.y - previous.y).toFixed(4)  != 0) {
+                        if ((current.y - previous.y).toFixed(4) != 0) {
                             clearFalse = false;
                         } else {
                             clearFalse = true;
@@ -178,7 +196,7 @@ function Wave() {
 
                         current.force.x += (MOUSE_PULL_SPEED * (1 - (dist / AREA_OF_EFFECT)) * mouseSpeed.x) * .3;
 
-                        if ((current.x - previous.x).toFixed(4)  != 0) {
+                        if ((current.x - previous.x).toFixed(4) != 0) {
                             clearFalse = false;
                         } else {
                             clearFalse = true;
@@ -214,7 +232,7 @@ function Wave() {
 
                         current.force.y += (MOUSE_PULL_SPEED * (1 - (dist / AREA_OF_EFFECT)) * mouseSpeed.y) * .3;
 
-                        if ((current.y - previous.y).toFixed(4)  != 0) {
+                        if ((current.y - previous.y).toFixed(4) != 0) {
                             clearFalse = false;
                         } else {
                             clearFalse = true;
@@ -251,7 +269,7 @@ function Wave() {
 
                         current.force.x += (MOUSE_PULL_SPEED * (1 - (dist / AREA_OF_EFFECT)) * mouseSpeed.x) * .3;
 
-                        if ((current.x - previous.x).toFixed(4)  != 0) {
+                        if ((current.x - previous.x).toFixed(4) != 0) {
                             clearFalse = false;
                         } else {
                             clearFalse = true;

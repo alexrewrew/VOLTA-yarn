@@ -1,5 +1,4 @@
 .body-crimson
-
   #preloader-load {
     background: #fff url('../img/logo/volta-logo4.svg') center center no-repeat;
     background-size: 197px
@@ -36,3 +35,8 @@
     color $pink
   .chosen-container:after
     triangle($crimson, down, 5px)
+
+body.no-canvas.body-crimson
+  +displays()
+    .wrapper
+      background $crimson !important
