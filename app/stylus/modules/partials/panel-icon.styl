@@ -5,8 +5,10 @@
   padding-left $s15
   display flex
   flex-direction column
-  +mobile()
+  +mob()
     display none
+  +port()
+    padding-left $s10
   li
     margin-bottom $s25
     a
@@ -24,3 +26,5 @@
   right 0
   padding-left 0
   padding-right $s15
+  +port()
+    padding-right $s10

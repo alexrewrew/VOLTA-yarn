@@ -2,15 +2,22 @@
   position relative
   padding-bottom 10.875rem
   margin-bottom 3.875rem
-  +mobile()
+  +mob()
     max-width 460px
     mcenter()
+  +xxl()
+    padding-bottom 11.625rem
+    margin-bottom 5rem
   &--image
     height 426px
     overflow hidden
     display flex
     justify-content center
     align-items center
+    +xxl()
+      height 554px
+      img
+        height 100%
   &--description
     background $trans
     trans()
@@ -20,7 +27,8 @@
     right -20px
     padding: $s37 $s30 61px
     z-index 30
-
+    +xxl()
+      padding-top 3.938rem
     &:after
       pseudo(block, absolute)
       left 0
@@ -32,9 +40,9 @@
       trans()
       height 0
 
-    +portrait()
+    +port()
       background $crimson-dark
-    +mobile()
+    +mob()
       background $crimson-dark
       left -15px
       right -15px
@@ -43,7 +51,7 @@
       padding-bottom $s25
       display flex
       flex-wrap wrap
-    +landscape()
+    +land()
       padding-left $s30
       padding-right $s30
     h3
@@ -53,29 +61,37 @@
       position relative
       left -70px
       width calc(100% + 70px)
-      +mobile()
+      +mob()
         position static
         width 100%
         margin-bottom $s12
+      +xxl()
+        margin-bottom $s28
+        left -78px
+        width calc(100% + 78px)
     &-text
       opacity 0
       trans()
-      +portrait()
+      +port()
         opacity 1
-      +mobile()
+      +mob()
         opacity 1
         order 2
         width 100%
       p
         margin-bottom: $s27
+        +xxl()
+          margin-bottom $s34
     &-prof
       color $white
       line-height: 1.44;
       font-size $f16
-      +mobile()
+      +mob()
         color #ff7b7b
         margin-bottom $s37
         width 100%
+      +retinanon()
+        font-weight 300
 
   &:hover
     .team--description-text

@@ -9,7 +9,6 @@
                 "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
             ));
             if (matches) {
-                // return decodeURIComponent(matches[1]);
                 $('body').addClass('no-canvas');
             } else {
                 return undefined;

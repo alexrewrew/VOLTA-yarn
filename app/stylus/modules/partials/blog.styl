@@ -4,7 +4,7 @@
   z-index 30
   padding-bottom 5.063rem
   margin-bottom $s47
-  +mobile()
+  +mob()
     max-width 460px
     mcenter()
     padding-bottom 3.438rem
@@ -15,35 +15,43 @@
     align-items center
     justify-content center
     overflow hidden
-
-    +tablet()
+    +tab()
       height: 162px;
-    +custom-max(992px)
+    +cmax(992px)
       height: auto
-
+    +xxl()
+      height 272px
     img
       height 100%
-      +mobile()
+      +mob()
         height auto
         width 100%
   &--text
     padding: $s37 $s15 0
-    +mobile()
+    +mob()
       padding $s33 0
+    +xxl()
+      padding $s48 0 0
     h3
       position relative
       left -70px
       width calc(100% + 70px)
       margin-bottom $s28
-      +mobile()
+      +mob()
         position static
         width auto
+      +xxl()
+        margin-bottom $s28
+        left -78px
+        width calc(100% + 78px)
     p
       margin-bottom $s22
   &--date
     display flex
     padding 0 $s15
-    +mobile()
+    +mob()
+      padding 0
+    +xxl()
       padding 0
     li
       color $lemon-darker
@@ -52,8 +60,12 @@
       font-size: $f12
       font-weight: 500;
       margin-right $s35
+      +retinanon()
+        font-weight 400
       svg
         margin-right $s10
+      +xxl()
+        font-size $f14
   &:after
     pseudo(block, absolute)
     background $lemon-dark
@@ -64,28 +76,31 @@
     z-index -1
     height 0
     trans()
-    +portrait()
+    +port()
       height calc(100% - 101px)
-    +mobile()
+    +mob()
       height calc(100% - 101px)
       left -15px
       right -15px
-    +landscape()
+    +land()
+      left -30px
+      right -30px
+    +xxl()
       left -30px
       right -30px
   .link-more
     opacity 0
-    +portrait()
+    +port()
       opacity 1
-    +mobile()
+    +mob()
       opacity 1
       right 5px
       bottom 38px
     &:after
       width 0
-      +portrait()
+      +port()
         width 100%
-      +mobile()
+      +mob()
         width 100%
         bottom 0
         top auto

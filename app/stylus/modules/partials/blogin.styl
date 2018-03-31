@@ -1,22 +1,26 @@
 .blogin-rubric
   display flex
   margin-bottom $s21
-  +mobile()
+  +mob()
     margin-bottom $s15
   li
     margin-right $s30
     color #868686
-    +mobile()
+    +mob()
       margin-right $s15
+    +retinanon()
+      font-weight 300
     a
       font-weight 700
+      +retinanon()
+        font-weight 500
 
 .blogin-date
   display flex
   justify-content flex-end
   align-items center
   margin-bottom $s21
-  +mobile()
+  +mob()
     justify-content space-between
     flex-wrap wrap
     margin-bottom 3.313rem
@@ -27,8 +31,10 @@
     font-family $sl-font, $s-font, sans-serif
     margin-left $s26
     padding-top $s1
-    +mobile()
+    +mob()
       margin-left 0
+    +retinanon()
+      font-weight 300
     svg
       margin-right $s10
       g
@@ -38,7 +44,7 @@
       margin-left 0
       font-size $f16
       font-family $m-font, $s-font, sans-serif
-      +mobile()
+      +mob()
         width 100%
         margin-bottom $s15
 
@@ -49,12 +55,15 @@
   height 230px
   overflow hidden
   margin-bottom 4.375rem
-  +mobile()
+  +mob()
     height 165px
     margin-bottom 3.750rem
+  +xxl()
+    height 296px
+    margin-bottom 5.625rem
   img
     width 100%
-    +mobile()
+    +mob()
       width auto
       height 100%
 
@@ -74,7 +83,7 @@
     align-items center
     justify-content center
     flex-shrink 0
-    +mobile()
+    +mob()
       margin-right $s15
   &--list
     display flex
@@ -100,9 +109,9 @@
   background $white
   padding $s30 0
   margin-bottom 5rem
-  +portrait()
+  +port()
     flex-wrap: wrap;
-  +mobile()
+  +mob()
     flex-wrap: wrap;
     padding $s10 0 $s40
     position relative
@@ -116,8 +125,9 @@
       bottom 0
       background $white
       z-index -1
-  +landscape()
+  +land()
     flex-wrap nowrap
+
   &--heading
     font-size: $f14
     line-height: 1.64;
@@ -125,10 +135,12 @@
     padding 0 $s29 0 $s24
     display flex
     align-items center
-    +mobile()
+    +mob()
       padding 0
       margin-bottom $s10
       width 100%
+    +retinanon()
+      font-weight 300
   &--image
     width: 68px;
     height: 68px;
@@ -149,7 +161,7 @@
     justify-content: center;
     max-width: 337px;
     width: 100%;
-    +mobile()
+    +mob()
       padding 0 $s30
       max-width: calc(100% - 68px)
 
@@ -159,7 +171,7 @@
       color: #3f3c41;
       width 100%
       margin-bottom 0
-      +mobile()
+      +mob()
         font-size $f14
     &-prof
       font-size: .875em
@@ -167,29 +179,31 @@
       color: #868686;
       width 100%
       margin-bottom 0
-      +mobile()
+      +mob()
         font-size $f12
 
   &--share
     display flex
     padding: 0 $s29 0 $s24
-    +tablet()
+    +tab()
       padding 0
-    +portrait()
+    +port()
       margin-top $s30
-    +mobile()
+    +mob()
       margin-top $s18
       padding 0
-    +landscape()
+    +land()
       margin-top 0
     &-heading
       display flex
       align-items center
-      +mobile()
+      +mob()
         font-size $f16
+      +retinanon()
+        font-weight 300
       svg
         margin-left $s27
-        +mobile()
+        +mob()
           margin-left $s15
 
     &-list
@@ -197,14 +211,14 @@
       flex-direction row
       align-items center
       padding $s6 $s22 0
-      +portrait()
+      +port()
         padding: $s6 $s34 0;
-      +mobile()
+      +mob()
         padding-left $s15
         padding-right $s6
       li
         margin 0 $s9
-        +mobile()
+        +mob()
           margin 0 $s6
         a
           svg g

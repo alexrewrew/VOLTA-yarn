@@ -2,17 +2,17 @@ body.msie
   .link-logo
     max-height 22px
     svg
-      +displays()
+      +dis()
         max-height 22px
 
   .grid
-    +custom-min(992px)
+    +cmin(992px)
       flex-direction: row;
       max-height: unset
       justify-content space-around
 
   .grid-item
-    +custom-min(992px)
+    +cmin(992px)
       &:nth-child(even)
         order 1
       &:nth-child(odd)

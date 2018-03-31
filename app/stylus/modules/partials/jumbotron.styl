@@ -1,25 +1,29 @@
 .portfolio.jumbotron
   height 500px
-  +portrait()
+  +port()
     padding-top 3.750rem
-  +mobile()
+  +mob()
     height 345px
     padding-top $s46
-  +landscape()
+  +land()
     padding-top: $s37
     height: 436px;
+  +xxl()
+    height 540px
   .portfolio--back
     top 0
     bottom 0
     left: 39.6vw;
     right 4.2vw
-    +portrait()
+    +port()
       left 4.2vw
-    +mobile()
+    +mob()
       bottom 0
       left 0
       right 0
       top 0
+    +xxl()
+      left 41.35vw
   .portfolio--back
     background $purple-dark
   .portfolio--front-image
@@ -27,41 +31,60 @@
     left: -10.4%;
     width 599px
     max-width unset
-    +custom-max(991px)
+    +cmax(991px)
       position static
       width 100%
-    +mobile()
+    +mob()
       max-width: 345px;
       margin: 0 auto;
       display: block;
-    +landscape()
+    +land()
       max-width: 500px;
+    +xxl()
+      max-width 680px
+      width 100%
+      top: 10.3%;
+      left: -11.4%;
 
   .portfolio--front-description
     height 500px
-    +portrait()
+    +port()
       height 100px
-    +mobile()
+    +mob()
       height: auto
       padding-top: $s15
+    +xxl()
+      height 540px
     .link-inner
       position absolute
       left 0
       bottom: 53px
-      +mobile()
+      +mob()
         position static
+      +port()
+        margin-bottom 0
+      +xxl()
+        bottom 36px
 
-+custom-max(991px)
++cmax(991px)
   .portfolio.jumbotron
     .col-left
       order 2
     .col-right
       order 1
 
-+mobile()
++mob()
   .portfolio.jumbotron.active
     .portfolio--back
       bottom 0
       left 0
       right 0
       top 0
+
++port()
+  .portfolio.jumbotron.active
+    .portfolio--back
+      top 0
+      bottom 0
+      right 4.2vw
+      left 4.2vw

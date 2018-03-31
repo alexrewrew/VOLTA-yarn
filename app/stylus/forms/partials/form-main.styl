@@ -7,15 +7,17 @@
   .input-group
     flex 1 1 calc(50% - 15px)
     max-width calc(50% - 15px)
-    +mobile()
+    +mob()
       flex 1 1 100% !important
       max-width 100% !important
-    +landscape()
+    +land()
       flex 1 1 calc(50% - 15px)
       max-width calc(50% - 15px)
   .select-group, .form-submit, .textarea-group
     flex 1 1 100%
     max-width 100%
+  +xxl()
+    max-width 722px
 
 .form-contactus
   textarea

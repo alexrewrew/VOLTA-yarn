@@ -1,24 +1,24 @@
 .grid
   justify-content space-around
-  +custom-min(992px)
+  +cmin(992px)
     flex-direction: column;
     justify-content flex-start
     max-height: 103vw
 
-  +displaysxxl()
+  +xxl()
     max-height: 90vw
 
-  +tablet()
+  +tab()
     max-height: 125vw;
 
 .grid.grid-small
-  +custom-min(992px)
+  +cmin(992px)
     max-height 52vw
 
 
 
 .grid-item
-  +custom-min(992px)
+  +cmin(992px)
     &:nth-child(even)
       order 2
     &:nth-child(odd)

@@ -14,24 +14,36 @@ h1
   margin-bottom $s23
   position relative
   z-index 30
-  +portrait()
+  +port()
     font-size 2.5em
-  +mobile()
+  +mob()
     font-size: $f30
     margin-bottom 60px
+  +xxl()
+    font-size 4.000em
+    line-height: 1.16;
+    margin-bottom: $s31
+
 
 h2
   font(3.5em, 700, 1)
   margin-bottom $s27
   color: $purple-text;
-  +mobile()
+  +mob()
     font-size 3em
+  +xxl()
+    font-size 3.750em
+
 
 h3
   font(1.875em, 700, 1.13)
   margin-bottom $s39
-  +mobile()
+  +mob()
     font-size: 1.375em;
+  +xxl()
+    font-size $f34
+  +retinanon()
+    font-weight 500
 
 h4
   font($f24, 700, 1.42)
@@ -43,14 +55,16 @@ h5
   font($f26, 400, 1)
   color $gray-lightdark
   margin 4rem 0 $s35
+  +retinanon()
+    font-weight 300
 
 h6
   font($f16, 700, 1.38)
   margin-bottom 0
   color #3f3c41
-  +portrait()
+  +port()
     font-size $f12
-  +mobile()
+  +mob()
     font-size $f14
   @media (max-height: 320px)
     font-size $f20
@@ -58,6 +72,10 @@ h6
 p
   font(1em, 400, 1.44)
   margin-bottom $s30
+  +xxl()
+    font-size $f18
+  +retinanon()
+    font-weight 300
 
 hr
   border: none;

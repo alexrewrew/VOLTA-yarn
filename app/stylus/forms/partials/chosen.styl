@@ -46,6 +46,8 @@
       font-size 1.125em
       line-height 1.89
       color $white
+      +retinanon()
+        font-weight 300
   .chosen-default
     span
       color #ff86c0
@@ -128,7 +130,7 @@
   margin 0 5px 0 0
   float: right
   width 100%
-  +mobile()
+  +mob()
     display none
   .chosen-container .chosen-single span
     color $purple
@@ -144,6 +146,7 @@
     &:hover
       .chosen-single span
         color $pink !important
+
   .chosen-container .chosen-single
     border-bottom 0
   .chosen-container-single .chosen-drop .chosen-results .active-result
@@ -168,3 +171,8 @@
   .chosen-container:after
     triangle($purple, down, 5px)
     right 0
+    +tab()
+      right -5px
+  .chosen-container .chosen-drop
+    +tab()
+      width 110%

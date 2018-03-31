@@ -13,8 +13,10 @@
 
 .slider
   padding-bottom 3.750rem
-  +mobile()
+  +mob()
     padding-bottom 0
+  +xxl()
+    padding-bottom 5.25rem
   .arrow
     position absolute
     z-index 100
@@ -28,7 +30,7 @@
     align-items center
     justify-content center
     trans()
-    +mobile()
+    +mob()
       top: 100px;
       bottom 0
     &:hover
@@ -36,20 +38,24 @@
 
   .arrow.left
     left 0
-    +mobile()
+    +mob()
       right calc(23% + 48px)
       left auto
   .arrow.right
     left 48px
-    +mobile()
+    +mob()
       right 6%
       left auto
+    +dis()
+      left: 58px;
   .slide
     padding-top $s19
-    +mobile()
+    +mob()
       padding-top $s5
+    +xxl()
+      padding-right $s50
     h3
-      +mobile()
+      +mob()
         margin-bottom 6.875rem
         max-width: 82%;
         height 48px
@@ -66,16 +72,16 @@
   font-size 8.625em
   font-weight 700
   color: $purple-text;
-  +portrait()
+  +port()
     left auto
     right 15px
-  +mobile()
+  +mob()
     font-size: 7.5em;
     left: auto;
     right: 6%
     bottom: -100px;
     z-index -1
-  +landscape()
+  +land()
     right 13%
 
 .slider.slick-dotted.slick-slider

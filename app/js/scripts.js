@@ -102,7 +102,7 @@ function Wave() {
 
     var lastLoop = new Date;
     var c = 0;
-    var dateCookie = new Date(new Date().getTime() + 60 * 1000 * 60 * 24);
+    var dateCookie = new Date(new Date().getTime() + 60 * 1000 * 60 * 8);
 
     this.InitCanvas = function () {
 
@@ -116,7 +116,7 @@ function Wave() {
             c++;
         }
 
-        if (c >= 20) {
+        if (c >= 30) {
             $('body').addClass('no-canvas');
             document.cookie = "nocanvas=true; path=/; expires=" + dateCookie;
         }
@@ -401,7 +401,6 @@ $(window).on("resize", function () {
                 "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
             ));
             if (matches) {
-                // return decodeURIComponent(matches[1]);
                 $('body').addClass('no-canvas');
             } else {
                 return undefined;

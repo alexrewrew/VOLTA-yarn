@@ -17,13 +17,15 @@ select
   &:focus
     outline none
     border-color $pink-lighter
+  +retinanon()
+    font-weight 300
 
 .select-group
   position relative
   margin-bottom $s5
   &:after
     display none
-    +mobile()
+    +mob()
       triangle($black, down, 4px)
       top calc(50% - 5px)
       right 5px

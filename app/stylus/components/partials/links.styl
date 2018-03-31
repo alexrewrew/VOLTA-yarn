@@ -14,7 +14,7 @@ a
 .link-logo
   display block
   max-width 97px
-  +mobile()
+  +mob()
     max-width 88px
     display flex
     align-items center
@@ -25,7 +25,7 @@ a
     g
       fill $purple
       trans()
-      +mobile()
+      +mob()
         fill $white
     &:hover
       g
@@ -42,37 +42,57 @@ a
   color $pink
   cursor pointer
   trans()
-  +mobile()
+  +mob()
     font-size $f24
+  +xxl()
+    font-size $f30
+    letter-spacing: 1.2px;
+  +retinanon()
+    font-weight 500
   svg
     margin-left $s30
     position relative
     top 4px
     trans()
+    +xxl()
+      width: 16px;
+      height: 27px;
+      margin-left 4.375rem
     g
       trans()
       fill $pink
   &:hover
     color $pink-hover
     svg
-      margin-left 2.75rem
+      margin-left $s44
+      +xxl()
+        margin-left 5.25rem
       g
         fill $pink-hover
 
 .link-inner-small
   font-size 1.25em
-  +mobile()
+  +mob()
     font-size $f24
+  +xxl()
+    font-size $f22
+    letter-spacing 1.1px
   svg
     top 2px
     margin-left 2.75rem
+    +xxl()
+      width: 10px;
+      height: 16px;
+      margin-left: $s27
   &:hover
     svg
       margin-left 3.625rem
+      +dis()
+        margin-left 2.563rem
 
 .link-slider
   margin-left 35%
-  +mobile()
+  +mob()
     margin-left 0
 
 
@@ -87,7 +107,7 @@ a
   z-index -1
   trans()
 
-  +mobile()
+  +mob()
     position absolute
     top 50px
     right 38px
@@ -116,8 +136,10 @@ a
   position relative
   &:hover
     color $pink-dark
-  +mobile()
+  +mob()
     float none
+  +retinanon()
+    font-weight 500
   &:after
     pseudo(block, absolute)
     height 3px
@@ -145,14 +167,19 @@ a
   font-weight 500
   padding $s7 $s14
   trans()
-  +portrait()
+  +port()
     opacity 1
-  +mobile()
+  +mob()
     opacity 1
     font-size $f24
     padding $s7 0
-  +landscape()
+  +land()
     right 30px
+  +xxl()
+    font-size $f18
+  +retinanon()
+    font-weight 400
+
   &:after
     pseudo(block, absolute)
     width 100%
@@ -173,6 +200,8 @@ a
   z-index 10
   padding 0 $s2
   line-height 1
+  +retinanon()
+    font-weight 500
   &:after, &:before
     pseudo(block, absolute)
     background #b9b9b9

@@ -15,27 +15,32 @@ ul, ol
   justify-content center
   align-items center
   padding $s43 0 $s25
+  +xxl()
+    padding-top 3.563rem
+    padding-bottom 0
   li
     flex 1 1 20%
     max-width 20%
     text-align center
     margin-bottom $s24
-    +tablet()
+    +tab()
       flex 1 1 25%
       max-width 25%
-    +portrait()
+    +port()
       flex 1 1 33.33333%
       max-width 33.33333%
-    +mobile()
+    +mob()
       flex 1 1 50%
       max-width 50%
       padding 0 $s15
-    +landscape()
+    +land()
       flex 1 1 33.33333%
       max-width 33.33333%
+    +xxl()
+      margin-bottom $s34
     img
       max-width 100%
-      +portrait()
+      +port()
         max-width: 85%;
 
 .ul-filter
@@ -43,9 +48,10 @@ ul, ol
   flex-wrap wrap
   li
     margin-right $s40
-    +portrait()
+    +port()
       margin-right $s30
-    +mobile()
+      margin-bottom $s8
+    +mob()
       margin-right $s26
       margin-bottom $s15
     a
@@ -54,7 +60,7 @@ ul, ol
       display inline-block
       padding: $s3 0 $s6;
       position relative
-      +mobile()
+      +mob()
         font-size: 1.125em;
       &:after
         pseudo(block, absolute)
@@ -68,6 +74,8 @@ ul, ol
       &:hover
         &:after
           width 100%
+      +retinanon()
+        font-weight 300
     .active
       &:after
         width 100%

@@ -3,8 +3,9 @@
 
 section
   padding-bottom 14.188rem
-  +mobile()
+  +mob()
     padding-bottom: 8.125rem
+
 
 article
   img
@@ -14,17 +15,21 @@ article
     width 100%
     margin-bottom $s30
     height 400px
-    +mobile()
+    +mob()
       height 300px
   p
     line-height: 1.63;
     color: $gray-lightdark
     margin-bottom $s26
+    +xxl()
+      font-size $f16
   a
     display inline-block
     border-bottom 2px solid $pink
     line-height 1.2
     font-weight 700
+    +retinanon()
+      font-weight 500
   ul, ol
     display flex
     flex-flow wrap column
@@ -37,8 +42,10 @@ article
       color $gray-lightdark
       line-height: 1.63;
       left 0
-      +mobile()
+      +mob()
         padding-right 0
+      +retinanon()
+        font-weight 300
       &:before
         position absolute
         display block
@@ -76,8 +83,10 @@ main
   overflow-x hidden
   height 100%
   z-index 0
-  +mobile()
+  +mob()
     padding 3.313rem 0 0
+  +port()
+    padding $s40 $s40 0 $s40
 
 canvas
   z-index: 1;
@@ -87,7 +96,7 @@ canvas
   bottom 0
   right 0
   display: none
-  +displays()
+  +dis()
     display block
 
 .wrapper
@@ -101,15 +110,19 @@ canvas
 
 .section-last
   padding-bottom 4.813rem
+  +xxl()
+    padding-bottom 7.500rem
 
 .section-slider
   padding-bottom: 11.438rem
-  +mobile()
+  +mob()
     padding-bottom 6.750rem
+  +xxl()
+    padding-bottom 12.875rem
 
 .section-portfolio
   padding-bottom 6.438rem
-  +mobile()
+  +mob()
     padding-bottom $s3
 
 .section-blog
@@ -117,5 +130,7 @@ canvas
 
 .section-filter
   padding-bottom 10.188rem
-  +mobile()
+  +mob()
     padding-bottom: 4.375rem
+  +tab()
+    padding-bottom 7rem

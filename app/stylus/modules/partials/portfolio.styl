@@ -3,13 +3,18 @@
   z-index 30
   height 560px
   margin-bottom 100px
-  +custom-max(991px)
+  +cmax(991px)
     .col-left
       order 2
     .col-right
       order 1
-  +mobile()
+  +mob()
     margin-bottom 3.563rem
+  +tab()
+    margin-bottom 80px
+  +xxl()
+    height: 580px
+    margin-bottom 128px
   &--front
     &-link
       display block
@@ -19,35 +24,44 @@
       left: 3.6%;
       max-width 457px
       width 100%
-      +portrait()
+      +port()
         top: -60px;
-      +mobile()
+      +mob()
         top: -40px;
         width: 320px
         max-width: unset;
         left: calc(50% - 160px);
         right: calc(50% - 160px);
-      +landscape()
+      +land()
         width: 400px;
         left: calc(50% - 200px);
         right: calc(50% - 200px);
+      +xxl()
+        width 100%
+        max-width: 508px;
+        left -14px
+        top -7px
     &-description
       padding-top: 125px;
       position relative
       height 560px
-      +custom-max(991px)
+      +cmax(991px)
         padding-top 0
         height auto
       h3
         margin-bottom $s43
-        +portrait()
+        +port()
           height: 66px;
-        +mobile()
+        +mob()
           height: 90px;
           font-size $f24
           line-height: 1.25;
-        +landscape()
+        +land()
           height 60px
+        +xxl()
+          font-size $f30
+          letter-spacing 1px
+          margin-bottom $s50
 
       &--marker
         color $white
@@ -58,12 +72,17 @@
         position absolute
         bottom: 125px;
         left 0
-        +custom-max(991px)
+        +cmax(991px)
           bottom: -400px;
           right 0
           left auto
-        +mobile()
+        +mob()
           bottom: -350px;
+        +dis()
+          font-size $f22
+          bottom 122px
+        +retinanon()
+          font-weight 400
 
   &--back
     position absolute
@@ -74,10 +93,10 @@
     z-index -1
     overflow hidden
     trans()
-    +portrait()
+    +port()
       top: 22%;
       bottom: 10%;
-    +mobile()
+    +mob()
       left 0
       right 0
       top 29%
@@ -92,11 +111,16 @@
         top calc(50% - 280px)
         bottom calc(50% - 280px)
         left 6%
+        +xxl()
+          left -2%
+          height 580px
+          top calc(50% - 290px)
+          bottom calc(50% - 290px)
   .link-inner-small
-    +portrait()
+    +port()
       position: absolute;
       bottom: -420px;
-    +mobile()
+    +mob()
       position: absolute;
       bottom: -370px;
 
@@ -108,12 +132,16 @@
   .portfolio--back-viewport--image
     left auto
     right 6%
+    +xxl()
+      right: 2%;
   .portfolio--front-image
     left: 17.5%
-    +mobile()
+    +mob()
       left: calc(50% - 160px);
-    +landscape()
+    +land()
       left: calc(50% - 200px);
+    +xxl()
+      left: 20.5%;
 
 .portfolio.active
   .portfolio--back
@@ -121,19 +149,16 @@
     bottom: 0
     left 1.6vw
     right 1.6vw
-    +mobile()
+    +mob()
       left 0
       right 0
       top 29%
       bottom: 13.85%;
-    +portrait()
+    +port()
       top: 22%;
       bottom: 10%;
       left 4.2vw
       right 4.2vw
-  //.link-inner
-  //  color $pink-hover
-  //  svg
-  //    margin-left 2.25rem
-  //    g
-  //      fill $pink-hover
+    +xxl()
+      left 3.1vw
+      right 3.1vw

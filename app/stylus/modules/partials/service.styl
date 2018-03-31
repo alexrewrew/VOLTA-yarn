@@ -4,22 +4,28 @@
   z-index 20
   &:last-child
     margin-bottom: 5rem
-  +mobile()
+  +mob()
     margin-bottom 8.125rem
+  +xxl()
+    margin-bottom 10.625em
   h3
-    +mobile()
+    +mob()
       font-size $f30
       line-height 1.13
       margin-bottom $s35
   &--image
     display block
     margin $s11 auto
-    +mobile()
+    +mob()
       margin-bottom $s50
       margin-top 0
+    +xxl()
+      max-width 148px
+      width 100%
+
   &--capabilities
     padding-top $s8
-    +mobile()
+    +mob()
       padding-top 0
     ul
       display flex
@@ -31,7 +37,7 @@
         margin-bottom $s16
         flex 1 1 50%
         max-width 50%
-        +mobile()
+        +mob()
           flex 1 1 100%
           max-width 100%
         &:before

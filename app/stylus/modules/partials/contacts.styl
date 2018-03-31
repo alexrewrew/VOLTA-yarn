@@ -1,10 +1,10 @@
 .contacts
   background $purple-darkest
   padding-top 4.563rem
-  +landscape()
+  +land()
     padding-right $s15
     padding-left $s15
-  +mobile()
+  +mob()
     position relative
     z-index 30
     padding-bottom: 5.125rem
@@ -13,18 +13,19 @@
       posn(0px,-15px,0px,-15px)
       background $purple-darkest
       z-index -1
-  +landscape()
+  +land()
     padding-bottom $s13
-
+  +xxl()
+    padding-top: 6.438rem
 .address
   display flex
   justify-content space-between
-  +mobile()
+  +mob()
     flex-wrap wrap
     padding-left $s5
   .address-col
     padding 0 $s25
-    +portrait()
+    +port()
       padding 0 $s20
     a
       color $white
@@ -40,15 +41,20 @@
     position absolute
     left -30px
     top 2px
-  +portrait()
+  +port()
     font-size $f14
+  +xxl()
+    left: -37px;
+    top: 4px;
+  +retinanon()
+    font-weight 300
 
 .contactus
   padding 3.250rem $s25
   min-height 460px
-  +portrait()
+  +port()
     padding 3.250rem $s20
-  +mobile()
+  +mob()
     padding $s42 0 $s20
 
   h4
@@ -73,7 +79,7 @@
       font-weight 500
       text-align center
       color: #541b9d;
-      +mobile()
+      +mob()
         font-size: 1.5em;
 
   #step2

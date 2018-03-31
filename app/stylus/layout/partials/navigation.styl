@@ -9,15 +9,17 @@ nav
   right 0
   z-index 8999
   trans()
-  +mobile()
+  +mob()
     border-top: 7px solid $white
     background $purple
     padding $s13 0
+  +port()
+    padding $s11 $s30
 
 nav.scroll
   background $white
   padding-bottom $s9
-  +mobile()
+  +mob()
     padding-bottom $s13
     background $purple
 
@@ -25,22 +27,22 @@ nav.scroll
   df(row)
   justify-content flex-end
   height 100%
-  +mobile()
+  +mob()
     flex-wrap wrap
     justify-content flex-start
   li
     margin 0 $s23
     &:last-child
       margin-right 0
-    +tablet()
+    +tab()
       margin 0 $s20
-    +portrait()
+    +port()
       margin 0 $s6
-    +mobile()
+    +mob()
       margin 0 0 $s20
       flex 1 1 100%
       max-width 100%
-    +landscape()
+    +land()
       flex 1 1 50%
       max-width 50%
     @media (max-height: 320px)
@@ -49,7 +51,7 @@ nav.scroll
       display inline-block
       color $purple
       font-weight 500
-      +mobile()
+      +mob()
         font-size: 1.25em
         font-weight 700
       &:hover
@@ -59,14 +61,14 @@ nav.scroll
 
 .menu.menu-lang
   display none
-  +mobile()
+  +mob()
     height auto
     display flex
   li
     margin 0 $s10
-    +portrait()
+    +port()
       margin 0 $s6
-    +mobile()
+    +mob()
       margin 0 0 $s20
       flex 1 1 100%
       max-width 100%
@@ -78,7 +80,7 @@ nav.scroll
   display none
   justify-content space-between
   margin $s20 0
-  +mobile()
+  +mob()
     display flex
   @media (max-height: 320px)
     margin $s10 0
@@ -90,7 +92,7 @@ nav.scroll
 
 .nav-menu
   display none
-  +mobile()
+  +mob()
     display block
 
 .nav-icon
@@ -132,7 +134,7 @@ nav.scroll
   transform translate3d(0, -150vh, 0)
   padding-top $s20
   trans()
-  +mobile()
+  +mob()
     display block
   @media (max-height: 320px)
     padding-top $s10
