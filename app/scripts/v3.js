@@ -298,6 +298,13 @@ function Wave() {
         WIDTH = body.width();
         HEIGHT = body.height();
 
+        var ds;
+        if (window.matchMedia("(min-width: 1600px)").matches) {
+            ds = 618;
+        } else {
+            ds = 580;
+        }
+
         canvas.width = WIDTH;
         canvas.height = HEIGHT;
 
@@ -308,7 +315,7 @@ function Wave() {
             waves[i].original.y = waves[i].y;
 
             waves3[i].x = WIDTH - (WIDTH / WAVE_DETAIL * i);
-            waves3[i].y = HEIGHT - 580;
+            waves3[i].y = HEIGHT - ds;
             waves3[i].original.x = waves3[i].x;
             waves3[i].original.y = waves3[i].y;
         }
@@ -323,22 +330,22 @@ function Wave() {
 
         for (i = 0; i < WAVE_DETAIL_HEIGHT; i++) {
             waves2[i].x = WIDTH - 50;
-            waves2[i].y = (HEIGHT - 580) / WAVE_DETAIL_HEIGHT * i;
+            waves2[i].y = (HEIGHT - ds) / WAVE_DETAIL_HEIGHT * i;
             waves2[i].original.x = waves2[i].x;
             waves2[i].original.y = waves2[i].y;
 
             waves4[i].x = 50;
-            waves4[i].y = (HEIGHT - 580) - ((HEIGHT - 580) / WAVE_DETAIL_HEIGHT * i);
+            waves4[i].y = (HEIGHT - ds) - ((HEIGHT - ds) / WAVE_DETAIL_HEIGHT * i);
             waves4[i].original.x = waves4[i].x;
             waves4[i].original.y = waves4[i].y;
         }
 
         waves2[0].y = 50;
         waves2[1].y = 50;
-        waves2[WAVE_DETAIL_HEIGHT - 1].y = HEIGHT - 580;
+        waves2[WAVE_DETAIL_HEIGHT - 1].y = HEIGHT - ds;
 
-        waves4[0].y = HEIGHT - 580;
-        waves4[1].y = HEIGHT - 580;
+        waves4[0].y = HEIGHT - ds;
+        waves4[1].y = HEIGHT - ds;
         waves4[WAVE_DETAIL_HEIGHT - 1].y = 50;
     };
 
