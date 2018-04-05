@@ -105,6 +105,9 @@
         // ========== SLIDER ==========
 
         // ----- SLICK SLIDER COUNTER -----
+        var arrowLeft = '<svg width="21px" height="37px" viewBox="0 0 21 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-557.000000, -1303.000000)"> <g id="SMM" transform="translate(163.000000, 1020.000000)" fill="#FC3A96"> <g id="Strelki"> <g id="Group-3"> <path d="M409.265991,301.58703 L394,285.778633 L396.877359,283 L414.243818,300.983495 L414.031023,301.18899 L414.641617,301.778633 L397.275158,319.762128 L394.397798,316.983495 L409.265991,301.58703 Z" id="Combined-Shape-Copy" transform="translate(404.320808, 301.381064) rotate(-180.000000) translate(-404.320808, -301.381064) "></path> </g> </g> </g> </g></svg>';
+
+        var arrowRight = '<svg width="21px" height="37px" viewBox="0 0 21 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-604.000000, -1303.000000)"> <g id="SMM" transform="translate(163.000000, 1020.000000)" fill="#FC3A96"> <g id="Strelki"> <g id="Group-3"> <path d="M456.265991,301.58703 L441,285.778633 L443.877359,283 L461.243818,300.983495 L461.031023,301.18899 L461.641617,301.778633 L444.275158,319.762128 L441.397798,316.983495 L456.265991,301.58703 Z" id="Combined-Shape"></path> </g> </g> </g> </g></svg>';
 
         var slider = $('.slider-full');
 
@@ -115,8 +118,8 @@
 
         // ----- SLICK SLIDER -----
         slider.slick({
-            prevArrow: "<div class='arrow left'><img src='img/icons/angle-left.svg'></div>",
-            nextArrow: "<div class='arrow right'><img src='img/icons/angle-right.svg'></div>",
+            prevArrow: "<div class='arrow left'>" + arrowLeft + "</div>",
+            nextArrow: "<div class='arrow right'>" + arrowRight + "</div>",
             dots: false,
             // fade: true
         });
