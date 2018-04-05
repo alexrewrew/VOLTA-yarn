@@ -116,7 +116,7 @@ function Wave() {
             c++;
         }
 
-        if (c >= 30) {
+        if (c >= 50) {
             $('body').addClass('no-canvas');
             document.cookie = "nocanvas=true; path=/; expires=" + dateCookie;
         }
