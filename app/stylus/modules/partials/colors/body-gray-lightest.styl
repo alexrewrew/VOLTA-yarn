@@ -8,12 +8,21 @@
   .wrapper
     background $gray-lightest
 
-  .panel-icon li a svg g, .link-logo svg g, .link-arrow svg g, .menu-social li a svg g
+  .panel-icon li a svg g, .link-arrow svg g, .menu-social li a svg g
     fill $gray-light
 
-  .panel-icon li a, .link-logo, .link-arrow, .menu-social li a
+  .link-logo
+      svg g, path, rect, circle, polygon
+        fill $gray-light
+
+  .panel-icon li a, .link-arrow, .menu-social li a
     &:hover
       svg g
+        fill $pink
+
+  .link-logo
+    &:hover
+      svg g, path, rect, circle, polygon
         fill $pink
 
   .menu li a, .footer-copyright
@@ -25,8 +34,8 @@
   +mob()
     nav
       background $gray-lightest
-    .link-logo
-      svg g
+    .link-logo svg
+      g, path, rect, circle, polygon
         fill $white
 
   .breadcrumbs li

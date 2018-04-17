@@ -293,7 +293,7 @@ body.no-canvas canvas {
 		width: 0;
 		left: 50%;
 	}
-	body.open .link-logo svg g {
+	body.open .link-logo svg g, body.open .link-logo svg path, body.open .link-logo svg rect, body.open .link-logo svg circle, body.open .link-logo svg polygon {
 		fill: #fc3a96;
 	}
 }
@@ -696,6 +696,7 @@ nav {
 nav.scroll {
 	background: #fff;
 	padding-bottom: .563rem;
+	padding-bottom: 0;
 }
 @media (max-width: 767px) {
 	nav.scroll {
@@ -1189,6 +1190,9 @@ a:hover, a:focus {
 .link-logo {
 	display: block;
 	max-width: 97px;
+	max-width: 180px;
+	position: relative;
+	top: -9px;
 }
 @media (max-width: 767px) {
 	.link-logo {
@@ -1200,24 +1204,26 @@ a:hover, a:focus {
 		-ms-flex-align: center;
 		align-items: center;
 		height: auto;
+		max-width: 118px;
+		top: -3px;
 	}
 }
 .link-logo svg {
 	height: auto;
 	width: 100%;
 }
-.link-logo svg g {
+.link-logo svg g, .link-logo svg polygon, .link-logo svg path, .link-logo svg rect, .link-logo svg circle {
 	fill: #7521e1;
 	-webkit-transition: all .3s ease;
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
 @media (max-width: 767px) {
-	.link-logo svg g {
+	.link-logo svg g, .link-logo svg polygon, .link-logo svg path, .link-logo svg rect, .link-logo svg circle {
 		fill: #fff;
 	}
 }
-.link-logo svg:hover g {
+.link-logo svg:hover g, .link-logo svg:hover polygon, .link-logo svg:hover path, .link-logo svg:hover rect, .link-logo svg:hover circle {
 	fill: #fc3a96;
 }
 .link-inner {
@@ -4276,7 +4282,13 @@ body.msie .link-logo {
 .body-crimson .panel-icon li a svg g, .body-crimson .link-logo svg g, .body-crimson .link-arrow svg g, .body-crimson .menu-social li a svg g {
 	fill: #e54646;
 }
-.body-crimson .panel-icon li a:hover svg g, .body-crimson .link-logo:hover svg g, .body-crimson .link-arrow:hover svg g, .body-crimson .menu-social li a:hover svg g {
+.body-crimson .link-logo svg g, .body-crimson .link-logo path, .body-crimson .link-logo rect, .body-crimson .link-logo circle, .body-crimson .link-logo polygon {
+	fill: #e54646;
+}
+.body-crimson .panel-icon li a:hover svg g, .body-crimson .link-arrow:hover svg g, .body-crimson .menu-social li a:hover svg g {
+	fill: #fc3a96;
+}
+.body-crimson .link-logo:hover svg g, .body-crimson .link-logo:hover path, .body-crimson .link-logo:hover rect, .body-crimson .link-logo:hover circle, .body-crimson .link-logo:hover polygon {
 	fill: #fc3a96;
 }
 .body-crimson .menu li a, .body-crimson .footer-copyright {
@@ -4289,7 +4301,7 @@ body.msie .link-logo {
 	.body-crimson nav {
 		background: #e54646;
 	}
-	.body-crimson .link-logo svg g {
+	.body-crimson .link-logo svg g, .body-crimson .link-logo svg path, .body-crimson .link-logo svg rect, .body-crimson .link-logo svg circle, .body-crimson .link-logo svg polygon {
 		fill: #fff;
 	}
 }
@@ -4324,7 +4336,13 @@ body.msie .link-logo {
 .body-gray-darker .panel-icon li a svg g, .body-gray-darker .link-logo svg g, .body-gray-darker .link-arrow svg g, .body-gray-darker .menu-social li a svg g {
 	fill: #2e2e2e;
 }
-.body-gray-darker .panel-icon li a:hover svg g, .body-gray-darker .link-logo:hover svg g, .body-gray-darker .link-arrow:hover svg g, .body-gray-darker .menu-social li a:hover svg g {
+.body-gray-darker .link-logo svg g, .body-gray-darker .link-logo path, .body-gray-darker .link-logo rect, .body-gray-darker .link-logo circle, .body-gray-darker .link-logo polygon {
+	fill: #2e2e2e;
+}
+.body-gray-darker .panel-icon li a:hover svg g, .body-gray-darker .link-arrow:hover svg g, .body-gray-darker .menu-social li a:hover svg g {
+	fill: #fc3a96;
+}
+.body-gray-darker .link-logo:hover svg g, .body-gray-darker .link-logo:hover path, .body-gray-darker .link-logo:hover rect, .body-gray-darker .link-logo:hover circle, .body-gray-darker .link-logo:hover polygon {
 	fill: #fc3a96;
 }
 .body-gray-darker .menu li a, .body-gray-darker .footer-copyright {
@@ -4337,7 +4355,7 @@ body.msie .link-logo {
 	.body-gray-darker nav {
 		background: #2e2e2e;
 	}
-	.body-gray-darker .link-logo svg g {
+	.body-gray-darker .link-logo svg g, .body-gray-darker .link-logo svg path, .body-gray-darker .link-logo svg rect, .body-gray-darker .link-logo svg circle, .body-gray-darker .link-logo svg polygon {
 		fill: #fff;
 	}
 }
@@ -4372,7 +4390,13 @@ body.msie .link-logo {
 .body-gray-light .panel-icon li a svg g, .body-gray-light .link-logo svg g, .body-gray-light .link-arrow svg g, .body-gray-light .menu-social li a svg g {
 	fill: #605c65;
 }
-.body-gray-light .panel-icon li a:hover svg g, .body-gray-light .link-logo:hover svg g, .body-gray-light .link-arrow:hover svg g, .body-gray-light .menu-social li a:hover svg g {
+.body-gray-light .link-logo svg g, .body-gray-light .link-logo path, .body-gray-light .link-logo rect, .body-gray-light .link-logo circle, .body-gray-light .link-logo polygon {
+	fill: #605c65;
+}
+.body-gray-light .panel-icon li a:hover svg g, .body-gray-light .link-arrow:hover svg g, .body-gray-light .menu-social li a:hover svg g {
+	fill: #fc3a96;
+}
+.body-gray-light .link-logo:hover svg g, .body-gray-light .link-logo:hover path, .body-gray-light .link-logo:hover rect, .body-gray-light .link-logo:hover circle, .body-gray-light .link-logo:hover polygon {
 	fill: #fc3a96;
 }
 .body-gray-light .menu li a, .body-gray-light .footer-copyright {
@@ -4385,7 +4409,7 @@ body.msie .link-logo {
 	.body-gray-light nav {
 		background: #605c65;
 	}
-	.body-gray-light .link-logo svg g {
+	.body-gray-light .link-logo svg g, .body-gray-light .link-logo svg path, .body-gray-light .link-logo svg rect, .body-gray-light .link-logo svg circle, .body-gray-light .link-logo svg polygon {
 		fill: #fff;
 	}
 }
@@ -4426,10 +4450,16 @@ body.msie .link-logo {
 .body-gray-lightest .wrapper {
 	background: #e3e3e3;
 }
-.body-gray-lightest .panel-icon li a svg g, .body-gray-lightest .link-logo svg g, .body-gray-lightest .link-arrow svg g, .body-gray-lightest .menu-social li a svg g {
+.body-gray-lightest .panel-icon li a svg g, .body-gray-lightest .link-arrow svg g, .body-gray-lightest .menu-social li a svg g {
 	fill: #605c65;
 }
-.body-gray-lightest .panel-icon li a:hover svg g, .body-gray-lightest .link-logo:hover svg g, .body-gray-lightest .link-arrow:hover svg g, .body-gray-lightest .menu-social li a:hover svg g {
+.body-gray-lightest .link-logo svg g, .body-gray-lightest .link-logo path, .body-gray-lightest .link-logo rect, .body-gray-lightest .link-logo circle, .body-gray-lightest .link-logo polygon {
+	fill: #605c65;
+}
+.body-gray-lightest .panel-icon li a:hover svg g, .body-gray-lightest .link-arrow:hover svg g, .body-gray-lightest .menu-social li a:hover svg g {
+	fill: #fc3a96;
+}
+.body-gray-lightest .link-logo:hover svg g, .body-gray-lightest .link-logo:hover path, .body-gray-lightest .link-logo:hover rect, .body-gray-lightest .link-logo:hover circle, .body-gray-lightest .link-logo:hover polygon {
 	fill: #fc3a96;
 }
 .body-gray-lightest .menu li a, .body-gray-lightest .footer-copyright {
@@ -4442,7 +4472,7 @@ body.msie .link-logo {
 	.body-gray-lightest nav {
 		background: #e3e3e3;
 	}
-	.body-gray-lightest .link-logo svg g {
+	.body-gray-lightest .link-logo svg g, .body-gray-lightest .link-logo svg path, .body-gray-lightest .link-logo svg rect, .body-gray-lightest .link-logo svg circle, .body-gray-lightest .link-logo svg polygon {
 		fill: #fff;
 	}
 }
@@ -4495,7 +4525,13 @@ body.msie .link-logo {
 .body-lemon .panel-icon li a svg g, .body-lemon .link-logo svg g, .body-lemon .link-arrow svg g, .body-lemon .menu-social li a svg g {
 	fill: #edbd05;
 }
+.body-lemon .link-logo svg g, .body-lemon .link-logo path, .body-lemon .link-logo rect, .body-lemon .link-logo circle, .body-lemon .link-logo polygon {
+	fill: #edbd05;
+}
 .body-lemon .panel-icon li a:hover svg g, .body-lemon .link-logo:hover svg g, .body-lemon .link-arrow:hover svg g, .body-lemon .menu-social li a:hover svg g {
+	fill: #fc3a96;
+}
+.body-lemon .link-logo:hover svg g, .body-lemon .link-logo:hover path, .body-lemon .link-logo:hover rect, .body-lemon .link-logo:hover circle, .body-lemon .link-logo:hover polygon {
 	fill: #fc3a96;
 }
 .body-lemon .menu li a, .body-lemon .footer-copyright {
@@ -4508,7 +4544,7 @@ body.msie .link-logo {
 	.body-lemon nav {
 		background: #edbd05;
 	}
-	.body-lemon .link-logo svg g {
+	.body-lemon .link-logo svg g, .body-lemon .link-logo svg path, .body-lemon .link-logo svg rect, .body-lemon .link-logo svg circle, .body-lemon .link-logo svg polygon {
 		fill: #fff;
 	}
 }
@@ -4552,7 +4588,13 @@ body.msie .link-logo {
 .body-malina .panel-icon li a svg g, .body-malina .link-logo svg g, .body-malina .link-arrow svg g, .body-malina .menu-social li a svg g {
 	fill: #ad2f6b;
 }
+.body-malina .link-logo svg g, .body-malina .link-logo svg path, .body-malina .link-logo svg rect, .body-malina .link-logo svg circle, .body-malina .link-logo svg polygon {
+	fill: #ad2f6b;
+}
 .body-malina .panel-icon li a:hover svg g, .body-malina .link-logo:hover svg g, .body-malina .link-arrow:hover svg g, .body-malina .menu-social li a:hover svg g {
+	fill: #fc3a96;
+}
+.body-malina .link-logo:hover svg g, .body-malina .link-logo:hover path, .body-malina .link-logo:hover rect, .body-malina .link-logo:hover circle, .body-malina .link-logo:hover polygon {
 	fill: #fc3a96;
 }
 .body-malina .menu li a, .body-malina .footer-copyright {
@@ -4565,7 +4607,7 @@ body.msie .link-logo {
 	.body-malina nav {
 		background: #ad2f6b;
 	}
-	.body-malina .link-logo svg g {
+	.body-malina .link-logo svg g, .body-malina .link-logo svg path, .body-malina .link-logo svg rect, .body-malina .link-logo svg circle, .body-malina .link-logo svg polygon {
 		fill: #fff;
 	}
 }
@@ -4597,10 +4639,16 @@ body.msie .link-logo {
 .body-purple .wrapper {
 	background: #7521e1;
 }
-.body-purple .panel-icon li a svg g, .body-purple .link-logo svg g, .body-purple .link-arrow svg g, .body-purple .menu-social li a svg g {
+.body-purple .panel-icon li a svg g, .body-purple .link-arrow svg g, .body-purple .menu-social li a svg g {
 	fill: #7521e1;
 }
-.body-purple .panel-icon li a:hover svg g, .body-purple .link-logo:hover svg g, .body-purple .link-arrow:hover svg g, .body-purple .menu-social li a:hover svg g {
+.body-purple .link-logo svg g, .body-purple .link-logo svg path, .body-purple .link-logo svg rect, .body-purple .link-logo svg circle, .body-purple .link-logo svg polygon {
+	fill: #7521e1;
+}
+.body-purple .panel-icon li a:hover svg g, .body-purple .link-arrow:hover svg g, .body-purple .menu-social li a:hover svg g {
+	fill: #fc3a96;
+}
+.body-purple .link-logo:hover svg g, .body-purple .link-logo:hover path, .body-purple .link-logo:hover rect, .body-purple .link-logo:hover circle, .body-purple .link-logo:hover polygon {
 	fill: #fc3a96;
 }
 .body-purple .menu li a, .body-purple .footer-copyright {
@@ -4613,7 +4661,7 @@ body.msie .link-logo {
 	.body-purple nav {
 		background: #7521e1;
 	}
-	.body-purple .link-logo svg g {
+	.body-purple .link-logo svg g, .body-purple .link-logo svg path, .body-purple .link-logo svg rect, .body-purple .link-logo svg circle, .body-purple .link-logo svg polygon {
 		fill: #fff;
 	}
 }
@@ -4645,10 +4693,16 @@ body.msie .link-logo {
 .body-purple-darker .wrapper {
 	background: #36096f;
 }
-.body-purple-darker .panel-icon li a svg g, .body-purple-darker .link-logo svg g, .body-purple-darker .link-arrow svg g, .body-purple-darker .menu-social li a svg g {
+.body-purple-darker .panel-icon li a svg g, .body-purple-darker .link-arrow svg g, .body-purple-darker .menu-social li a svg g {
+	fill: #36096f;
+}
+.body-purple-darker .link-logo g, .body-purple-darker .link-logo path, .body-purple-darker .link-logo rect, .body-purple-darker .link-logo circle, .body-purple-darker .link-logo polygon {
 	fill: #36096f;
 }
 .body-purple-darker .panel-icon li a:hover svg g, .body-purple-darker .link-logo:hover svg g, .body-purple-darker .link-arrow:hover svg g, .body-purple-darker .menu-social li a:hover svg g {
+	fill: #fc3a96;
+}
+.body-purple-darker .link-logo:hover svg g, .body-purple-darker .link-logo:hover path, .body-purple-darker .link-logo:hover rect, .body-purple-darker .link-logo:hover circle, .body-purple-darker .link-logo:hover polygon {
 	fill: #fc3a96;
 }
 .body-purple-darker .menu li a, .body-purple-darker .footer-copyright {
@@ -4661,7 +4715,7 @@ body.msie .link-logo {
 	.body-purple-darker nav {
 		background: #36096f;
 	}
-	.body-purple-darker .link-logo svg g {
+	.body-purple-darker .link-logo svg g, .body-purple-darker .link-logo svg path, .body-purple-darker .link-logo svg rect, .body-purple-darker .link-logo svg circle, .body-purple-darker .link-logo svg polygon {
 		fill: #fff;
 	}
 }
