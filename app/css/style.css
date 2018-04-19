@@ -1190,9 +1190,9 @@ a:hover, a:focus {
 .link-logo {
 	display: block;
 	max-width: 97px;
-	max-width: 180px;
+	max-width: 140px;
 	position: relative;
-	top: -9px;
+	top: -3px;
 }
 @media (max-width: 767px) {
 	.link-logo {
