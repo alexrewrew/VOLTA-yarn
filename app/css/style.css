@@ -462,7 +462,7 @@ blockquote:before, blockquote:after {
 	display: block;
 }
 blockquote:before {
-	content: open-quote;
+	content: '"';
 	line-height: 1;
 	font-size: 7em;
 	top: 10px;
