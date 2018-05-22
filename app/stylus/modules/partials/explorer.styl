@@ -1,3 +1,19 @@
+$contrast = rgba(255,255,255,0.8)
+
+.chosen-container .chosen-default span
+  color: $contrast
+
+.chosen-container .chosen-single
+  border-bottom-color $contrast
+
+input, textarea
+  border-bottom-color $contrast
+
+  +placeholder()
+    color $contrast
+
+
+
 body.msie
   .link-logo
     max-height 22px
@@ -17,3 +33,4 @@ body.msie
         order 1
       &:nth-child(odd)
         order 1
+

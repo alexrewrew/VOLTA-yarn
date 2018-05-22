@@ -149,7 +149,10 @@
         DOMs.sliderFull.slick({
             prevArrow: DOMs.arrowLeft,
             nextArrow: DOMs.arrowRight,
-            dots: false
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            infinite: true
         });
 
         // ========== PORTFOLIO LINK ==========
@@ -185,8 +188,14 @@
             }, 1500);
         });
 
+        autosize($('textarea'));
+
         if (bowser.msie) {
             DOMs.documentBody.addClass('msie');
+        }
+
+        if (bowser.safari) {
+            DOMs.documentBody.addClass('no-canvas');
         }
 
 

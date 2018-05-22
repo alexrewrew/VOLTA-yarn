@@ -42,7 +42,7 @@
         left -14px
         top -7px
     &-description
-      padding-top: 125px;
+      padding-top: 136px;
       position relative
       height 560px
       +cmax(991px)
@@ -93,6 +93,9 @@
     z-index -1
     overflow hidden
     trans()
+    +xxl()
+      left: 8.725vw;
+      right: 8.725vw;
     +port()
       top: 22%;
       bottom: 10%;
@@ -149,6 +152,11 @@
     bottom: 0
     left 1.6vw
     right 1.6vw
+
+    //
+    //max-width 100%
+    //
+
     +mob()
       left 0
       right 0

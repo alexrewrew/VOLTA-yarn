@@ -27,6 +27,7 @@
     "@fancyapps/fancybox": "^3.2.5",
     "animate.css": "latest",
     "aos": "^2.2.0",
+    "autosize": "^4.0.2",
     "bootstrap": "^4.0.0",
     "bowser": "^1.9.2",
     "chosen-js": "^1.8.3",
