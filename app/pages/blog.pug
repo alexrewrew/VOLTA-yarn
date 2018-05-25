@@ -36,57 +36,8 @@ block content
             .row.justify-content-center
                 .offset-lg-2.col-lg-10
                     .row.grid
-                        .col-lg-5.col-sm-8.grid-item
-                            a(href='blogin.html' title='' ).blog
-                                .blog--image
-                                    img(src='img/blog/blog1.png' title='')
-                                .blog--text
-                                    h3 Lifeprint - принтер, печатающий видео
-                                    p Живые фото из Гарри Поттера теперь существуют!
-                                ul.blog--date
-                                    li 17.02.2017
-                                    li
-                                        include svgs/eye.svg
-                                        | 125
-                                span.link-more More
-                        .col-lg-5.col-sm-8.grid-item
-                            a(href='blogin.html' title='').blog
-                                .blog--image
-                                    img(src='img/blog/blog2.png' title='')
-                                .blog--text
-                                    h3 Lifeprint - принтер, печатающий видео
-                                    p Создатели хоррор-игры Outlast 2 разработали специальные трусы-подгузники, призванные спасти чувство собственного достоинства и любимое нижнее белье от риска быть испачканным во время жутких и неожиданных игровых сцен
-                                ul.blog--date
-                                    li 17.02.2017
-                                    li
-                                        include svgs/eye.svg
-                                        | 125
-                                span.link-more More
-                        .col-lg-5.col-sm-8.grid-item
-                            a(href='blogin.html' title='' ).blog
-                                .blog--image
-                                    img(src='img/blog/blog1.png' title='')
-                                .blog--text
-                                    h3 Lifeprint - принтер, печатающий видео
-                                    p Живые фото из Гарри Поттера теперь существуют!
-                                ul.blog--date
-                                    li 17.02.2017
-                                    li
-                                        include svgs/eye.svg
-                                        | 125
-                                span.link-more More
-                        .col-lg-5.col-sm-8.grid-item
-                            a(href='blogin.html' title='').blog
-                                .blog--image
-                                    img(src='img/blog/blog2.png' title='')
-                                .blog--text
-                                    h3 Lifeprint - принтер, печатающий видео
-                                    p Создатели хоррор-игры Outlast 2 разработали специальные трусы-подгузники, призванные спасти чувство собственного достоинства и любимое нижнее белье от риска быть испачканным во время жутких и неожиданных игровых сцен
-                                ul.blog--date
-                                    li 17.02.2017
-                                    li
-                                        include svgs/eye.svg
-                                        | 125
-                                span.link-more More
+                        - for(var i = 0; i < 6; i++)
+                            +blog('Lifeprint - принтер, печатающий видео','Создатели хоррор-игры Outlast 2 разработали специальные трусы-подгузники, призванные спасти чувство собственного достоинства и любимое нижнее белье от риска быть испачканным во время жутких и неожиданных игровых сцен')
+
 
     include partials/_pagination

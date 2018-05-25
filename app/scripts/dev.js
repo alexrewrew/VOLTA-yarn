@@ -230,7 +230,7 @@
             } else if (DOMs.gridMasonryItems.length === 3 || DOMs.gridMasonryItems.length === 4) {
                 DOMs.gridMasonry.css('max-height', (max * 2) + 100);
             } else if (DOMs.gridMasonryItems.length === 5 || DOMs.gridMasonryItems.length === 6) {
-                DOMs.gridMasonry.css('max-height', (max * 3) + 100);
+                DOMs.gridMasonry.css('max-height', (max * 3) + 200);
             }
         }
     });

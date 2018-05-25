@@ -13,3 +13,17 @@ mixin img(src)
 mixin input(type, placeholder)
     input(type= type, placeholder= placeholder)
 
+mixin blog(heading, text)
+    .col-lg-5.col-sm-8.grid-item
+        a(href='blogin.html' title='').blog
+            .blog--image
+                img(src='img/blog/blog2.png' title='')
+            .blog--text
+                h3= heading
+                p= text
+            ul.blog--date
+                li 17.02.2017
+                li
+                    include ../svgs/eye.svg
+                    | 125
+            span.link-more More
